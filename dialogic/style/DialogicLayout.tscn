@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://idhqj50sfpgt"]
+[gd_scene load_steps=27 format=3 uid="uid://idhqj50sfpgt"]
 
 [ext_resource type="Script" path="res://addons/dialogic/Events/DefaultStyles/Default/DialogicDefaultLayout.gd" id="1_8406p"]
 [ext_resource type="Script" path="res://addons/dialogic/Events/Background/node_background_holder.gd" id="2_uy4j7"]
@@ -33,16 +33,15 @@ expand_margin_top = 5.0
 expand_margin_right = 5.0
 expand_margin_bottom = 5.0
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bxpcl"]
+content_margin_left = 32.0
+content_margin_top = 32.0
+content_margin_right = 32.0
+content_margin_bottom = 32.0
+bg_color = Color(1, 1, 1, 1)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q3vpc"]
 bg_color = Color(1, 1, 1, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-expand_margin_left = 15.0
-expand_margin_top = 15.0
-expand_margin_right = 15.0
-expand_margin_bottom = 15.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a3cyk"]
 bg_color = Color(0.12549, 0.12549, 0.12549, 1)
@@ -80,7 +79,9 @@ shadow_size = 5
 
 [node name="DefaultDialogNode" type="CanvasLayer"]
 script = ExtResource("1_8406p")
-name_label_box_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.843137)
+box_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.447059)
+name_label_font_size = 16
+name_label_box_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.447059)
 
 [node name="DialogicNode_BackgroundHolder" type="CanvasLayer" parent="."]
 layer = -1
@@ -114,8 +115,7 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 219.0
-offset_right = -690.0
+offset_right = -909.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("3_jrdso")
@@ -140,8 +140,8 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 683.0
-offset_right = -224.0
+offset_left = 910.0
+offset_right = 3.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("3_jrdso")
@@ -153,10 +153,9 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 1170.0
-offset_top = -2.0
-offset_right = 281.0
-offset_bottom = 1.0
+offset_left = 1150.0
+offset_right = 261.0
+offset_bottom = 3.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("3_jrdso")
@@ -234,10 +233,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -427.0
-offset_top = -286.0
-offset_right = -360.0
-offset_bottom = -256.0
+offset_left = -836.0
+offset_top = -364.0
+offset_right = -769.0
+offset_bottom = -334.0
 grow_horizontal = 2
 grow_vertical = 0
 scale = Vector2(1.5, 1.5)
@@ -258,38 +257,17 @@ script = ExtResource("11_iw8ug")
 [node name="DialogTextPanel" type="PanelContainer" parent="DefaultStyle"]
 unique_name_in_owner = true
 self_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.843137)
+custom_minimum_size = Vector2(0, 300)
 layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
+anchors_preset = 12
 anchor_top = 1.0
-anchor_right = 0.5
+anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -412.0
-offset_top = -207.0
-offset_right = 140.0
-offset_bottom = -97.9999
+offset_top = -10.0
 grow_horizontal = 2
 grow_vertical = 0
-scale = Vector2(1.5, 1.5)
-theme_override_styles/panel = SubResource("StyleBoxFlat_q3vpc")
+theme_override_styles/panel = SubResource("StyleBoxFlat_bxpcl")
 metadata/_edit_layout_mode = 1
-
-[node name="DialogicNode_DialogText" type="RichTextLabel" parent="DefaultStyle/DialogTextPanel"]
-unique_name_in_owner = true
-layout_mode = 2
-theme_override_colors/default_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/normal_font_size = 15
-theme_override_font_sizes/bold_font_size = 15
-theme_override_font_sizes/italics_font_size = 15
-theme_override_font_sizes/bold_italics_font_size = 15
-bbcode_enabled = true
-text = "Some default text"
-visible_characters_behavior = 1
-script = ExtResource("12_be5v2")
-
-[node name="DialogicNode_TypeSounds" type="AudioStreamPlayer" parent="DefaultStyle/DialogTextPanel/DialogicNode_DialogText"]
-script = ExtResource("13_dnu48")
-play_every_character = 0
 
 [node name="DNextIndicator" type="Control" parent="DefaultStyle/DialogTextPanel"]
 visible = false
@@ -310,6 +288,23 @@ step = 0.001
 value = 0.5
 show_percentage = false
 script = ExtResource("15_bvq6h")
+
+[node name="DialogicNode_DialogText" type="RichTextLabel" parent="DefaultStyle/DialogTextPanel"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/normal_font_size = 15
+theme_override_font_sizes/bold_font_size = 15
+theme_override_font_sizes/italics_font_size = 15
+theme_override_font_sizes/bold_italics_font_size = 15
+bbcode_enabled = true
+text = "Some default text"
+visible_characters_behavior = 1
+script = ExtResource("12_be5v2")
+
+[node name="DialogicNode_TypeSounds" type="AudioStreamPlayer" parent="DefaultStyle/DialogTextPanel/DialogicNode_DialogText"]
+script = ExtResource("13_dnu48")
+play_every_character = 0
 
 [node name="DialogicNode_TextInput" type="Control" parent="DefaultStyle"]
 layout_mode = 1

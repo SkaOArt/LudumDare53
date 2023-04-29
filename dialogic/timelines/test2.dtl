@@ -1,9 +1,9 @@
-Join girl 4
-girl: Hallooooo \:D
-girl: Welche Farbe magst du lieber?
+Join miu 4
+miu: Hallooooo \:D
+miu: Welche Farbe magst du lieber?
 - Rot
 	VAR {favourite_color} = "Rot"
 - Blau
 	VAR {favourite_color} = "Blau"
-girl: Ach {favourite_color}? Interessant..
-girl: Das ist auch meine Lieblingsfarbe!
+miu: Ach {favourite_color}? Interessant..
+miu: Das ist auch meine Lieblingsfarbe!

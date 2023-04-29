@@ -1,13 +1,13 @@
 [gd_scene load_steps=3 format=3 uid="uid://wf37gecg83pm"]
 
-[ext_resource type="Texture2D" uid="uid://ca27fsra86j4b" path="res://scenes/locations/building_complex/WIP_nachbar_bg.png" id="1_fqo4v"]
+[ext_resource type="Texture2D" uid="uid://dbs6tdnthvgjj" path="res://scenes/locations/building_complex/nachbar_bg.png" id="1_ykrgi"]
 [ext_resource type="PackedScene" uid="uid://es0kxxw0ecbx" path="res://scenes/gameplay/start_dialog_area.tscn" id="2_sqtae"]
 
 [node name="BuildingComplex" type="Node2D"]
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
-texture = ExtResource("1_fqo4v")
+texture = ExtResource("1_ykrgi")
 
 [node name="Door" parent="." instance=ExtResource("2_sqtae")]
 position = Vector2(893, 407)

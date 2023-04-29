@@ -1,9 +1,18 @@
-Join mr_paket 0
-mr_paket (default): Hallo!\
-Ich bin Mr. Paket und bin zum testen hier.
-mr_paket: Das hier ist eine neue Textbox.
-mr_paket: Das hier ist noch eine. Mit besonders viel Text. Den ich mir jetzt einfallen lasse, damit es vielleicht nicht in die Textbox passt und man sieht was dann passiert. Ich laber einfach mal weiter weil ich nicht weiß wie viel Text in so eine Textbox passt. Das sieht man leider vorher nicht so wirklich. Deswegen schreib ich einfach immer weiter, und weiter, und weiter... Reicht das jetzt schon? Wer weiß das schon.. Vielleicht wird der Text auch nur einfach immer kleiner..
-Join girl 4
-girl (default): [wave]Halt die Klappe![/wave]
-girl: Du hast nun wirklich genug geredet. Nun redet mal ein anderer Character, mal gucken wie das mit zweien so aussieht.
+Join mc 1
+mc (default): Hey, I'm in a hurry. Just a moment.
+Join mc_gedanken 2
+mc_gedanken (default): I'm on the phone with my best friend. We wanted to got for a walk in the city today and talk a bit. As I leave the apartment complex, i hear a strange noise.
+Join bf 2
+bf (default): I'm sorry, but I can't make it today. I just received a visit from my parents. We will have to postpone it until next time.
+mc_gedanken: I bite my lip. This is the third time now that my best friend has cancelled. I want to say something.. but we're best friends!
+bf: I'm really sorry, but tomorrow is definitely the day!
+mc_gedanken: I hear that she's sorry, but I still hesitate. Tomorrow, I was actually planning to take a break and have some time for myself...
+bf: Alright then, see you tomorrow!
+mc: Yes, then tomorrow. Well, have a good time today!
+mc_gedanken:  I agree hurriedly and after a brief farewell, I feel a bit frustrated. Strange noises don't improve my mood, and I turn in the direction they're coming from.
+mc: What is that?
+mc_gedanken: After taking a few steps towards the package and examining it more closely, I discovered that it was ripped open and contained a gift. After carefully examining the package, I was able to decipher the address and recipient name.
+mc: Oh, Ak…b..n... oh, this is surely for Mrs. Akoban. Since I have nothing to do today, I can bring it to her right away.
+mc_gedanken: I picked up the package and set off. I was sure I could bring some joy to my neighbor. After the breakup with her ex, he seemed to retaliate with childish behavior by not delivering her mail properly.
+
 [signal]

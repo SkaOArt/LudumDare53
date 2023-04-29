@@ -5,40 +5,29 @@
 [ext_resource type="Texture2D" uid="uid://swhfoe2807o5" path="res://assets/ui/inventory_ slot.png" id="3_4wf5j"]
 [ext_resource type="Texture2D" uid="uid://bn823eu7y36jd" path="res://assets/ui/letter.png" id="4_iixgc"]
 
-[node name="inventory" type="Control"]
+[node name="inventory" type="CanvasLayer"]
+
+[node name="Control" type="Control" parent="."]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="TextureButton" type="TextureButton" parent="CanvasLayer"]
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -232.0
-offset_top = -176.0
-offset_right = -129.0
-offset_bottom = -73.0
-grow_horizontal = 0
-grow_vertical = 0
-texture_normal = ExtResource("1_52n8u")
-ignore_texture_size = true
-stretch_mode = 4
-
-[node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer"]
 anchors_preset = 11
 anchor_left = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -136.0
-offset_right = 317.0
-offset_bottom = 1512.0
+offset_left = -231.0
+grow_horizontal = 0
+grow_vertical = 2
+size_flags_horizontal = 8
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -128.0
+offset_top = 560.0
+offset_right = 299.0
+offset_bottom = 1213.0
 grow_horizontal = 0
 grow_vertical = 2
 scale = Vector2(0.3, 0.3)
@@ -53,35 +42,105 @@ patch_margin_bottom = 158
 axis_stretch_horizontal = 1
 axis_stretch_vertical = 1
 
-[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/NinePatchRect"]
+[node name="ScrollContainer" type="ScrollContainer" parent="Control/NinePatchRect"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 50.0
-offset_top = 50.0
-offset_right = 105.0
-offset_bottom = 840.0
+offset_left = 27.0
+offset_top = 133.0
+offset_right = 133.0
+offset_bottom = 495.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.7, 0.7)
 horizontal_scroll_mode = 0
+vertical_scroll_mode = 3
 
-[node name="GridContainer" type="GridContainer" parent="CanvasLayer/NinePatchRect/ScrollContainer"]
+[node name="GridContainer" type="GridContainer" parent="Control/NinePatchRect/ScrollContainer"]
 clip_contents = true
 layout_mode = 2
+size_flags_horizontal = 6
 theme_override_constants/v_separation = 39
 
-[node name="inventory_slot" type="TextureRect" parent="CanvasLayer/NinePatchRect/ScrollContainer/GridContainer"]
+[node name="inventory_slot" type="TextureRect" parent="Control/NinePatchRect/ScrollContainer/GridContainer"]
 layout_mode = 2
 texture = ExtResource("3_4wf5j")
-stretch_mode = 3
 
-[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/NinePatchRect/ScrollContainer/GridContainer/inventory_slot"]
+[node name="CenterContainer" type="CenterContainer" parent="Control/NinePatchRect/ScrollContainer/GridContainer/inventory_slot"]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer/NinePatchRect/ScrollContainer/GridContainer/inventory_slot/CenterContainer"]
+[node name="item" type="TextureRect" parent="Control/NinePatchRect/ScrollContainer/GridContainer/inventory_slot/CenterContainer"]
 layout_mode = 2
 texture = ExtResource("4_iixgc")
+
+[node name="inventory_slot2" type="TextureRect" parent="Control/NinePatchRect/ScrollContainer/GridContainer"]
+layout_mode = 2
+texture = ExtResource("3_4wf5j")
+
+[node name="CenterContainer" type="CenterContainer" parent="Control/NinePatchRect/ScrollContainer/GridContainer/inventory_slot2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="item" type="TextureRect" parent="Control/NinePatchRect/ScrollContainer/GridContainer/inventory_slot2/CenterContainer"]
+layout_mode = 2
+texture = ExtResource("4_iixgc")
+
+[node name="inventory_slot3" type="TextureRect" parent="Control/NinePatchRect/ScrollContainer/GridContainer"]
+layout_mode = 2
+texture = ExtResource("3_4wf5j")
+
+[node name="CenterContainer" type="CenterContainer" parent="Control/NinePatchRect/ScrollContainer/GridContainer/inventory_slot3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="item" type="TextureRect" parent="Control/NinePatchRect/ScrollContainer/GridContainer/inventory_slot3/CenterContainer"]
+layout_mode = 2
+texture = ExtResource("4_iixgc")
+
+[node name="inventory_slot4" type="TextureRect" parent="Control/NinePatchRect/ScrollContainer/GridContainer"]
+layout_mode = 2
+texture = ExtResource("3_4wf5j")
+
+[node name="CenterContainer" type="CenterContainer" parent="Control/NinePatchRect/ScrollContainer/GridContainer/inventory_slot4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="item" type="TextureRect" parent="Control/NinePatchRect/ScrollContainer/GridContainer/inventory_slot4/CenterContainer"]
+layout_mode = 2
+texture = ExtResource("4_iixgc")
+
+[node name="inventory_slot5" type="TextureRect" parent="Control/NinePatchRect/ScrollContainer/GridContainer"]
+layout_mode = 2
+texture = ExtResource("3_4wf5j")
+
+[node name="CenterContainer" type="CenterContainer" parent="Control/NinePatchRect/ScrollContainer/GridContainer/inventory_slot5"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="item" type="TextureRect" parent="Control/NinePatchRect/ScrollContainer/GridContainer/inventory_slot5/CenterContainer"]
+layout_mode = 2
+texture = ExtResource("4_iixgc")
+
+[node name="inventory_Button" type="TextureButton" parent="Control"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -227.0
+offset_top = -149.0
+offset_right = -124.0
+offset_bottom = -46.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("1_52n8u")
+ignore_texture_size = true
+stretch_mode = 4

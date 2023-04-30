@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c8vhbpk8nun6d"]
 
 [ext_resource type="Script" path="res://script/credit.gd" id="1_gew0e"]
-[ext_resource type="Theme" uid="uid://deehlrh573mkc" path="res://themes/red_theme.tres" id="2_al37v"]
+[ext_resource type="Theme" uid="uid://deehlrh573mkc" path="res://red_theme.tres" id="2_al37v"]
 
 [node name="credit" type="Control"]
 layout_mode = 3

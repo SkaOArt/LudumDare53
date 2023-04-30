@@ -3,9 +3,12 @@
 [ext_resource type="Script" path="res://script/main.gd" id="1_6wtgq"]
 [ext_resource type="FontFile" uid="uid://v8wwvuijl17k" path="res://Rakoon_PersonalUse.ttf" id="2_71r32"]
 [ext_resource type="Theme" uid="uid://deehlrh573mkc" path="res://red_theme.tres" id="2_h8idp"]
+[ext_resource type="Texture2D" uid="uid://bpam3ix0nbmuf" path="res://assets/backgrounds/nachbar_bg.png" id="2_k175f"]
 [ext_resource type="PackedScene" uid="uid://dm5ivslqnb6n5" path="res://scenes/settings.tscn" id="3_ows2v"]
 [ext_resource type="PackedScene" uid="uid://c8vhbpk8nun6d" path="res://scenes/credit.tscn" id="4_pxa1v"]
 [ext_resource type="Texture2D" uid="uid://cguxs6brr6v7f" path="res://dialogic/characters/girl/lara.png" id="6_qfo0t"]
+[ext_resource type="Texture2D" uid="uid://ctatx6iuea0uh" path="res://dialogic/characters/neighbor/neighbor.png" id="7_h77e2"]
+[ext_resource type="Texture2D" uid="uid://bxom2nggowcob" path="res://dialogic/characters/seller/verkäufer.png" id="8_yfuri"]
 
 [node name="main" type="Control"]
 layout_mode = 3
@@ -16,12 +19,23 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_6wtgq")
 
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_k175f")
+
 [node name="Label" type="Label" parent="."]
 layout_mode = 2
 offset_left = 654.0
 offset_top = 176.0
 offset_right = 1267.0
 offset_bottom = 331.0
+theme_override_colors/font_outline_color = Color(0.780392, 0.862745, 0.815686, 1)
+theme_override_constants/outline_size = 24
 theme_override_fonts/font = ExtResource("2_71r32")
 theme_override_font_sizes/font_size = 152
 text = "Delivery"
@@ -88,15 +102,21 @@ visible = false
 layout_mode = 2
 anchors_preset = 0
 
-[node name="Neighbor15" type="Sprite2D" parent="."]
-position = Vector2(1647, 709)
-scale = Vector2(0.632762, 0.632762)
+[node name="Neighbor" type="Sprite2D" parent="."]
+position = Vector2(1591, 661)
+scale = Vector2(0.731799, 0.731799)
+texture = ExtResource("7_h77e2")
 
-[node name="LaraV3" type="Sprite2D" parent="."]
-position = Vector2(332, 799)
-scale = Vector2(0.49197, 0.49197)
-texture = ExtResource("6_qfo0t")
+[node name="Verkäufer" type="Sprite2D" parent="."]
+position = Vector2(502, 700)
+scale = Vector2(0.656317, 0.656317)
+texture = ExtResource("8_yfuri")
 flip_h = true
+
+[node name="Lara" type="Sprite2D" parent="."]
+position = Vector2(220, 698)
+scale = Vector2(0.666488, 0.666488)
+texture = ExtResource("6_qfo0t")
 
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/settings" to="." method="_on_settings_pressed"]

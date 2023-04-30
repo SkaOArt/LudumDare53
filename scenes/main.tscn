@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://dn8wkiqls3x25"]
+[gd_scene load_steps=8 format=3 uid="uid://dn8wkiqls3x25"]
 
 [ext_resource type="Script" path="res://script/main.gd" id="1_6wtgq"]
 [ext_resource type="FontFile" uid="uid://v8wwvuijl17k" path="res://Rakoon_PersonalUse.ttf" id="2_71r32"]
 [ext_resource type="Theme" uid="uid://deehlrh573mkc" path="res://red_theme.tres" id="2_h8idp"]
 [ext_resource type="PackedScene" uid="uid://dm5ivslqnb6n5" path="res://scenes/settings.tscn" id="3_ows2v"]
 [ext_resource type="PackedScene" uid="uid://c8vhbpk8nun6d" path="res://scenes/credit.tscn" id="4_pxa1v"]
+[ext_resource type="Texture2D" uid="uid://ctatx6iuea0uh" path="res://dialogic/characters/neighbor/neighbor 1.5.png" id="6_mumso"]
+[ext_resource type="Texture2D" uid="uid://cguxs6brr6v7f" path="res://dialogic/characters/girl/lara v3.png" id="7_ko3g7"]
 
 [node name="main" type="Control"]
 layout_mode = 3
@@ -86,6 +88,17 @@ anchors_preset = 0
 visible = false
 layout_mode = 2
 anchors_preset = 0
+
+[node name="Neighbor15" type="Sprite2D" parent="."]
+position = Vector2(1647, 709)
+scale = Vector2(0.632762, 0.632762)
+texture = ExtResource("6_mumso")
+
+[node name="LaraV3" type="Sprite2D" parent="."]
+position = Vector2(332, 799)
+scale = Vector2(0.49197, 0.49197)
+texture = ExtResource("7_ko3g7")
+flip_h = true
 
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/settings" to="." method="_on_settings_pressed"]

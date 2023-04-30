@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djqdgtgdo8asg"
-path="res://.godot/imported/background.png-24260438a47636688306ee8730b64de8.ctex"
+uid="uid://880e403coglq"
+path="res://.godot/imported/onkel.png-0527347f1009227fb357df2006fd840c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/locations/test/background.png"
-dest_files=["res://.godot/imported/background.png-24260438a47636688306ee8730b64de8.ctex"]
+source_file="res://dialogic/characters/barkeeper/onkel.png"
+dest_files=["res://.godot/imported/onkel.png-0527347f1009227fb357df2006fd840c.ctex"]
 
 [params]
 

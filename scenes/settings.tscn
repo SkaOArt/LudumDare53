@@ -80,7 +80,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 alignment = 1
 
-[node name="Label" type="Label" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer"]
+[node name="Full" type="Label" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 theme = ExtResource("2_6joy6")
 text = "Fullscreen"
@@ -88,7 +88,7 @@ text = "Fullscreen"
 [node name="CheckButton" type="CheckButton" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer"]
+[node name="music" type="Label" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 1
@@ -99,6 +99,11 @@ text = "Music
 [node name="audioSlider" type="HSlider" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("2_6joy6")
+
+[node name="Speed" type="Label" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_6joy6")
+text = "Text Speed"
 
 [node name="VBoxEnd" type="VBoxContainer" parent="Panel"]
 layout_mode = 1

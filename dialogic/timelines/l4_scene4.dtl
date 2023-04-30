@@ -24,4 +24,4 @@ elif {location 4.barkeeper_first} == "false":
 		I packed the gift and the card and said goodbye to the group.
 		Leave barkeeper
 	else:
-		„Get lost."
+		barkeeper: „Get lost."

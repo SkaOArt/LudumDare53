@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://oegvg7f8gcgj"]
+
+[ext_resource type="Texture2D" uid="uid://cfypjal280bwa" path="res://assets/backgrounds/V2_bar_bg.png" id="1_h60rc"]
+[ext_resource type="Texture2D" uid="uid://lsamuy46cuth" path="res://assets/backgrounds/V1_bar_bg.png" id="2_k6dgo"]
+
+[node name="bar" type="Node2D"]
+
+[node name="V2_Bar" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_h60rc")
+
+[node name="V1_Bar" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_k6dgo")

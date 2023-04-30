@@ -2,4 +2,4 @@ if {location1.paket_picket} == "true":
 	The gate is locked.
 else:
 	The gate is locked.
-	mc: "The noise doesn't seem to come from there anyway."
+	mc: „The noise doesn't seem to come from there anyway."

@@ -3,4 +3,4 @@ After taking a few steps towards the package and examining it more closely, I di
 mc: „Oh, Ak…b..n... oh, this is surely for Mrs. Akoban. Since I have nothing to do today, I can bring it to her right away."
 I pick up the package and set off. I'm sure I can bring some joy to my neighbor. After the breakup with her ex, he seemed to retaliate with childish behavior by not delivering her mail properly.
 VAR {location1.paket_picket} = "true"
-[signal arg="package_picked"]
+[signal arg="packet_picked"]

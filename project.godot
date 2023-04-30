@@ -22,7 +22,7 @@ Dialogic="*res://addons/dialogic/Other/DialogicGameHandler.gd"
 [dialogic]
 
 editor/character_preview_mode=0
-editor/current_editor=&"Timeline Editor"
+editor/current_editor=&"VariablesEditor"
 editor/current_resources={
 "Character Editor": "res://dialogic/characters/neighbor/neighbor.dch",
 "Timeline Editor": "res://dialogic/timelines/l1_door.dtl"
@@ -50,6 +50,7 @@ variables={
 "location1": {
 "paket_picket": "false"
 },
+"barkeeper_first": "true",
 "mc": ""
 }
 layout/export_overrides={
@@ -60,6 +61,7 @@ layout/export_overrides={
 }
 editor/layout/mode=2
 <<<<<<<Updatedupstreameditor/last_resources=PackedStringArray("res://dialogic/timelines/test.dtl", "res://dialogic/characters/girl/girl.dch", "res://dialogic/timelines/test2.dtl", "res://dialogic/timelines/test3.dtl", "res://dialogic/characters/mc/mc.dch", "res://dialogic/characters/neighbor/neighbor.dch", "")
+editor/timeline_editor_mode=0
 
 [display]
 

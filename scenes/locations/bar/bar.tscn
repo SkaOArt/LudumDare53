@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://oegvg7f8gcgj"]
+
+[ext_resource type="Script" path="res://scenes/locations/bar/bar.gd" id="1_rt3ho"]
+[ext_resource type="Texture2D" uid="uid://cfypjal280bwa" path="res://assets/backgrounds/V2_bar_bg.png" id="2_t564t"]
+[ext_resource type="Texture2D" uid="uid://880e403coglq" path="res://dialogic/characters/barkeeper/onkel.png" id="3_tlttg"]
+[ext_resource type="Texture2D" uid="uid://lsamuy46cuth" path="res://assets/backgrounds/V1_bar_bg.png" id="4_0xvn1"]
+[ext_resource type="PackedScene" uid="uid://es0kxxw0ecbx" path="res://scenes/gameplay/start_dialog_area.tscn" id="5_m2mqt"]
+
+[node name="bar" type="Node2D"]
+script = ExtResource("1_rt3ho")
+
+[node name="V2_Bar" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_t564t")
+
+[node name="Onkel" type="Sprite2D" parent="."]
+position = Vector2(1148, 592)
+scale = Vector2(0.508565, 0.508565)
+texture = ExtResource("3_tlttg")
+
+[node name="V1_Bar" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("4_0xvn1")
+
+[node name="sorting_game_playable" parent="." instance=ExtResource("5_m2mqt")]
+timeline_name = "sorting_game"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="sorting_game_playable"]
+polygon = PackedVector2Array(489, 93, 489, 212, 1482, 208, 1478, 95)
+
+[node name="boris_talk" parent="." instance=ExtResource("5_m2mqt")]
+timeline_name = "l4_scene4_beginning"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="boris_talk"]
+position = Vector2(24, 446)
+polygon = PackedVector2Array(988, -146, 911, 292, 1306, 295, 1207, -149)

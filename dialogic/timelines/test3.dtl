@@ -1,8 +1,0 @@
-Join mr_paket 0
-mr_paket: Hi.
-[update_position vector="Vector2(400, -400)"]
-mr_paket: Huui, was mach ich denn hier oben?
-[text_input var="input"]
-mr_paket: Verstehe, dann komme ich mal lieber wieder runter..
-[update_position vector="Vector2(-400, 400)"]
-Besser.

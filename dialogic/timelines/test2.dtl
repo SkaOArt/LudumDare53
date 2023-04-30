@@ -1,9 +1,0 @@
-Join miu 3
-miu: Hallooooo \:D
-miu: Welche Farbe magst du lieber?
-- Rot
-	VAR {favourite_color} = "Rot"
-- Blau
-	VAR {favourite_color} = "Blau"
-miu: Ach {favourite_color}? Interessant..
-miu: Das ist auch meine Lieblingsfarbe!

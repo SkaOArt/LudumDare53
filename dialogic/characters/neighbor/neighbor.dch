@@ -18,7 +18,7 @@
 "image": "res://dialogic/characters/neighbor/neighbor 1.5.png",
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
+"scale": 1.0,
 "scene": ""
 }
 },

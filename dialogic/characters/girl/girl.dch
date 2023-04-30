@@ -15,10 +15,10 @@
 "offset": Vector2(0, 0),
 "portraits": {
 "default": {
-"image": "res://dialogic/characters/girl/girl.png",
+"image": "res://dialogic/characters/girl/lara v3.png",
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1.0,
+"scale": 1,
 "scene": ""
 }
 },

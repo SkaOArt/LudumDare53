@@ -1,13 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://bqxer5ekgpsyw"]
+[gd_scene load_steps=4 format=3 uid="uid://bqxer5ekgpsyw"]
 
 [ext_resource type="Script" path="res://script/settings.gd" id="1_ryncp"]
+[ext_resource type="Theme" uid="uid://deehlrh573mkc" path="res://base_theme.tres" id="2_umvop"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ug7af"]
-bg_color = Color(0.27451, 0.27451, 0.27451, 1)
-border_width_left = 5
-border_width_top = 5
-border_width_right = 5
-border_width_bottom = 5
+bg_color = Color(0.180392, 0.133333, 0.184314, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(0.243137, 0.207843, 0.27451, 1)
+border_blend = true
 corner_radius_top_left = 20
 corner_radius_top_right = 20
 corner_radius_bottom_right = 20
@@ -27,60 +30,99 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 346.0
-offset_top = 130.0
-offset_right = -346.0
-offset_bottom = -130.0
+offset_left = 773.0
+offset_top = 278.0
+offset_right = -773.0
+offset_bottom = -278.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_ug7af")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
-layout_mode = 2
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -55.5
-offset_top = -64.0
-offset_right = 55.5
-offset_bottom = 64.0
+[node name="VBoxBegin" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-alignment = 1
 
-[node name="Settings" type="Label" parent="Panel/VBoxContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="Panel/VBoxBegin"]
+layout_mode = 2
+theme_override_constants/margin_top = 24
+
+[node name="Settings" type="Label" parent="Panel/VBoxBegin"]
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_font_sizes/font_size = 29
+theme = ExtResource("2_umvop")
+theme_override_font_sizes/font_size = 46
 text = "Settings"
 horizontal_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer"]
+[node name="MarginContainer2" type="MarginContainer" parent="Panel/VBoxBegin"]
+layout_mode = 2
+theme_override_constants/margin_top = 17
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/VBoxBegin"]
+layout_mode = 2
+alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Panel/VBoxBegin/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 alignment = 1
 
-[node name="Label" type="Label" parent="Panel/VBoxContainer/HBoxContainer"]
+[node name="Label" type="Label" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer"]
 layout_mode = 2
+theme = ExtResource("2_umvop")
 text = "Fullscreen"
 
-[node name="CheckButton" type="CheckButton" parent="Panel/VBoxContainer/HBoxContainer"]
+[node name="CheckButton" type="CheckButton" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Panel/VBoxContainer"]
+[node name="Label" type="Label" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 1
+theme = ExtResource("2_umvop")
 text = "Music
 "
 
-[node name="HSlider" type="HSlider" parent="Panel/VBoxContainer"]
+[node name="HSlider" type="HSlider" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("2_umvop")
 
-[node name="back" type="Button" parent="Panel/VBoxContainer"]
+[node name="VBoxEnd" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -66.0
+offset_top = -66.0
+offset_right = 66.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 2
+
+[node name="back" type="Button" parent="Panel/VBoxEnd"]
 layout_mode = 2
+size_flags_vertical = 8
+theme = ExtResource("2_umvop")
 text = "Back"
 
-[connection signal="toggled" from="Panel/VBoxContainer/HBoxContainer/CheckButton" to="." method="_on_check_button_toggled"]
-[connection signal="pressed" from="Panel/VBoxContainer/back" to="." method="_on_button_pressed"]
+[node name="MarginContainer" type="MarginContainer" parent="Panel/VBoxEnd"]
+layout_mode = 2
+theme_override_constants/margin_bottom = 18
+
+[connection signal="toggled" from="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer/CheckButton" to="." method="_on_check_button_toggled"]
+[connection signal="pressed" from="Panel/VBoxEnd/back" to="." method="_on_button_pressed"]

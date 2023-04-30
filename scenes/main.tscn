@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dn8wkiqls3x25"]
+[gd_scene load_steps=10 format=3 uid="uid://dn8wkiqls3x25"]
 
 [ext_resource type="Script" path="res://script/main.gd" id="1_6wtgq"]
 [ext_resource type="FontFile" uid="uid://v8wwvuijl17k" path="res://Rakoon_PersonalUse.ttf" id="2_71r32"]

@@ -1,4 +1,7 @@
-[gd_scene format=3 uid="uid://c8vhbpk8nun6d"]
+[gd_scene load_steps=3 format=3 uid="uid://c8vhbpk8nun6d"]
+
+[ext_resource type="Script" path="res://script/credit.gd" id="1_gew0e"]
+[ext_resource type="Theme" uid="uid://deehlrh573mkc" path="res://themes/red_theme.tres" id="2_al37v"]
 
 [node name="credit" type="Control"]
 layout_mode = 3
@@ -7,3 +10,19 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_gew0e")
+
+[node name="back" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 42.0
+offset_top = -78.0
+offset_right = 128.0
+offset_bottom = -34.0
+grow_vertical = 0
+theme = ExtResource("2_al37v")
+text = "Back"
+
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]

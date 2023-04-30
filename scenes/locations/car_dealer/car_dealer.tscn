@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwinlcmmsgovg"]
+
+[ext_resource type="Script" path="res://scenes/locations/car_dealer/car_dealer.gd" id="1_ear6f"]
+[ext_resource type="Texture2D" uid="uid://dfeorcyh538oi" path="res://scenes/locations/car_dealer/autohaus_bg.png" id="2_frqwl"]
+
+[node name="CarDealer" type="Node2D"]
+script = ExtResource("1_ear6f")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("2_frqwl")

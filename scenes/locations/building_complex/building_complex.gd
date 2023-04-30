@@ -22,8 +22,15 @@ func on_dialogic_signal(arg):
 		
 		"packet_picked":
 			paket.disable()
+		
+		"talked_miu":
+			exit_location()
 
 
 func start():
 	var dialog = Dialogic.start("l1_scene1")
 	add_child(dialog)
+
+
+func exit_location():
+	get_tree().change_scene_to_file("res://scenes/locations/car_dealer/car_dealer.tscn")

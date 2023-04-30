@@ -1,43 +1,7 @@
-As soon as I arrive, I spot a few cars that are clearly not in my price range. Nonetheless, I can't take my eyes off some of them. The package is getting heavier and I wonder if I should put it down.
-- I put down the package.
-	mc: As soon as I put it down, I felt somewhat freer and stretch a bit.
-	Join seller 1
-	seller: „Welcome to Autohaus KING, where we make driving a real experience.“
-	mc: I jump as the salesman suddenly walks past me and stands in front of me. In doing so, he trips over the package. After a brief stumble, he regains his balance and starts talking.
-	seller: „I'm your man today, not just any salesman, but your friend who wants to sell you only the best of the best.“
-	mc: I pick up the package again and notice that the salesman is making sure he is visible.
-- I kept the package in my arms.
-	mc: I decide to continue carrying the package to prevent myself or someone else from tripping over it.
-	Join seller 1
-	seller: „Welcome to Autohaus KING, where we make driving a real experience.“
-	mc: I jump as the salesman suddenly walks past me and stands in front of me. He makes sure the package does not cover him too much.
-	seller: „I'm your man today, not just any salesman, but your friend who wants to sell you only the best of the best.“
-mc: I am about to say something, but the salesman is already pointing at a red sports car.
-seller: „That is your car, the latest model that you can pay for in installments. But wait, I can see that's not your thing. But don't worry, I'll find the perfect car for you.“
-mc: I open my mouth to say something, but he interrupts me right away.
-seller: „These days there are so many cars and uncertainties. You clearly belong to the type of people who want it a little safer. Just follow me..“
-mc: I follow him reluctantly, but I don't want to be rude either. This is at least my chance to say something!
-mc: „I am actually here because of the package. It's for a Mr. Akuban.“
-seller: „Of course, you are a delivery person. Then I have the perfect vehicle for you.“
-mc: I sigh quietly and clear my throat. This can't be true! I just want to deliver the package!
-seller: „This is our compact car. Very handy, a bit older, but it has all the tires and has always been serviced in the workshop. Exactly the right car for you. Look at the price. A real bargain!“
-mc: I look at the price and hesitate for a moment.
-- I think I'll take the car!
-	mc: Then I might as well drive to Mr. Akuban's with it! The salesman suddenly smiled broadly as soon as I agreed.
-	seller: „Wonderful, then we can conclude the contract right away!“
-	Leave seller
-	mc: Barely out of the office, I suddenly feel much worse. I now have the address and my own car, but something in me says I will regret it in the next few years. Is it because of the strange fine print?
-	mc: Although I now have a car, I can't use it. Apparently, the salesman wants to take the car back to the workshop again, so I have to walk to the bar.
-- I won't take the car.
-	mc: „Thanks, but I'm not interested in the car.“
-	seller: „Okay, then maybe-"
-	mc: „NO!“
-	„I'm not interested in the car, but I need to find Mr. Akuban. Can you tell me where he is or do you not know him?"
-	mc: The salesman purses his lips and lets out a heavy sigh.
-	seller: „Are you really not willing to buy a car?“
-	mc: „Listen, if this keeps going on like this...!“
-	mc: He quickly raises his hands and puts on his brightest smile. In that moment, I feel the overwhelming desire to wipe it off his face.
-	seller: „Mr. Akuban is a good friend. He works at the bar which is not very far from here. A good man, that guy. Say hello to him from me. You just go straight from here and take the third left. You can't miss the bar“
-	mc: „Thank you very much.“
-	Leave seller
-	mc: I said goodbye and felt very relieved to be getting away from this man. Buying a car had suddenly become much less attractive than I had thought.
+As soon as I arrive, I spot a few cars that are clearly not in my price range. Nonetheless, I can't take my eyes off some of them.\
+The package is getting heavier and I wonder if I should put it down.
+- I put down the package
+	As soon as I put it down, I felt somewhat freer and stretch a bit.
+	VAR {location2.packet_dropped} = "true"
+- I kept the package in my arms
+	I decide to continue carrying the package to prevent myself or someone else from tripping over it.

@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://oegvg7f8gcgj"]
+[gd_scene load_steps=4 format=3 uid="uid://oegvg7f8gcgj"]
 
 [ext_resource type="Texture2D" uid="uid://cfypjal280bwa" path="res://assets/backgrounds/V2_bar_bg.png" id="1_h60rc"]
 [ext_resource type="Texture2D" uid="uid://lsamuy46cuth" path="res://assets/backgrounds/V1_bar_bg.png" id="2_k6dgo"]
+[ext_resource type="PackedScene" uid="uid://es0kxxw0ecbx" path="res://scenes/gameplay/start_dialog_area.tscn" id="3_18htt"]
 
 [node name="bar" type="Node2D"]
 
@@ -14,3 +15,8 @@ texture = ExtResource("1_h60rc")
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("2_k6dgo")
+
+[node name="sorting_dame" parent="." instance=ExtResource("3_18htt")]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="sorting_dame"]
+polygon = PackedVector2Array(490, 90, 489, 212, 1488, 208, 1464, 93)

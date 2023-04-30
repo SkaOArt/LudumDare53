@@ -2,29 +2,25 @@ extends Node2D
 
 
 @onready var fade_in: ColorRect = %FadeIn
-@onready var carson: Area2D = %Carson
 
 
 func _ready() -> void:
+	Dialogic.signal_event.connect(on_dialog_event)
+	
 	# fade in
 	fade_in.visible = true
 	var tween = create_tween()
 	tween.tween_property(fade_in, "self_modulate", Color(0, 0, 0, 0), 1.0)
-	tween.tween_callback(start)
+	#tween.tween_callback(start)
 
 
 func start():
 	# auto start
-	Dialogic.signal_event.connect(on_dialog_event)
-	var dialog = Dialogic.start("l2_scene3")
+	var dialog = Dialogic.start("l4_intro")
 	add_child(dialog)
 
 
 func on_dialog_event(arg):
-	match arg:
-		"talked_seller":
-			exit_location()
-
-
-func exit_location():
-	get_tree().change_scene_to_file("res://scenes/overworld.tscn")
+	if arg == "end":
+		# ToDo
+		get_tree().change_scene_to_file("res://scenes/main.tscn")

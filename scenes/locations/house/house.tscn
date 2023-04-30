@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://bo8ab7dh2t4d3"]
+
+[ext_resource type="Script" path="res://scenes/locations/house/house.gd" id="1_iou7b"]
+[ext_resource type="Texture2D" uid="uid://4034t71eyc1v" path="res://scenes/locations/house/haustür_zu_bg.png" id="1_tamcb"]
+[ext_resource type="PackedScene" uid="uid://es0kxxw0ecbx" path="res://scenes/gameplay/start_dialog_area.tscn" id="3_74k72"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xgxnq"]
+radius = 16.0
+
+[node name="House" type="Node2D"]
+script = ExtResource("1_iou7b")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("1_tamcb")
+
+[node name="FadeIn" type="ColorRect" parent="."]
+unique_name_in_owner = true
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+color = Color(0.129412, 0.129412, 0.129412, 1)
+
+[node name="StartDialogArea" parent="." instance=ExtResource("3_74k72")]
+position = Vector2(574, 402)
+timeline_name = "l4_intro"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StartDialogArea"]
+shape = SubResource("CircleShape2D_xgxnq")

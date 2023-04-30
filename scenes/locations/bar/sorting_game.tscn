@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://30xn2xfnlomb"]
+
+[ext_resource type="Script" path="res://scenes/locations/bar/sorting_game.gd" id="1_n25l6"]
+
+[node name="sorting_game" type="Node2D"]
+script = ExtResource("1_n25l6")

@@ -39,4 +39,4 @@ I look at the price and hesitate for a moment.
 	Leave seller
 	I said goodbye and felt very relieved to be getting away from this man. Buying a car had suddenly become much less attractive than I had thought.
 	VAR {auto} = "false"
-[signal arg="car"]
+[signal arg="talked_seller"]

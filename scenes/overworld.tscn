@@ -1,70 +1,42 @@
-[gd_scene load_steps=4 format=3 uid="uid://c44213wnhbgpt"]
+[gd_scene load_steps=7 format=3 uid="uid://dkk8yacxbaga2"]
 
 [ext_resource type="Texture2D" uid="uid://bxtvo1u0ufoe8" path="res://assets/backgrounds/Wip_map_overworld.png" id="1_3t7un"]
+[ext_resource type="PackedScene" uid="uid://tx0n7tcj711m" path="res://scenes/gameplay/select_location_area.tscn" id="2_nug62"]
+[ext_resource type="PackedScene" uid="uid://wf37gecg83pm" path="res://scenes/locations/building_complex/building_complex.tscn" id="3_mc850"]
+[ext_resource type="PackedScene" uid="uid://cwinlcmmsgovg" path="res://scenes/locations/car_dealer/car_dealer.tscn" id="4_877cn"]
+[ext_resource type="PackedScene" uid="uid://oegvg7f8gcgj" path="res://scenes/locations/bar/bar.tscn" id="5_dbqeo"]
+[ext_resource type="PackedScene" uid="uid://bo8ab7dh2t4d3" path="res://scenes/locations/house/house.tscn" id="6_kbnlq"]
 
-[sub_resource type="Gradient" id="Gradient_j6mks"]
+[node name="overworld" type="Node2D"]
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_rix48"]
-gradient = SubResource("Gradient_j6mks")
-
-[node name="overworld" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="TextureRect" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
 texture = ExtResource("1_3t7un")
 
-[node name="car_dealer" type="TextureButton" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -28.0
-offset_top = -362.0
-offset_right = 36.0
-offset_bottom = -298.0
-grow_horizontal = 2
-grow_vertical = 2
-texture_normal = SubResource("GradientTexture2D_rix48")
+[node name="BuildingComplex" parent="." instance=ExtResource("2_nug62")]
+position = Vector2(271, 503)
+location = ExtResource("3_mc850")
 
-[node name="bar" type="TextureButton" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 52.0
-offset_top = 218.0
-offset_right = 116.0
-offset_bottom = 282.0
-grow_horizontal = 2
-grow_vertical = 2
-texture_normal = SubResource("GradientTexture2D_rix48")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="BuildingComplex"]
+polygon = PackedVector2Array(29, 140, -135, 52, -157, -36, -202, -103, -138, -67, -21, -136, -14, -186, 167, -117, 150, -60, 157, 42)
 
-[node name="house" type="TextureButton" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 612.0
-offset_top = -144.0
-offset_right = 676.0
-offset_bottom = -80.0
-grow_horizontal = 2
-grow_vertical = 2
-texture_normal = SubResource("GradientTexture2D_rix48")
+[node name="CarDealer" parent="." instance=ExtResource("2_nug62")]
+position = Vector2(963, 191)
+location = ExtResource("4_877cn")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CarDealer"]
+polygon = PackedVector2Array(-161, 64, -128, -19, -99, -62, -59, -50, -23, -78, 119, -67, 131, -38, 174, -21, 157, 33, 129, 69, 148, 128, 17, 145, -128, 140, -178, 107)
+
+[node name="Bar" parent="." instance=ExtResource("2_nug62")]
+position = Vector2(1044, 790)
+location = ExtResource("5_dbqeo")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bar"]
+polygon = PackedVector2Array(-185, 107, -192, 62, -157, -42, -123, -50, -135, -95, -126, -147, -47, -126, 0, -240, 48, -185, 198, 103, 122, 155, 74, 205, -107, 188)
+
+[node name="House" parent="." instance=ExtResource("2_nug62")]
+position = Vector2(1544, 429)
+location = ExtResource("6_kbnlq")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House"]
+polygon = PackedVector2Array(-157, 88, -169, -7, -103, -76, -110, -112, -74, -121, -57, -95, -7, -91, 31, -245, 116, -72, 195, -52, 190, 88, 92, 133, -22, 104)

@@ -1,0 +1,4 @@
+if {auto} == "true":
+	[jump timeline="scene5_location_4b"]
+else:
+	[jump timeline="scene5_location_4a"]

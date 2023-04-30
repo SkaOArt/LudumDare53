@@ -23,5 +23,6 @@ elif {location 4.barkeeper_first} == "false":
 		mc: I was surprised by his words and couldn't possibly refuse. Boris wasn't a bad guy, and since I had already taken the whole way, I might as well go the last few meters.
 		I packed the gift and the card and said goodbye to the group.
 		Leave barkeeper
+		[signal arg="goodbye"]
 	else:
 		barkeeper: „Get lost."

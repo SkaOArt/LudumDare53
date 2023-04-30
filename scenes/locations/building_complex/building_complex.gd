@@ -7,19 +7,17 @@ extends Node2D
 
 
 func _ready() -> void:
+	Dialogic.signal_event.connect(on_dialog_signal)
+	
+	# fade in
 	fade_in.visible = true
-	Dialogic.signal_event.connect(on_dialogic_signal)
-	var dialog = Dialogic.start("name")
-	add_child(dialog)
+	var tween = create_tween()
+	tween.tween_property(fade_in, "self_modulate", Color(0, 0, 0, 0), 1.0)
+	tween.tween_callback(start)
 
 
-func on_dialogic_signal(arg):
+func on_dialog_signal(arg):
 	match arg:
-		"name":
-			var tween = create_tween()
-			tween.tween_property(fade_in, "self_modulate", Color(0, 0, 0, 0), 1.0)
-			tween.tween_callback(start)
-		
 		"packet_picked":
 			paket.disable()
 		
@@ -33,4 +31,4 @@ func start():
 
 
 func exit_location():
-	get_tree().change_scene_to_file("res://scenes/locations/car_dealer/car_dealer.tscn")
+	get_tree().change_scene_to_file("res://scenes/overworld.tscn")

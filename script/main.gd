@@ -2,7 +2,7 @@ extends Control
 
 
 func _on_play_pressed():
-	get_tree().change_scene_to_file("res://scenes/locations/building_complex/building_complex.tscn")
+	get_tree().change_scene_to_file("res://scenes/ask_player_name.tscn")
 
 func _on_settings_pressed():
 	get_node("settings").show()

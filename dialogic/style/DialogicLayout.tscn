@@ -79,9 +79,9 @@ shadow_size = 5
 
 [node name="DefaultDialogNode" type="CanvasLayer"]
 script = ExtResource("1_gf4oe")
-text_size = 22
+text_size = 30
 box_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.447059)
-name_label_font_size = 16
+name_label_font_size = 30
 name_label_box_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.447059)
 
 [node name="DialogicNode_BackgroundHolder" type="CanvasLayer" parent="."]
@@ -253,7 +253,7 @@ script = ExtResource("10_f4ckt")
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 16
+theme_override_font_sizes/font_size = 30
 text = "Name"
 horizontal_alignment = 1
 script = ExtResource("11_iw8ug")
@@ -297,10 +297,10 @@ script = ExtResource("15_bvq6h")
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_colors/default_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/normal_font_size = 22
-theme_override_font_sizes/bold_font_size = 22
-theme_override_font_sizes/italics_font_size = 22
-theme_override_font_sizes/bold_italics_font_size = 22
+theme_override_font_sizes/normal_font_size = 30
+theme_override_font_sizes/bold_font_size = 30
+theme_override_font_sizes/italics_font_size = 30
+theme_override_font_sizes/bold_italics_font_size = 30
 bbcode_enabled = true
 text = "Some default text"
 visible_characters_behavior = 1
@@ -346,7 +346,7 @@ layout_mode = 2
 
 [node name="TextLabel" type="Label" parent="DefaultStyle/DialogicNode_TextInput/TextInputPanel/VBoxContainer"]
 layout_mode = 2
-text = "Please enter some text:"
+text = "What is your name?"
 autowrap_mode = 3
 
 [node name="InputField" type="LineEdit" parent="DefaultStyle/DialogicNode_TextInput/TextInputPanel/VBoxContainer"]

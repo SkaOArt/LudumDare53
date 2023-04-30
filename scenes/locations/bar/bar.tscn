@@ -25,13 +25,13 @@ offset_bottom = 40.0
 texture = ExtResource("4_0xvn1")
 
 [node name="sorting_game_playable" parent="." instance=ExtResource("5_m2mqt")]
-timeline_name = "l4_sorting_game"
+timeline_name = "l3_sorting_game"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="sorting_game_playable"]
 polygon = PackedVector2Array(489, 93, 489, 212, 1482, 208, 1478, 95)
 
 [node name="boris_talk" parent="." instance=ExtResource("5_m2mqt")]
-timeline_name = "l4_scene4"
+timeline_name = "l3_scene4"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="boris_talk"]
 position = Vector2(24, 446)

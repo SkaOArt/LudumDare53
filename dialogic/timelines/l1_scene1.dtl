@@ -1,16 +1,16 @@
-mc: „Hey, I'm in a hurry. Just a moment."
-I'm on the phone with my best friend. We wanted to go for a walk in the city today and talk a bit. As I leave the apartment complex, I hear a strange noise.
-best_friend (default): „I'm sorry, but I can't make it today. I just received a visit from my parents. We will have to postpone it until next time."
-I bite my lip. This is the third time now that my best friend has canceled. I want to say something...but we're best friends!
-- But I have to say something!
-	mc: „Uh, do you know..."
-	best_friend: „Yes, I'll be right there! What's the matter, {mc}?"
-	mc: I sigh softly and shake my head.
-	mc: „No, no... all good."
-- I choose to remain silent.
-best_friend: „I'm really sorry, but tomorrow is definitely the day!"
-I hear that she's sorry, but I still hesitate. Tomorrow, I was actually planning to take a break and have some time for myself...
-best_friend: „Alright then, see you tomorrow!"
-mc: „Yes, then tomorrow. Well, have a good time today!"
-I agree hurriedly and after a brief farewell, I feel a bit frustrated. Strange noises don't improve my mood, and I turn in the direction they're coming from.
-mc: „What is that?"
+mc: „Hey, I'm in a hurry. Just a moment." #id:19
+I'm on the phone with my best friend. We wanted to go for a walk in the city today and talk a bit. As I leave the apartment complex, I hear a strange noise. #id:1a
+best_friend (default): „I'm sorry, but I can't make it today. I just received a visit from my parents. We will have to postpone it until next time." #id:1b
+I bite my lip. This is the third time now that my best friend has canceled. I want to say something...but we're best friends! #id:1c
+- But I have to say something! #id:1d
+	mc: „Uh, do you know..." #id:1e
+	best_friend: „Yes, I'll be right there! What's the matter, {mc}?" #id:1f
+	mc: I sigh softly and shake my head. #id:20
+	mc: „No, no... all good." #id:21
+- I choose to remain silent. #id:22
+best_friend: „I'm really sorry, but tomorrow is definitely the day!" #id:23
+I hear that she's sorry, but I still hesitate. Tomorrow, I was actually planning to take a break and have some time for myself... #id:24
+best_friend: „Alright then, see you tomorrow!" #id:25
+mc: „Yes, then tomorrow. Well, have a good time today!" #id:26
+I agree hurriedly and after a brief farewell, I feel a bit frustrated. Strange noises don't improve my mood, and I turn in the direction they're coming from. #id:27
+mc: „What is that?" #id:28

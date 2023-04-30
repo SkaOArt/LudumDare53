@@ -1,5 +1,5 @@
 if {location1.paket_picket} == "true":
-	The gate is locked.
+	The gate is locked. #id:14
 else:
-	The gate is locked.
-	mc: „The noise doesn't seem to come from there anyway."
+	The gate is locked. #id:15
+	mc: „The noise doesn't seem to come from there anyway." #id:16

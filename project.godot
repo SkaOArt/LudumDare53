@@ -27,7 +27,7 @@ editor/current_resources={
 "Character Editor": "res://dialogic/characters/neighbor/neighbor.dch",
 "Timeline Editor": "res://dialogic/timelines/name.dtl"
 }
-editor/last_resources=PackedStringArray("res://dialogic/characters/girl/girl.dch", "res://dialogic/characters/mc/mc.dch", "res://dialogic/characters/neighbor/neighbor.dch", "res://dialogic/characters/seller/seller.dch", "res://dialogic/characters/barkeeper/barkeeper.dch", "res://dialogic/characters/best_friend/best_friend.dch", "res://dialogic/timelines/l1_paket.dtl", "res://dialogic/timelines/l1_scene1b.dtl", "res://dialogic/timelines/l1_bin.dtl", "res://dialogic/timelines/l1_door.dtl", "res://dialogic/timelines/l1_fence.dtl", "res://dialogic/timelines/l1_letterbox.dtl", "res://dialogic/timelines/l1_scene1.dtl", "res://dialogic/timelines/l1_scene2.dtl", "res://dialogic/timelines/l2_scene3.dtl", "res://dialogic/timelines/scene5_location_4a.dtl", "res://dialogic/timelines/l4_intro.dtl", "res://dialogic/timelines/scene5_location_4b.dtl", "res://dialogic/timelines/name.dtl", "res://dialogic/timelines/l2_scene3b.dtl", "res://dialogic/timelines/l3_scene4.dtl", "res://dialogic/timelines/l3_sorting_game.dtl", "res://dialogic/timelines/l3_placeholder.dtl", "")
+editor/last_resources=PackedStringArray("res://dialogic/characters/girl/girl.dch", "res://dialogic/characters/mc/mc.dch", "res://dialogic/characters/neighbor/neighbor.dch", "res://dialogic/characters/seller/seller.dch", "res://dialogic/characters/barkeeper/barkeeper.dch", "res://dialogic/characters/best_friend/best_friend.dch", "res://dialogic/timelines/l1_paket.dtl", "res://dialogic/timelines/l1_scene1b.dtl", "res://dialogic/timelines/l1_bin.dtl", "res://dialogic/timelines/l1_door.dtl", "res://dialogic/timelines/l1_fence.dtl", "res://dialogic/timelines/l1_letterbox.dtl", "res://dialogic/timelines/l1_scene1.dtl", "res://dialogic/timelines/l1_scene2.dtl", "res://dialogic/timelines/l2_scene3.dtl", "res://dialogic/timelines/scene5_location_4a.dtl", "res://dialogic/timelines/l4_intro.dtl", "res://dialogic/timelines/scene5_location_4b.dtl", "res://dialogic/timelines/name.dtl", "res://dialogic/timelines/l2_scene3b.dtl", "res://dialogic/timelines/l3_scene4.dtl", "res://dialogic/timelines/l3_sorting_game.dtl", "res://dialogic/timelines/l3_placeholder.dtl")
 editor/last/resources=["res://dialogic/characters/girl/girl.dch", "res://dialogic/characters/mc/mc.dch", "res://dialogic/characters/neighbor/neighbor.dch", "res://dialogic/characters/seller/seller.dch", "res://dialogic/characters/barkeeper/barkeeper.dch", "res://dialogic/characters/best_friend/best_friend.dch", "res://dialogic/timelines/l1_paket.dtl", "res://dialogic/timelines/l1_scene1b.dtl", "res://dialogic/timelines/l1_bin.dtl", "res://dialogic/timelines/l1_door.dtl", "res://dialogic/timelines/l1_fence.dtl", "res://dialogic/timelines/l1_letterbox.dtl", "res://dialogic/timelines/l1_scene1.dtl", "res://dialogic/timelines/l1_scene2.dtl", "res://dialogic/timelines/l2_scene3.dtl", "res://dialogic/timelines/l4_scene4.dtl", "res://dialogic/timelines/scene5_location_4a.dtl", "res://dialogic/timelines/l4_intro.dtl", "res://dialogic/timelines/scene5_location_4b.dtl", "res://dialogic/timelines/name.dtl", "res://dialogic/timelines/l2_scene3b.dtl", "res://dialogic/timelines/l3_scene4.dtl"]
 animations/join_default_length=0.8
 animations/leave_default_length=0.6
@@ -68,10 +68,11 @@ layout/export_overrides={
 editor/layout/mode=2
 <<<<<<<Updatedupstreameditor/last_resources=PackedStringArray("res://dialogic/timelines/test.dtl", "res://dialogic/characters/girl/girl.dch", "res://dialogic/timelines/test2.dtl", "res://dialogic/timelines/test3.dtl", "res://dialogic/characters/mc/mc.dch", "res://dialogic/characters/neighbor/neighbor.dch", "")
 editor/timeline_editor_mode=0
-translation/enabled=false
+translation/enabled=true
 translation/original_locale="en"
 translation/file_mode=0
 translation/translation_folder="res://dialogic/timelines/translations"
+translation/id_counter=179
 
 [display]
 

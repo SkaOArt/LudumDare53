@@ -1,4 +1,4 @@
 if {location1.paket_picket} == "true":
-	There is nothing special in the trash can.
+	There is nothing special in the trash can. #id:11
 else:
-	There is nothing special in the trash can, but the sound seems to be coming from behind it.
+	There is nothing special in the trash can, but the sound seems to be coming from behind it. #id:12

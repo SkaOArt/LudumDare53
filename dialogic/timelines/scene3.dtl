@@ -1,0 +1,45 @@
+Join mc_f 1
+mc_f: Kaum war ich angekommen, entdeckte ich ein paar Autos, die eindeutig nicht in meiner Preisklasse lagen. Dennoch konnte ich meinen Blick von einigen Wagen nicht abwenden. Das Paket wurde immer schwerer und ich überlegte, ob ich es ablegen sollte.
+- Ich legte das Paket ab.
+	mc_f: Kaum hatte ich es abgestellt, fühlte ich mich etwas freier und streckte mich erst einmal.
+	Join seller 1
+	seller: „Herzlich willkommen bei Autohaus KING, wir machen das Fahren zu einem echten Erlebnis.“
+	mc_f: Ich erschrak, als plötzlich der Verkäufer an mir vorbeiging und sich vor mich stellte. Dabei stolperte er über das Paket. Nach einem kurzen Wanken bekam er das Gleichgewicht zurück und begann auch schon drauflos zu plappern.
+	seller: „Ich bin heute Ihr Mann, nicht irgendein Verkäufer, sondern Ihr Freund, der Ihnen nur das Beste vom Besten verkaufen will.“
+	mc_f: Ich hob das Paket wieder hoch und bemerkte, dass der Verkäufer darauf achtete, dass er gut zu sehen war.
+- Ich behielt das Paket auf dem Arm.
+	mc_f: Ich entschied mich lieber, das Paket weiterhin zu halten. Wer wusste, was passieren würde.
+	Join seller 1
+	seller: „Herzlich willkommen bei Autohaus KING, wir machen das Fahren zu einem echten Erlebnis.“
+	mc_f: Ich erschrak, als plötzlich der Verkäufer an mir vorbeiging und sich vor mich stellte. Dabei achtete er darauf, dass das Paket ihn nicht zu sehr bedeckte.
+seller: „Ich bin heute Ihr Mann, nicht irgendein Verkäufer, sondern Ihr Freund, der Ihnen nur das Beste vom Besten verkaufen will.“
+mc_f: Ich wollte schon etwas entgegnen, aber der Verkäufer deutete bereits auf einen roten Sportwagen.
+seller: „Das wäre dein Wagen, das neueste Modell, das du in Raten bezahlen kannst. Aber Moment, ich sehe schon, dass das nicht dein Ding ist. Aber keine Sorge, ich finde den perfekten Wagen für dich.“
+mc_f: Ich öffnete den Mund, um etwas zu sagen, aber er unterbrach mich sofort.
+seller: „Heutzutage gibt es so viele Autos und Unsicherheiten. Du gehörst eindeutig zu der Sorte Mensch, die es etwas sicherer wollen. Folge mir einfach.“
+mc_f: Ich folgte ihm widerwillig, aber ich wollte auch nicht unhöflich sein. Das war zumindest meine Chance, etwas zu sagen!
+mc_f: „Ich bin eigentlich hier wegen des Pakets. Das ist für einen Herrn Akuban.“
+seller: „Natürlich, du bist eine Lieferant. Dann habe ich das perfekte Fahrzeug für dich.“
+mc_f: Ich seufzte leise und räusperte mich. Das konnte doch nicht wahr sein! Ich wollte nur das Paket abgeben.
+seller: „Das ist unser Kleinwagen, sehr handlich, etwas älter, aber er hat alle Reifen und wurde immer in der Werkstatt gewartet. Genau das richtige Auto für dich. Schau dir nur den Preis an. Ein wahres Schnäppchen!“
+mc_f: Ich sah auf den Preis und zögerte ein wenig.
+- Ich glaube, ich nehme den Wagen.
+	mc_f: Dann könnte ich auch gleich damit zu Herrn Akuban fahren! Der Verkäufer lächelte plötzlich breit, kaum sagte ich ihm zu.
+	seller: „Wunderbar, dann können wir den Vertrag gleich abschließen!“
+	Leave seller
+	mc_f: Kaum war ich wieder aus dem Büro, fühlte ich mich irgendwie deutlich schlechter. Ich hatte zwar nun die Adresse und einen neuen Wagen, aber irgendwas in mir sagte, dass ich in den nächsten Jahren es bereuen werde. Lag das wohl an dem seltsamen Kleingedruckten?
+	mc_f: Obwohl ich nun ein Auto besaß, konnte ich es nicht benutzen. Offenbar wollte der Verkäufer das Auto noch einmal in die Werkstatt bringen, also musste ich zu Fuß zur Bar gehen.
+	[jump timeline="scene 3_5_Auto"]
+- Ich nehme den Wagen nicht.
+	mc_f: „Danke, aber ich habe kein Interesse an dem Wagen.“
+	seller: „Gut, dann vielleicht-„
+	mc_f: „Nein! Ich würde jetzt wirklich gerne wissen, wo ich Herrn Akuban finde. Wären Sie nun so freundlich, mir zu sagen, wo er ist... oder kennen Sie ihn gar nicht?“
+	mc_f: Der Verkäufer verzog den Mundwinkel und seufzte schwer.
+	seller: „Sie wollen wirklich kein Auto kaufen?“
+	mc_f: „Hören Sie, wenn das so weitergeht...“
+	mc_f: Eilig hob er die Hände und setzte sein strahlendstes Lächeln auf die Lippen. Mit einem Mal hatte ich das Bedürfnis, es ihm aus dem Gesicht zu ziehen.
+	seller: „Herr Akuban ist ein guter Freund. Er arbeitet in der Bar, die nicht sehr weit von hier ist. Ein guter Mann, der Kerl. Grüßen Sie ihn von mir. Sie gehen einfach von hier aus geradeaus und nehmen die dritte Straße links. Die Bar können Sie gar nicht verpassen.“
+	mc_f: „Danke sehr.“
+	Leave seller
+	mc_f: Ich verabschiedete mich und fühlte mich sehr erleichtert, dass ich mich von diesem Mann entfernte. Der Kauf eines Autos war mit einem Mal deutlich unattraktiver geworden, als ich gedacht hatte.
+	[jump timeline="scene 4"]

@@ -1,0 +1,26 @@
+Join mc_f 1
+mc_f: Ich war tatsächlich froh, dass ich nicht mehr das große Paket tragen musste, sondern nur noch das Geschenk und die angebrachte Karte. Das machte vieles leichter!
+mc_f: Langsam aber sicher näherte ich mich der Adresse. Ich hörte Kinderlachen, allerdings auch ein paar Schreie der Freude. Kinder waren manchmal etwas sehr eigen.
+mc_f: Nachdem ich das Haus erreichte, sah ich, wie viel geschmückt war. Kinder rannten durch die Gegend, doch eines der Kinder wirkte besonders traurig und stand herum und beobachtete die anderen.
+Join girl 1
+mc_f: Ich näherte mich dem Mädchen, das fragend zu mir sah.
+girl: „Also, dich kenne ich nicht.“
+mc_f: „Ich bin MC. Ich bin hier, weil ich eine ganz wichtige Lieferung für das Geburtstagskind habe!“
+girl: „Ich bin das Geburtstagskind, ich bin Lara und werde heute schon 7 Jahre alt.“
+mc_f: Stolz hob das Mädchen ihre Hände, um die Zahl anhand der Finger zu zeigen. Augenblicklich sah sie zum Geschenk und wirkte ganz aufgeregt.
+mc_f: „Dein Onkel und deine Tante wollten beide, dass ich dir das liefere, und dein Onkel hat sogar eine Karte für dich mitgegeben. Leider wird er sich noch etwas verspäten.“
+girl: „Solange er kommt, ist das nicht schlimm! Ist das… das Geschenk, was die beiden mir ausgesucht haben?“
+mc_f: Ich sah, wie das Mädchen immer wieder zum verpackten Geschenk sah und überreichte ihr das Paket samt der Karte.
+girl: „Vielen lieben Dank! Du hast meinen Geburtstag gerettet!“
+mc_f: Eilig packte das Mädchen aus, und ein Teddy kam zum Vorschein, den sie an sich drückte. Es dauerte nicht lange, da rannte sie los und war aufgedrehter als jedes andere Kind. Ich war sehr froh, sie so zu sehen, und bereute es nicht, dass ich Mia das Paket abgenommen hatte.
+Leave girl
+Join neighbor 1
+neighbor: „Bist du das nicht, Mc?“
+mc_f: „Mia, was machst du denn hier?“
+neighbor: „Ich sagte doch, dass ich zu einem Geburtstag eingeladen bin. Und du? Hattest du Erfolg mit dem Paket?“
+mc_f: Ich nickte, und plötzlich hörte ich eine Hupe. Ich sah gemeinsam mit Mia zum Eingang und sah, wie der Verkäufer aus einem Auto stieg. Auch Boris konnte ich sehen. Sogleich ging er zu Lara, die ihn begrüßte.
+neighbor: „Warte, bedeutet das etwa… Oh nein, es tut mir so leid, MC, ich wusste nicht…“
+mc_f: Ich schüttelte den Kopf und lächelte.
+mc_f: „Mach dir keine Sorgen. Heute war mir jedenfalls nicht langweilig. Und weißt du was? Ich glaube, wir können ruhig öfter etwas zusammen machen und auch dein Problem mit deinem Ex lösen.“
+mc_f: Ich wusste nicht, warum, doch ich hatte das Gefühl, dass sich durch diese kleine Lieferung etwas in mir geändert hatte, und diese Änderung wollte ich fortsetzen!
+[end_timeline]

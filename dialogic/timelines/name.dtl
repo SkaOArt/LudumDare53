@@ -1,2 +1,2 @@
-neighbor: What is your name?
+What is your name?
 [text_input var="mc"]

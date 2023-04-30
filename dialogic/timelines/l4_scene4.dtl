@@ -8,7 +8,7 @@ if {location 4.barkeeper_first} == "true":
 	mc: I was interrupted as the bartender looked at me with a cold and downright creepy gaze.
 	barkeeper: „Get out of here, you have no business here.“
 	mc: I quickly understood that he didn't want to talk to me. So I had to make sure he would talk to me!
-	VAR {barkeeper_first} = "false"
+	VAR {location 4.barkeeper_first} = "false"
 elif {location 4.barkeeper_first} == "false":
 	if {location 4.sorting_game_played} == "true":
 		mc: Mr. Akuban seemed much friendlier all of a sudden after I made an effort to show him that I was serious.
@@ -24,4 +24,4 @@ elif {location 4.barkeeper_first} == "false":
 		I packed the gift and the card and said goodbye to the group.
 		Leave barkeeper
 	else:
-		: „Get lost."
+		„Get lost."

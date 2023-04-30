@@ -1,0 +1,9 @@
+if {location 4.barkeeper_first} == "true":
+	Join barkeeper 3
+	barkeeper: "Hey don't touch it."
+elif {location 4.barkeeper_first} == "false":
+	mc: Maybe he will talked to me when I help him.
+	"Hey Boris can I help you out by sorting the shelf?"
+	Join barkeeper 3
+	"Fine. If you sort them well I will awnser any question your have."
+	[signal arg="sorting_game"]

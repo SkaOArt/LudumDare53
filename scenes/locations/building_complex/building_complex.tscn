@@ -1,19 +1,21 @@
-[gd_scene load_steps=4 format=3 uid="uid://wf37gecg83pm"]
+[gd_scene load_steps=5 format=3 uid="uid://wf37gecg83pm"]
 
 [ext_resource type="Script" path="res://scenes/locations/building_complex/building_complex.gd" id="1_heswl"]
 [ext_resource type="Texture2D" uid="uid://dbs6tdnthvgjj" path="res://scenes/locations/building_complex/nachbar_bg.png" id="1_ykrgi"]
 [ext_resource type="PackedScene" uid="uid://es0kxxw0ecbx" path="res://scenes/gameplay/start_dialog_area.tscn" id="2_sqtae"]
+[ext_resource type="Texture2D" uid="uid://ooambsvy805y" path="res://scenes/locations/building_complex/paket.png" id="4_6ae78"]
 
 [node name="BuildingComplex" type="Node2D"]
 script = ExtResource("1_heswl")
 
 [node name="Background" type="Sprite2D" parent="."]
+unique_name_in_owner = true
 position = Vector2(960, 540)
 texture = ExtResource("1_ykrgi")
 
 [node name="Door" parent="." instance=ExtResource("2_sqtae")]
 position = Vector2(893, 407)
-timeline_name = "scene1"
+timeline_name = "l1_door"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Door"]
 position = Vector2(0, -1)
@@ -21,14 +23,42 @@ polygon = PackedVector2Array(-69, 291, -70, -155, 107, -150, 107, 265)
 
 [node name="Fence" parent="." instance=ExtResource("2_sqtae")]
 position = Vector2(1324, 587)
-timeline_name = "scene3"
+timeline_name = "l1_fence"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Fence"]
 polygon = PackedVector2Array(-87, 111, -87, -79, -26, -99, 11, -99, 55, -85, 95, -64, 96, 157)
 
 [node name="Letterbox" parent="." instance=ExtResource("2_sqtae")]
 position = Vector2(718, 521)
-timeline_name = "scene2"
+timeline_name = "l1_letterbox"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Letterbox"]
 polygon = PackedVector2Array(-94, -46, 57, -56, 78, -44, 78, 40, -73, 54, -93, 50)
+
+[node name="Paket" parent="." instance=ExtResource("2_sqtae")]
+unique_name_in_owner = true
+position = Vector2(152, 620)
+timeline_name = "l1_paket"
+
+[node name="Sprite" type="Sprite2D" parent="Paket"]
+position = Vector2(5, -2)
+scale = Vector2(0.648699, 0.595477)
+texture = ExtResource("4_6ae78")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Paket"]
+polygon = PackedVector2Array(-55, -13, -49, -40, 8, -53, 43, -26, 58, 18, 90, 34, 76, 53, 2, 51, -44, 54, -69, 51, -69, 29, -57, 19)
+
+[node name="FadeIn" type="ColorRect" parent="."]
+unique_name_in_owner = true
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+color = Color(0.129412, 0.129412, 0.129412, 1)
+
+[node name="Bin" parent="." instance=ExtResource("2_sqtae")]
+position = Vector2(348, 582)
+timeline_name = "l1_bin"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bin"]
+polygon = PackedVector2Array(-101, -131, 2, -134, 7, -125, 32, -125, 56, -122, 92, -113, 92, -103, 83, -95, 84, 45, 80, 57, 80, 132, -39, 149, -97, 119, -100, 87, -93, 76, -97, 20)

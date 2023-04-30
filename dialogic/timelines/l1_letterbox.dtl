@@ -1,0 +1,4 @@
+if {location1.paket_picket} == "true":
+	mc: "She should be at home. I prefer to give it to her personally."
+else:
+	mc: "The sound is not coming from here."

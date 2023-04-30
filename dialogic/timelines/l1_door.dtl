@@ -1,0 +1,4 @@
+if {location1.paket_picket} == "true":
+	[jump timeline="l1_scene2"]
+else:
+	mc: "The sound comes from outside."

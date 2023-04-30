@@ -1,2 +1,3 @@
 What is your name?
 [text_input var="mc"]
+[signal arg="name"]

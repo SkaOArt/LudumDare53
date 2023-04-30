@@ -25,10 +25,10 @@ editor/character_preview_mode=0
 editor/current_editor=&"Timeline Editor"
 editor/current_resources={
 "Character Editor": "res://dialogic/characters/neighbor/neighbor.dch",
-"Timeline Editor": "res://dialogic/timelines/l1_scene2.dtl"
+"Timeline Editor": "res://dialogic/timelines/l1_door.dtl"
 }
 editor/last_resources=PackedStringArray("res://dialogic/characters/girl/girl.dch", "res://dialogic/characters/mc/mc.dch", "res://dialogic/characters/neighbor/neighbor.dch", "res://dialogic/characters/seller/seller.dch", "res://dialogic/characters/barkeeper/barkeeper.dch", "res://dialogic/characters/best_friend/best_friend.dch", "res://dialogic/timelines/l1_paket.dtl", "res://dialogic/timelines/l1_scene1b.dtl", "res://dialogic/timelines/l1_bin.dtl", "res://dialogic/timelines/l1_door.dtl", "res://dialogic/timelines/l1_fence.dtl", "res://dialogic/timelines/l1_letterbox.dtl", "res://dialogic/timelines/l1_scene1.dtl", "res://dialogic/timelines/l1_scene2.dtl", "res://dialogic/timelines/l2_scene3.dtl")
-editor/last/resources=["res://dialogic/characters/girl/girl.dch", "res://dialogic/timelines/test3.dtl", "res://dialogic/characters/mc/mc.dch", "res://dialogic/characters/neighbor/neighbor.dch", "res://dialogic/characters/seller/seller.dch", "res://dialogic/characters/barkeeper/barkeeper.dch", "res://dialogic/characters/best_friend/best_friend.dch", "res://dialogic/timelines/l1_paket.dtl", "res://dialogic/timelines/l1_scene1b.dtl", "res://dialogic/timelines/l1_bin.dtl", "res://dialogic/timelines/l1_door.dtl", "res://dialogic/timelines/l1_fence.dtl", "res://dialogic/timelines/l1_letterbox.dtl", "res://dialogic/timelines/l1_scene1.dtl", "res://dialogic/timelines/l1_scene2.dtl", "res://dialogic/timelines/l2_scene3.dtl"]
+editor/last/resources=["res://dialogic/characters/girl/girl.dch", "res://dialogic/characters/mc/mc.dch", "res://dialogic/characters/neighbor/neighbor.dch", "res://dialogic/characters/seller/seller.dch", "res://dialogic/characters/barkeeper/barkeeper.dch", "res://dialogic/characters/best_friend/best_friend.dch", "res://dialogic/timelines/l1_paket.dtl", "res://dialogic/timelines/l1_scene1b.dtl", "res://dialogic/timelines/l1_bin.dtl", "res://dialogic/timelines/l1_door.dtl", "res://dialogic/timelines/l1_fence.dtl", "res://dialogic/timelines/l1_letterbox.dtl", "res://dialogic/timelines/l1_scene1.dtl", "res://dialogic/timelines/l1_scene2.dtl", "res://dialogic/timelines/l2_scene3.dtl"]
 animations/join_default_length=0.8
 animations/leave_default_length=0.6
 animations/leave_default_wait=true
@@ -46,6 +46,7 @@ editor/visual_timeline_editor_sidebar=200.0
 editor/current_timeline_path="res://dialogic/timelines/test.dtl"
 glossary/default_case_sensitive=true
 variables={
+"auto": "false",
 "location1": {
 "paket_picket": "false"
 },

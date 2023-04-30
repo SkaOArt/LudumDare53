@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cguxs6brr6v7f"
-path="res://.godot/imported/lara v3.png-3c1dabc5700cf2475a03403620e54c30.ctex"
+uid="uid://ldl7cbrwrllk"
+path="res://.godot/imported/neighbor happy.png-44a061d92ee7e89ecd81c31c0fa5bee8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dialogic/characters/girl/lara v3.png"
-dest_files=["res://.godot/imported/lara v3.png-3c1dabc5700cf2475a03403620e54c30.ctex"]
+source_file="res://dialogic/characters/neighbor/neighbor happy.png"
+dest_files=["res://.godot/imported/neighbor happy.png-44a061d92ee7e89ecd81c31c0fa5bee8.ctex"]
 
 [params]
 

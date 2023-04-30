@@ -27,7 +27,7 @@ editor/current_resources={
 "Character Editor": "res://dialogic/characters/girl/girl.dch",
 "Timeline Editor": "res://dialogic/timelines/test.dtl"
 }
-editor/last_resources=PackedStringArray("res://dialogic/timelines/test.dtl", "res://dialogic/characters/girl/girl.dch", "res://dialogic/timelines/test2.dtl", "res://dialogic/timelines/test3.dtl", "res://dialogic/characters/mc/mc.dch", "res://dialogic/characters/neighbor/neighbor.dch")
+editor/last_resources=PackedStringArray("res://dialogic/timelines/test.dtl", "res://dialogic/characters/girl/girl.dch", "res://dialogic/timelines/test2.dtl", "res://dialogic/timelines/test3.dtl", "res://dialogic/characters/mc/mc.dch", "res://dialogic/characters/neighbor/neighbor.dch", "")
 editor/last/resources=["res://dialogic/characters/mr_paket/mr_paket.dch", "res://dialogic/timelines/test.dtl", "res://dialogic/characters/girl/girl.dch", "res://dialogic/timelines/test2.dtl", "res://dialogic/timelines/test3.dtl", "res://dialogic/characters/miu/miu.dch", "res://dialogic/characters/mc/mc.dch", "res://dialogic/timelines/scene1.dtl", "res://dialogic/timelines/scene2.dtl", "res://dialogic/timelines/scene3.dtl", "res://dialogic/timelines/scene5.dtl", "res://dialogic/timelines/scene5_5.dtl", "res://dialogic/timelines/scene 3_5_Auto.dtl", "res://dialogic/timelines/scene 4.dtl", "res://dialogic/characters/barkeeper/barkeeper.dch", "res://dialogic/characters/best_friend/best_friend.dch", "res://dialogic/characters/mc_f/mc_f.dch", "res://dialogic/characters/neighbor/neighbor.dch", "res://dialogic/characters/seller/seller.dch", "res://dialogic/timelines/name.dtl"]
 animations/join_default_length=0.8
 animations/leave_default_length=0.6

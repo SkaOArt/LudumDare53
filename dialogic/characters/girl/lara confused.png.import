@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctatx6iuea0uh"
-path="res://.godot/imported/neighbor 1.5.png-855df2a16f88d439785ea827e8c5740c.ctex"
+uid="uid://cuujgyvbmxxjq"
+path="res://.godot/imported/lara confused.png-cd04a1a9c30c0fe4b89d136bc5126567.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dialogic/characters/neighbor/neighbor 1.5.png"
-dest_files=["res://.godot/imported/neighbor 1.5.png-855df2a16f88d439785ea827e8c5740c.ctex"]
+source_file="res://dialogic/characters/girl/lara confused.png"
+dest_files=["res://.godot/imported/lara confused.png-cd04a1a9c30c0fe4b89d136bc5126567.ctex"]
 
 [params]
 

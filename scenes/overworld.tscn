@@ -1,0 +1,70 @@
+[gd_scene load_steps=4 format=3 uid="uid://c44213wnhbgpt"]
+
+[ext_resource type="Texture2D" uid="uid://bxtvo1u0ufoe8" path="res://assets/backgrounds/Wip_map_overworld.png" id="1_3t7un"]
+
+[sub_resource type="Gradient" id="Gradient_j6mks"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_rix48"]
+gradient = SubResource("Gradient_j6mks")
+
+[node name="overworld" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_3t7un")
+
+[node name="car_dealer" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -28.0
+offset_top = -362.0
+offset_right = 36.0
+offset_bottom = -298.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = SubResource("GradientTexture2D_rix48")
+
+[node name="bar" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 52.0
+offset_top = 218.0
+offset_right = 116.0
+offset_bottom = 282.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = SubResource("GradientTexture2D_rix48")
+
+[node name="house" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 612.0
+offset_top = -144.0
+offset_right = 676.0
+offset_bottom = -80.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = SubResource("GradientTexture2D_rix48")

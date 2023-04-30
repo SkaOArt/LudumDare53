@@ -1,24 +1,23 @@
-Join mc_f 1
-mc_f: Als ich die Bar endlich erreichte, schlug mir der Geruch von Alkohol und Rauch entgegen und ich bemerkte, wie einige der Gäste mich musterten. Ich beschloss, zum Barkeeper zu gehen und nach Herrn Akuban zu fragen. Je näher ich der Bar kam, desto unsicherer wurde ich.
+mc: Als ich die Bar endlich erreichte, schlug mir der Geruch von Alkohol und Rauch entgegen und ich bemerkte, wie einige der Gäste mich musterten. Ich beschloss, zum Barkeeper zu gehen und nach Herrn Akuban zu fragen. Je näher ich der Bar kam, desto unsicherer wurde ich.
 Join barkeeper 1
 barkeeper: „Halt die Schnauze Ciper, trink deinen Dreck und dann verzieh dich“
-mc_f: Sagte der Barkeeper, und ich zuckte leicht zusammen. Ich setzte mich an die Bar und stellte das Paket so dicht wie möglich neben mich.
+mc: Sagte der Barkeeper, und ich zuckte leicht zusammen. Ich setzte mich an die Bar und stellte das Paket so dicht wie möglich neben mich.
 barkeeper: „Was willst du hier, Kindchen?“
-mc_f: „Ich suche einen Herrn Akuban ... also ...“
-mc_f: Ich wurde unterbrochen, als der Barkeeper mich mit einem eiskalten und geradezu gruseligen Blick ansah.
+mc: „Ich suche einen Herrn Akuban ... also ...“
+mc: Ich wurde unterbrochen, als der Barkeeper mich mit einem eiskalten und geradezu gruseligen Blick ansah.
 barkeeper: „Verschwinde von hier, du hast hier nichts zu suchen.“
-mc_f: Ich verstand schnell, dass er nicht mit mir reden wollte. Also musste ich dafür sorgen, dass er mit mir sprechen würde!
-mc_f: Herr Akuban schien auf einmal viel freundlicher zu sein, nachdem ich mich bemüht hatte, ihm zu zeigen, dass ich es ernst meinte.
+mc: Ich verstand schnell, dass er nicht mit mir reden wollte. Also musste ich dafür sorgen, dass er mit mir sprechen würde!
+mc: Herr Akuban schien auf einmal viel freundlicher zu sein, nachdem ich mich bemüht hatte, ihm zu zeigen, dass ich es ernst meinte.
 barkeeper: „Man nennt mich hier Boris. Lass das mit dem 'Herrn'. Was willst du?“
-mc_f: Obwohl er das "Du" anbot, fühlte es sich nicht wirklich willkommen an.
-mc_f: „Ich bin wegen des Pakets hier, es ist für Sie.“
-mc_f: Ich schob das Paket zu ihm rüber und nachdem er es begutachtet und ausgepackt hatte, sah er eine ganze Weile zu mir. Schließlich schlug er auf den Tresen, was mich völlig verwirrte.
+mc: Obwohl er das "Du" anbot, fühlte es sich nicht wirklich willkommen an.
+mc: „Ich bin wegen des Pakets hier, es ist für Sie.“
+mc: Ich schob das Paket zu ihm rüber und nachdem er es begutachtet und ausgepackt hatte, sah er eine ganze Weile zu mir. Schließlich schlug er auf den Tresen, was mich völlig verwirrte.
 barkeeper: „Verdammte Hexe, warte kurz.“
-mc_f: Sagte er und verschwand kurz darauf. Als er zurückkam, hatte er eine kleine Karte und einen Zettel bei sich. Auf dem Zettel stand eine Adresse und eine Wegbeschreibung, während die Karte eindeutig eine Geburtstagskarte war.
+mc: Sagte er und verschwand kurz darauf. Als er zurückkam, hatte er eine kleine Karte und einen Zettel bei sich. Auf dem Zettel stand eine Adresse und eine Wegbeschreibung, während die Karte eindeutig eine Geburtstagskarte war.
 barkeeper: „Ich wäre sehr froh, wenn du das Geschenk meiner Nichte bringen könntest. Eigentlich wollte ich das Geschenk der Hexe nicht mitnehmen, aber da du dich bemüht hast, meinen Respekt zu verdienen, drücke ich ein Auge zu.“
-mc_f: Er wirkte zwar eingeschnappt, sprach jedoch weiter.
+mc: Er wirkte zwar eingeschnappt, sprach jedoch weiter.
 barkeeper: „Meine Nichte hat heute Geburtstag ... Bitte gib ihr Bescheid, dass ich später vorbeikomme. Heute muss ich leider länger in dem Laden bleiben“
-mc_f: Ich war überrascht von seinen Worten und konnte unmöglich ablehnen. Boris war kein schlechter Kerl, und da ich sowieso den ganzen Weg auf mich genommen hatte, konnte ich genauso gut die letzten Meter gehen.
+mc: Ich war überrascht von seinen Worten und konnte unmöglich ablehnen. Boris war kein schlechter Kerl, und da ich sowieso den ganzen Weg auf mich genommen hatte, konnte ich genauso gut die letzten Meter gehen.
 Ich steckte das Geschenk und die Karte ein und verabschiedete mich von der Runde.
 Leave barkeeper
 [jump timeline="scene5"]

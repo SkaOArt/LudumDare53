@@ -1,22 +1,20 @@
-Join mc_f 1
-Join neighbor 1
+Join neighbor 3
 neighbor: „Hallo MC, freut mich dich zu sehen. Seit wann lieferst du Pakete?“
-mc_f: Ich bemerkte, wie sie das Paket musterte und sichtlich verwundert war. Kaum hatten wir kurz Blickkontakt, schaute sie eilig weg und versuchte, stattdessen nur das Paket anzusehen.
-mc_f: „Hallo Mia, das Paket ist für dich. Es war bei den Mülltonnen…“
-mc_f: Erklärte ich langsam und sah, wie sie zögerlich näherkam. Sie nahm das Paket ab und betrachtete die Adressierung, bevor sie hineinschaute und den Kopf schüttelte.
+mc: Ich bemerkte, wie sie das Paket musterte und sichtlich verwundert war. Kaum hatten wir kurz Blickkontakt, schaute sie eilig weg und versuchte, stattdessen nur das Paket anzusehen.
+mc: „Hallo Mia, das Paket ist für dich. Es war bei den Mülltonnen…“
+mc: Erklärte ich langsam und sah, wie sie zögerlich näherkam. Sie nahm das Paket ab und betrachtete die Adressierung, bevor sie hineinschaute und den Kopf schüttelte.
 neighbor: „Das ist nicht meins. Ich glaube, das gehört Herrn Akuban. Der ist vor einer ganzen Weile umgezogen, da gab es schon öfter Verwechslungen…“
-mc_f: Ich nickte langsam verständnisvoll und musste mich etwas anstrengen, um ihr weiterhin zuzuhören. Sie sprach immer etwas leiser als die anderen.
-mc_f: „Dann kannst du das sicher ihm bringen. Ich kenne ihn nicht.“
-mc_f: Begann ich langsam, und meine Nachbarin schüttelte den Kopf.
+mc: Ich nickte langsam verständnisvoll und musste mich etwas anstrengen, um ihr weiterhin zuzuhören. Sie sprach immer etwas leiser als die anderen.
+mc: „Dann kannst du das sicher ihm bringen. Ich kenne ihn nicht.“
+mc: Begann ich langsam, und meine Nachbarin schüttelte den Kopf.
 neighbor: „Ich würde gerne, aber ich weiß nicht mehr als den Nachnamen. Es wäre aber sicher schade, wenn er sein Paket heute nicht bekommt…"
 neighbor: „Ich habe gehört, seine Frau hat sich von ihm getrennt… Vielleicht sollte ich heute nicht zum Geburtstag gehen und lieber ihn suchen…“
-mc_f: „Überlass das mir. Ich habe heute sowieso nichts vor, und wenn er so bekannt ist, sollte es möglich sein, ihn schnell zu finden.“
-mc_f: Mia strahlte über das ganze Gesicht.
+mc: „Überlass das mir. Ich habe heute sowieso nichts vor, und wenn er so bekannt ist, sollte es möglich sein, ihn schnell zu finden.“
+mc: Mia strahlte über das ganze Gesicht.
 girl: „Vielen Dank, MC. Ich habe gehört, ein alter Freund von ihm soll in der Lessingstraße Autos verkaufen. Vielleicht kann er dir mehr helfen. Aber ist das wirklich okay für dich?“
-mc_f: „Ja, klar. Dann gehe ich gleich mal los.“
-mc_f: Ich nahm das Paket wieder an mich und spürte, wie sie sachte meinen Arm berührte. Ich sah zu ihr auf, sie zog eilig ihre Hand zurück.
+mc: „Ja, klar. Dann gehe ich gleich mal los.“
+mc: Ich nahm das Paket wieder an mich und spürte, wie sie sachte meinen Arm berührte. Ich sah zu ihr auf, sie zog eilig ihre Hand zurück.
 girl: „Entschuldige, dass ich dir das aufdrücke. Ich weiß doch, dass du auch viel zu tun hast.“
-mc_f: Ich lächelte dankbar und ging los.
+mc: Ich lächelte dankbar und ging los.
 Leave neighbor
-mc_f: Mia war schon immer eine sehr aufmerksame Person. Umso mehr wollte ich ihr das nicht auch noch aufbrummen. Sie nahm viel Rücksicht auf andere, und daher sollte sie heute auch nur einen schönen Tag haben. Tatsächlich konnte ich ihr nicht viel helfen abnehmen, obwohl sie als Nachbarin immer wieder so entgegenkam. Da war es doch ein Klacks, ein Paket zu liefern.
-[jump timeline="scene3"]
+mc: Mia war schon immer eine sehr aufmerksame Person. Umso mehr wollte ich ihr das nicht auch noch aufbrummen. Sie nahm viel Rücksicht auf andere, und daher sollte sie heute auch nur einen schönen Tag haben. Tatsächlich konnte ich ihr nicht viel helfen abnehmen, obwohl sie als Nachbarin immer wieder so entgegenkam. Da war es doch ein Klacks, ein Paket zu liefern.

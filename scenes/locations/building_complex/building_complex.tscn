@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://wf37gecg83pm"]
+[gd_scene load_steps=4 format=3 uid="uid://wf37gecg83pm"]
 
+[ext_resource type="Script" path="res://scenes/locations/building_complex/building_complex.gd" id="1_heswl"]
 [ext_resource type="Texture2D" uid="uid://dbs6tdnthvgjj" path="res://scenes/locations/building_complex/nachbar_bg.png" id="1_ykrgi"]
 [ext_resource type="PackedScene" uid="uid://es0kxxw0ecbx" path="res://scenes/gameplay/start_dialog_area.tscn" id="2_sqtae"]
 
 [node name="BuildingComplex" type="Node2D"]
+script = ExtResource("1_heswl")
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
@@ -11,7 +13,7 @@ texture = ExtResource("1_ykrgi")
 
 [node name="Door" parent="." instance=ExtResource("2_sqtae")]
 position = Vector2(893, 407)
-timeline_name = "test"
+timeline_name = "scene1"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Door"]
 position = Vector2(0, -1)
@@ -19,14 +21,14 @@ polygon = PackedVector2Array(-69, 291, -70, -155, 107, -150, 107, 265)
 
 [node name="Fence" parent="." instance=ExtResource("2_sqtae")]
 position = Vector2(1324, 587)
-timeline_name = "test2"
+timeline_name = "scene3"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Fence"]
 polygon = PackedVector2Array(-87, 111, -87, -79, -26, -99, 11, -99, 55, -85, 95, -64, 96, 157)
 
 [node name="Letterbox" parent="." instance=ExtResource("2_sqtae")]
 position = Vector2(718, 521)
-timeline_name = "test3"
+timeline_name = "scene2"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Letterbox"]
 polygon = PackedVector2Array(-94, -46, 57, -56, 78, -44, 78, 40, -73, 54, -93, 50)

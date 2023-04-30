@@ -9,7 +9,7 @@
 },
 "default_portrait": "",
 "description": "Main Character",
-"display_name": "MC",
+"display_name": "{mc}",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),

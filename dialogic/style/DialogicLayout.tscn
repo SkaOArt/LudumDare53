@@ -1,6 +1,6 @@
 [gd_scene load_steps=27 format=3 uid="uid://idhqj50sfpgt"]
 
-[ext_resource type="Script" path="res://addons/dialogic/Events/DefaultStyles/Default/DialogicDefaultLayout.gd" id="1_8406p"]
+[ext_resource type="Script" path="res://dialogic/style/DialogicLayout.gd" id="1_gf4oe"]
 [ext_resource type="Script" path="res://addons/dialogic/Events/Background/node_background_holder.gd" id="2_uy4j7"]
 [ext_resource type="Script" path="res://addons/dialogic/Events/Character/node_portrait_container.gd" id="3_jrdso"]
 [ext_resource type="Script" path="res://addons/dialogic/Events/Style/node_style.gd" id="4_byqk6"]
@@ -16,7 +16,7 @@
 [ext_resource type="Script" path="res://addons/dialogic/Events/Text/node_next_indicator.gd" id="14_xgmde"]
 [ext_resource type="Script" path="res://addons/dialogic/Events/DefaultStyles/Default/autoadvance_indicator.gd" id="15_bvq6h"]
 [ext_resource type="Script" path="res://addons/dialogic/Events/TextInput/node_text_input.gd" id="16_byusb"]
-[ext_resource type="Script" path="res://addons/dialogic/Events/DefaultStyles/Default/ExampleGlossaryPopup.gd" id="17_d6x6h"]
+[ext_resource type="Script" path="res://dialogic/style/ExampleGlossaryPopup.gd" id="17_la2xs"]
 [ext_resource type="PackedScene" path="res://addons/dialogic/Events/DefaultStyles/ExampleHistoryScene.tscn" id="18_3lf5n"]
 [ext_resource type="FontFile" uid="uid://vrrmdx83skor" path="res://addons/dialogic/Example Assets/Fonts/Roboto-Regular.ttf" id="19_s0jnk"]
 [ext_resource type="FontFile" uid="uid://cc4xli25271fd" path="res://addons/dialogic/Example Assets/Fonts/Roboto-Bold.ttf" id="20_apcf1"]
@@ -34,9 +34,9 @@ expand_margin_right = 5.0
 expand_margin_bottom = 5.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bxpcl"]
-content_margin_left = 32.0
+content_margin_left = 64.0
 content_margin_top = 32.0
-content_margin_right = 32.0
+content_margin_right = 64.0
 content_margin_bottom = 32.0
 bg_color = Color(1, 1, 1, 1)
 
@@ -78,7 +78,8 @@ shadow_color = Color(0.823529, 0.803922, 0.756863, 1)
 shadow_size = 5
 
 [node name="DefaultDialogNode" type="CanvasLayer"]
-script = ExtResource("1_8406p")
+script = ExtResource("1_gf4oe")
+text_size = 22
 box_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.447059)
 name_label_font_size = 16
 name_label_box_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.447059)
@@ -178,13 +179,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -231.0
-offset_top = -211.0
-offset_right = -1.0
-offset_bottom = -5.0
+offset_left = -171.0
+offset_top = -151.0
+offset_right = 59.0
+offset_bottom = 55.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(2, 2)
+scale = Vector2(1.5, 1.5)
 alignment = 1
 metadata/_edit_layout_mode = 1
 
@@ -226,37 +227,39 @@ sound_focus = ExtResource("9_dhcdm")
 
 [node name="NameLabelPanel" type="PanelContainer" parent="DefaultStyle"]
 unique_name_in_owner = true
-self_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.843137)
+self_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.447059)
 layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -836.0
-offset_top = -364.0
-offset_right = -769.0
-offset_bottom = -334.0
-grow_horizontal = 2
-grow_vertical = 0
-scale = Vector2(1.5, 1.5)
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 55.0
+offset_top = 184.0
+offset_right = 158.0
+offset_bottom = 229.0
+grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_wpkyg")
 script = ExtResource("10_f4ckt")
 metadata/_edit_layout_mode = 1
 metadata/_edit_use_custom_anchors = true
 metadata/_edit_group_ = true
 
-[node name="DialogicNode_NameLabel" type="Label" parent="DefaultStyle/NameLabelPanel"]
+[node name="MarginContainer" type="MarginContainer" parent="DefaultStyle/NameLabelPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_right = 8
+
+[node name="DialogicNode_NameLabel" type="Label" parent="DefaultStyle/NameLabelPanel/MarginContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 15
+theme_override_font_sizes/font_size = 16
 text = "Name"
+horizontal_alignment = 1
 script = ExtResource("11_iw8ug")
 
 [node name="DialogTextPanel" type="PanelContainer" parent="DefaultStyle"]
 unique_name_in_owner = true
-self_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.843137)
+self_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.447059)
 custom_minimum_size = Vector2(0, 300)
 layout_mode = 1
 anchors_preset = 12
@@ -293,10 +296,10 @@ script = ExtResource("15_bvq6h")
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_colors/default_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/normal_font_size = 15
-theme_override_font_sizes/bold_font_size = 15
-theme_override_font_sizes/italics_font_size = 15
-theme_override_font_sizes/bold_italics_font_size = 15
+theme_override_font_sizes/normal_font_size = 22
+theme_override_font_sizes/bold_font_size = 22
+theme_override_font_sizes/italics_font_size = 22
+theme_override_font_sizes/bold_italics_font_size = 22
 bbcode_enabled = true
 text = "Some default text"
 visible_characters_behavior = 1
@@ -328,7 +331,7 @@ metadata/_edit_layout_mode = 1
 
 [node name="TextInputPanel" type="PanelContainer" parent="DefaultStyle/DialogicNode_TextInput"]
 unique_name_in_owner = true
-self_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.843137)
+self_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.447059)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -356,7 +359,7 @@ text = "Confirm"
 [node name="Glossary" type="Control" parent="DefaultStyle"]
 layout_mode = 1
 anchors_preset = 0
-script = ExtResource("17_d6x6h")
+script = ExtResource("17_la2xs")
 
 [node name="Panel" type="PanelContainer" parent="DefaultStyle/Glossary"]
 layout_mode = 1

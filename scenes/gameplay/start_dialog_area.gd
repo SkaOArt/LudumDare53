@@ -26,8 +26,6 @@ func _on_click(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 		
 		MOUSE_BUTTON_RIGHT:
 			right_click()
-		
-	print(event)
 
 
 func _on_mouse_entered() -> void:

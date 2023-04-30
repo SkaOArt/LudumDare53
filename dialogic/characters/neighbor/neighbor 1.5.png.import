@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvps6th1cnsb7"
-path="res://.godot/imported/mr_paket.png-c731e80d46866d25a3f187f5a292c88a.ctex"
+uid="uid://ctatx6iuea0uh"
+path="res://.godot/imported/neighbor 1.5.png-855df2a16f88d439785ea827e8c5740c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dialogic/characters/mr_paket/mr_paket.png"
-dest_files=["res://.godot/imported/mr_paket.png-c731e80d46866d25a3f187f5a292c88a.ctex"]
+source_file="res://dialogic/characters/neighbor/neighbor 1.5.png"
+dest_files=["res://.godot/imported/neighbor 1.5.png-855df2a16f88d439785ea827e8c5740c.ctex"]
 
 [params]
 

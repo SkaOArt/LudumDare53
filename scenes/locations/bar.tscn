@@ -19,4 +19,4 @@ texture = ExtResource("2_k6dgo")
 [node name="sorting_dame" parent="." instance=ExtResource("3_18htt")]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="sorting_dame"]
-polygon = PackedVector2Array(490, 90, 489, 212, 1488, 208, 1464, 93)
+polygon = PackedVector2Array(489, 93, 489, 212, 1482, 208, 1478, 95)

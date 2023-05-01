@@ -3,13 +3,17 @@ extends Node2D
 @onready var inventory_slots = %SlotContainer
 
 var holding_item = null
-
+var current_list = []
+var right_list = []
+	
 
 func _ready():
 	for inv_slot in inventory_slots.get_children():
-		print(inv_slot)
 		(inv_slot as SlotClass).gui_input.connect(slot_gui_input.bind(inv_slot))
 		#inv_slot.connect("gui_input", self, "slot_gui_input", [inv_slot])
+		current_list.append(inv_slot)
+		print(current_list)
+		
 
 
 func slot_gui_input(event: InputEvent, slot: SlotClass):
@@ -25,11 +29,11 @@ func slot_gui_input(event: InputEvent, slot: SlotClass):
 					temp_item.global_position = event.global_position
 					slot.putIntoSlot(holding_item)
 					holding_item = temp_item
-			elif slot.item:
+			elif slot.item != null:
 				holding_item = slot.item
 				slot.pickFromSlot()
 				holding_item.global_position = get_global_mouse_position()
-				
+			
 func _input(event):
 	if holding_item:
 		holding_item.global_position = get_global_mouse_position()

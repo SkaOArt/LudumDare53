@@ -6,10 +6,10 @@ uid="uid://d0kupek86k36x"
 
 [deps]
 
-files=["res://dialogic/translation/dialogic_translations.en.translation"]
+files=["res://dialogic/translation/dialogic_translations.en.translation", "res://dialogic/translation/dialogic_translations.de.translation"]
 
 source_file="res://dialogic/translation/dialogic_translations.csv"
-dest_files=["res://dialogic/translation/dialogic_translations.en.translation"]
+dest_files=["res://dialogic/translation/dialogic_translations.en.translation", "res://dialogic/translation/dialogic_translations.de.translation"]
 
 [params]
 

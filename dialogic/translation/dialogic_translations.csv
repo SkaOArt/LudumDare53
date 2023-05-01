@@ -1,4 +1,4 @@
-keys,en
+keys,en,de
 Text/11/text,There is nothing special in the trash can.
 Text/12/text,"There is nothing special in the trash can, but the sound seems to be coming from behind it."
 Text/13/text,"„The sound comes from outside."""
@@ -126,7 +126,7 @@ Text/82/text,"""Hey don't touch it."""
 Text/83/text,Maybe he will talk to me when I help him.
 Text/84/text,"""Hey Boris can I help you out by sorting the shelf?"""
 Text/85/text,"""Fine. If you sort them well I will awnser any question your have."""
-Text/86/text,What is your name?
+Text/86/text,What is your name?,Wie lautet dein Name?
 Text/87/text,"I am actually glad that I don't have to carry the big package anymore, but only the gift and the attached card. That makes things much easier!"
 Text/88/text,"Slowly but surely, I approach the address. I hear children's laughter, but also a few screams of joy. Children can be very peculiar at times."
 Text/89/text,"After I reach the house, I see how much is decorated. Children are running around, but one of the children looks particularly sad and is standing around watching the others."

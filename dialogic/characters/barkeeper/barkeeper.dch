@@ -14,8 +14,15 @@
 "nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {
-"default": {
+"angry": {
 "image": "res://dialogic/characters/barkeeper/onkel.png",
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"default": {
+"image": "res://dialogic/characters/barkeeper/onkel neutral.png",
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,

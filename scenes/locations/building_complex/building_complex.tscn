@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://wf37gecg83pm"]
+[gd_scene load_steps=7 format=3 uid="uid://wf37gecg83pm"]
 
 [ext_resource type="Script" path="res://scenes/locations/building_complex/building_complex.gd" id="1_heswl"]
 [ext_resource type="Texture2D" uid="uid://los23mkieied" path="res://scenes/locations/building_complex/v1_nachbar_bg.png" id="2_lbq1q"]
 [ext_resource type="PackedScene" uid="uid://es0kxxw0ecbx" path="res://scenes/gameplay/start_dialog_area.tscn" id="2_sqtae"]
 [ext_resource type="Texture2D" uid="uid://b64gx4pmer4tm" path="res://scenes/locations/building_complex/geschenk ohne schatten.png" id="4_ipiir"]
 [ext_resource type="Texture2D" uid="uid://dr5qvntojtng2" path="res://scenes/locations/building_complex/hecke.png" id="5_38y7u"]
+[ext_resource type="AudioStream" uid="uid://ch2kcdtgsfgx0" path="res://sound/background sound/Szene_1_v001.wav" id="6_0qyex"]
 
 [node name="BuildingComplex" type="Node2D"]
 script = ExtResource("1_heswl")
@@ -38,8 +39,9 @@ polygon = PackedVector2Array(-94, -46, 57, -56, 78, -44, 78, 40, -73, 54, -93, 5
 
 [node name="Paket" parent="." instance=ExtResource("2_sqtae")]
 unique_name_in_owner = true
-position = Vector2(141, 620)
+position = Vector2(193, 583)
 timeline_name = "l1_paket"
+enabled = false
 
 [node name="Sprite" type="Sprite2D" parent="Paket"]
 position = Vector2(-20, 17.9999)
@@ -47,15 +49,8 @@ scale = Vector2(0.341849, 0.313803)
 texture = ExtResource("4_ipiir")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Paket"]
-polygon = PackedVector2Array(-74, 59, -57, 62, -40, 59, -39, 20, -38, -32, -59, -32, -68, -20, -67, -10, -60, 0, -75, 2, -77, 21, -71, 29, -70, 40, -75, 49)
-
-[node name="FadeIn" type="ColorRect" parent="."]
-unique_name_in_owner = true
 visible = false
-offset_right = 1920.0
-offset_bottom = 1080.0
-mouse_filter = 2
-color = Color(0.129412, 0.129412, 0.129412, 1)
+polygon = PackedVector2Array(-74, 59, -48, 59, 11, 57, 41, 54, 32, 20, 37, -29, 15, -26, -15, -15, -38, -32, -59, -32, -68, -20, -67, -10, -60, 0, -75, 2, -77, 21, -71, 29, -70, 40, -75, 49)
 
 [node name="Bin" parent="." instance=ExtResource("2_sqtae")]
 position = Vector2(348, 582)
@@ -68,3 +63,15 @@ polygon = PackedVector2Array(-101, -131, 2, -134, 7, -125, 32, -125, 56, -122, 9
 [node name="Hecke" type="Sprite2D" parent="."]
 position = Vector2(959, 541)
 texture = ExtResource("5_38y7u")
+
+[node name="FadeIn" type="ColorRect" parent="."]
+unique_name_in_owner = true
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+color = Color(0.129412, 0.129412, 0.129412, 1)
+
+[node name="bgm" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("6_0qyex")

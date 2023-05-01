@@ -227,7 +227,7 @@ sound_focus = ExtResource("9_dhcdm")
 
 [node name="NameLabelPanel" type="PanelContainer" parent="DefaultStyle"]
 unique_name_in_owner = true
-self_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.447059)
+self_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.752941)
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
@@ -260,7 +260,7 @@ script = ExtResource("11_iw8ug")
 
 [node name="DialogTextPanel" type="PanelContainer" parent="DefaultStyle"]
 unique_name_in_owner = true
-self_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.447059)
+self_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.752941)
 custom_minimum_size = Vector2(0, 300)
 layout_mode = 1
 anchors_preset = 12
@@ -332,7 +332,7 @@ metadata/_edit_layout_mode = 1
 
 [node name="TextInputPanel" type="PanelContainer" parent="DefaultStyle/DialogicNode_TextInput"]
 unique_name_in_owner = true
-self_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.447059)
+self_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.752941)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

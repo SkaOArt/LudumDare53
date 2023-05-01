@@ -2,3 +2,6 @@ if {location1.paket_picket} == "true":
 	mc: „She should be at home. I prefer to give it to her personally." #id:17
 else:
 	mc: „The sound is not coming from here." #id:18
+	VAR {location1.search_count} += 1
+	if {location1.search_count} == 3:
+		[signal arg="searched_enough"]

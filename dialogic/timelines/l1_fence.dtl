@@ -3,3 +3,6 @@ if {location1.paket_picket} == "true":
 else:
 	The gate is locked. #id:15
 	mc: „The noise doesn't seem to come from there anyway." #id:16
+	VAR {location1.search_count} += 1
+	if {location1.search_count} == 3:
+		[signal arg="searched_enough"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blc1jy3hcbukx"
-path="res://.godot/imported/Lupe_neu.png-5dce128b49c2d336b4a8c59bc75f5d70.ctex"
+uid="uid://dghstwmusxpr0"
+path="res://.godot/imported/cursor_questionmark.png-cd63c64479f11a17248f56410b1a026c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/courser/Lupe_neu.png"
-dest_files=["res://.godot/imported/Lupe_neu.png-5dce128b49c2d336b4a8c59bc75f5d70.ctex"]
+source_file="res://assets/courser/cursor_questionmark.png"
+dest_files=["res://.godot/imported/cursor_questionmark.png-cd63c64479f11a17248f56410b1a026c.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dghstwmusxpr0"
-path="res://.godot/imported/Cursor_Fragezeichen_neu_klein.png-f776d24082cecfc2c23feaf1ca1e7a91.ctex"
+uid="uid://dfmp4n7spt1ap"
+path="res://.godot/imported/map_overworld.png-988cf36c2759cb9fcd437ca961ff8600.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/courser/Cursor_Fragezeichen_neu_klein.png"
-dest_files=["res://.godot/imported/Cursor_Fragezeichen_neu_klein.png-f776d24082cecfc2c23feaf1ca1e7a91.ctex"]
+source_file="res://assets/backgrounds/map_overworld.png"
+dest_files=["res://.godot/imported/map_overworld.png-988cf36c2759cb9fcd437ca961ff8600.ctex"]
 
 [params]
 

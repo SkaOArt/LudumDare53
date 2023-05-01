@@ -1,42 +1,166 @@
-[gd_scene load_steps=7 format=3 uid="uid://dkk8yacxbaga2"]
+[gd_scene load_steps=9 format=3 uid="uid://dkk8yacxbaga2"]
 
-[ext_resource type="Texture2D" uid="uid://bxtvo1u0ufoe8" path="res://assets/backgrounds/Wip_map_overworld.png" id="1_3t7un"]
+[ext_resource type="Texture2D" uid="uid://dfmp4n7spt1ap" path="res://assets/backgrounds/map_overworld.png" id="1_dy8bb"]
+[ext_resource type="Script" path="res://scenes/overworld.gd" id="1_m3rri"]
 [ext_resource type="PackedScene" uid="uid://tx0n7tcj711m" path="res://scenes/gameplay/select_location_area.tscn" id="2_nug62"]
 [ext_resource type="PackedScene" uid="uid://wf37gecg83pm" path="res://scenes/locations/building_complex/building_complex.tscn" id="3_mc850"]
 [ext_resource type="PackedScene" uid="uid://cwinlcmmsgovg" path="res://scenes/locations/car_dealer/car_dealer.tscn" id="4_877cn"]
 [ext_resource type="PackedScene" uid="uid://oegvg7f8gcgj" path="res://scenes/locations/bar/bar.tscn" id="5_dbqeo"]
 [ext_resource type="PackedScene" uid="uid://bo8ab7dh2t4d3" path="res://scenes/locations/house/house.tscn" id="6_kbnlq"]
 
-[node name="overworld" type="Node2D"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1kyeg"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
 
-[node name="TextureRect" type="Sprite2D" parent="."]
+[node name="overworld" type="Node2D"]
+script = ExtResource("1_m3rri")
+
+[node name="Background" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
-texture = ExtResource("1_3t7un")
+texture = ExtResource("1_dy8bb")
 
 [node name="BuildingComplex" parent="." instance=ExtResource("2_nug62")]
-position = Vector2(271, 503)
+position = Vector2(1383, 851)
 location = ExtResource("3_mc850")
+cursor_shape = 13
+
+[node name="NeighborPanel" type="PanelContainer" parent="BuildingComplex"]
+self_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.752941)
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 8.0
+offset_top = -220.0
+offset_right = 184.0
+offset_bottom = -172.0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1kyeg")
+metadata/_edit_layout_mode = 1
+metadata/_edit_use_custom_anchors = true
+
+[node name="MarginContainer" type="MarginContainer" parent="BuildingComplex/NeighborPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_right = 16
+
+[node name="Label" type="Label" parent="BuildingComplex/NeighborPanel/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 32
+text = "Neighbor"
+horizontal_alignment = 1
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="BuildingComplex"]
-polygon = PackedVector2Array(29, 140, -135, 52, -157, -36, -202, -103, -138, -67, -21, -136, -14, -186, 167, -117, 150, -60, 157, 42)
+polygon = PackedVector2Array(77, 87, -13, 19, 11, 7, -36, -31, -35, -92, 115, -151, 167, -154, 232, -72, 232, -12, 206, 0, 221, 21)
 
 [node name="CarDealer" parent="." instance=ExtResource("2_nug62")]
-position = Vector2(963, 191)
+position = Vector2(261, 261)
 location = ExtResource("4_877cn")
+cursor_shape = 13
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CarDealer"]
-polygon = PackedVector2Array(-161, 64, -128, -19, -99, -62, -59, -50, -23, -78, 119, -67, 131, -38, 174, -21, 157, 33, 129, 69, 148, 128, 17, 145, -128, 140, -178, 107)
+polygon = PackedVector2Array(-190, 1, -190, -45, -37, -71, -20, -51, 88, -56, 162, 17, 163, 86, -79, 136, -109, 91, -132, 95)
+
+[node name="NeighborPanel" type="PanelContainer" parent="CarDealer"]
+self_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.752941)
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -98.0
+offset_top = -120.0
+offset_right = 96.0
+offset_bottom = -72.0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1kyeg")
+metadata/_edit_layout_mode = 1
+metadata/_edit_use_custom_anchors = true
+
+[node name="MarginContainer" type="MarginContainer" parent="CarDealer/NeighborPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_right = 16
+
+[node name="Label" type="Label" parent="CarDealer/NeighborPanel/MarginContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 32
+text = "Car Dealer"
+horizontal_alignment = 1
 
 [node name="Bar" parent="." instance=ExtResource("2_nug62")]
-position = Vector2(1044, 790)
+position = Vector2(636, 650)
 location = ExtResource("5_dbqeo")
+cursor_shape = 13
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bar"]
-polygon = PackedVector2Array(-185, 107, -192, 62, -157, -42, -123, -50, -135, -95, -126, -147, -47, -126, 0, -240, 48, -185, 198, 103, 122, 155, 74, 205, -107, 188)
+polygon = PackedVector2Array(-50, 122, -129, 2, -127, -82, 83, -136, 169, -55, 162, 51)
 
-[node name="House" parent="." instance=ExtResource("2_nug62")]
-position = Vector2(1544, 429)
+[node name="NeighborPanel" type="PanelContainer" parent="Bar"]
+self_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.752941)
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -39.0
+offset_top = -124.0
+offset_right = 47.0
+offset_bottom = -76.0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1kyeg")
+metadata/_edit_layout_mode = 1
+metadata/_edit_use_custom_anchors = true
+
+[node name="MarginContainer" type="MarginContainer" parent="Bar/NeighborPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_right = 16
+
+[node name="Label" type="Label" parent="Bar/NeighborPanel/MarginContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 32
+text = "Bar"
+horizontal_alignment = 1
+
+[node name="NieceHouse" parent="." instance=ExtResource("2_nug62")]
+unique_name_in_owner = true
+position = Vector2(1246, 127)
 location = ExtResource("6_kbnlq")
+cursor_shape = 13
+enabled = false
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House"]
-polygon = PackedVector2Array(-157, 88, -169, -7, -103, -76, -110, -112, -74, -121, -57, -95, -7, -91, 31, -245, 116, -72, 195, -52, 190, 88, 92, 133, -22, 104)
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="NieceHouse"]
+polygon = PackedVector2Array(-14, 53, -83, 20, -81, -34, 134, -104, 195, -81, 197, -2, 105, 14, 104, 29)
+
+[node name="NeighborPanel" type="PanelContainer" parent="NieceHouse"]
+self_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.752941)
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -37.0
+offset_top = -118.0
+offset_right = 157.0
+offset_bottom = -70.0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1kyeg")
+metadata/_edit_layout_mode = 1
+metadata/_edit_use_custom_anchors = true
+
+[node name="MarginContainer" type="MarginContainer" parent="NieceHouse/NeighborPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_right = 16
+
+[node name="Label" type="Label" parent="NieceHouse/NeighborPanel/MarginContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 32
+text = "Niece's house"
+horizontal_alignment = 1

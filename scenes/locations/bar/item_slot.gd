@@ -1,6 +1,8 @@
 class_name SlotClass
 extends TextureRect
 
+@export var index: int
+
 var item = null
 
 
@@ -10,17 +12,16 @@ func _ready():
 
 func pickFromSlot():
 	remove_child(item)
-	var inventoryNode = find_parent("sorting_game")
-	inventoryNode.add_child(item)
+	owner.add_child(item)
 	item = null
+
 
 func putIntoSlot(new_item):
 	item = new_item
-	print(item)
-	item.position = Vector2(0,0)
-	var inventoryNode = find_parent("sorting_game")
-	inventoryNode.remove_child(item)
+	owner.remove_child(item)
 	add_child(item)
+	item.position = Vector2(20,-440)
+
 
 func get_current_list():
 	return get_child(0)

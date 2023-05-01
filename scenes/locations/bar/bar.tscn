@@ -15,6 +15,7 @@ script = ExtResource("1_rt3ho")
 [node name="V2_Bar" type="TextureRect" parent="."]
 offset_right = 40.0
 offset_bottom = 40.0
+mouse_filter = 2
 texture = ExtResource("2_t564t")
 
 [node name="Onkel" type="Sprite2D" parent="."]
@@ -25,6 +26,7 @@ texture = ExtResource("3_tlttg")
 [node name="V1_Bar" type="TextureRect" parent="."]
 offset_right = 40.0
 offset_bottom = 40.0
+mouse_filter = 2
 texture = ExtResource("4_0xvn1")
 
 [node name="sorting_game_playable" parent="." instance=ExtResource("5_m2mqt")]

@@ -14,6 +14,9 @@ func _ready():
 	
 	sorting_game = load("res://scenes/locations/bar/sorting_game2.tscn")
 	
+	if not Globals.location_2_cleared:
+		sorting_game_playable.disable()
+	
 	if Globals.location_3_cleared:
 		# disable all areas
 		sorting_game_playable.disable()

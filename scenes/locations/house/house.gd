@@ -2,9 +2,13 @@ extends Node2D
 
 
 @onready var fade_in: ColorRect = %FadeIn
+@onready var end: Sprite2D = %End
+@onready var bgm: AudioStreamPlayer = %bgm
 
 
 func _ready() -> void:
+	bgm.play()
+	
 	Dialogic.signal_event.connect(on_dialog_event)
 	
 	# fade in
@@ -22,5 +26,10 @@ func start():
 
 func on_dialog_event(arg):
 	if arg == "end":
-		# ToDo
-		get_tree().change_scene_to_file("res://scenes/main.tscn")
+		# bgm louder
+		bgm.volume_db = -4.0
+		
+		# fade in
+		fade_in.visible = true
+		var tween = create_tween()
+		tween.tween_property(end, "self_modulate", Color(1, 1, 1, 1), 3.0)

@@ -5,7 +5,7 @@ extends Node2D
 @onready var paket: Area2D = %Paket
 @onready var fade_in: ColorRect = %FadeIn
 @onready var bgm: AudioStreamPlayer = %bgm
-@onready var go_overworld: Area2D = %SelectLocationArea
+@onready var go_overworld: Area2D = %GoOverworld
 
 @onready var door: Area2D = $Door
 @onready var fence: Area2D = $Fence

@@ -1,3 +1,7 @@
+if {location2.completed} != "true":
+	mc: I decided to approach the bartender and ask for Mr. Akuban. The closer I got to the counter, the more unsure I became.
+	Join barkeeper 3
+	barkeeper: „We have not opened yet. Come back later..“
 if {location 4.barkeeper_first} == "true":
 	mc: I decided to approach the bartender and ask for Mr. Akuban. The closer I got to the counter, the more unsure I became. #id:6d
 	Join barkeeper 3

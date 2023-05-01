@@ -4,13 +4,18 @@ extends Node2D
 var bar_scene: Resource
 
 @onready var inventory_slots = %SlotContainer
+@onready var bgm: AudioStreamPlayer = %bgm
+
 
 var holding_item = null
 var current_list = []
 
 
 func _ready():
+	bgm.play()
+	
 	bar_scene = load("res://scenes/locations/bar/bar.tscn")
+	
 	for inv_slot in inventory_slots.get_children():
 		(inv_slot as SlotClass).gui_input.connect(slot_gui_input.bind(inv_slot))
 		#inv_slot.connect("gui_input", self, "slot_gui_input", [inv_slot])

@@ -39,4 +39,5 @@ I look at the price and hesitate for a moment. #id:59
 	Leave seller
 	I said goodbye and felt very relieved to be getting away from this man. Buying a car had suddenly become much less attractive than I had  previously thought. #id:6b
 	VAR {auto} = "false"
+VAR {location2.completed} = "true"
 [signal arg="talked_seller"]

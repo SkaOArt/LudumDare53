@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bo8ab7dh2t4d3"]
+[gd_scene load_steps=7 format=3 uid="uid://bo8ab7dh2t4d3"]
 
 [ext_resource type="Script" path="res://scenes/locations/house/house.gd" id="1_iou7b"]
 [ext_resource type="Texture2D" uid="uid://4034t71eyc1v" path="res://scenes/locations/house/haustür_zu_bg.png" id="1_tamcb"]
 [ext_resource type="PackedScene" uid="uid://es0kxxw0ecbx" path="res://scenes/gameplay/start_dialog_area.tscn" id="3_74k72"]
+[ext_resource type="Texture2D" uid="uid://ba1mrkf3svu0n" path="res://scenes/locations/house/end2.png" id="4_pu2uc"]
+[ext_resource type="AudioStream" uid="uid://b3cshsf0i52qk" path="res://sound/background sound/Szene_4_Finale_v001.wav" id="5_ui820"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xgxnq"]
 radius = 16.0
@@ -28,3 +30,14 @@ timeline_name = "l4_intro"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StartDialogArea"]
 shape = SubResource("CircleShape2D_xgxnq")
+
+[node name="End" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(960, 540)
+texture = ExtResource("4_pu2uc")
+
+[node name="bgm" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("5_ui820")
+volume_db = -16.0

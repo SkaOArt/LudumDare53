@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://so4dxqtjyxgq"]
+[gd_scene load_steps=12 format=3 uid="uid://so4dxqtjyxgq"]
 
 [ext_resource type="Script" path="res://scenes/locations/bar/sorting_game2.gd" id="1_m2ue1"]
 [ext_resource type="Texture2D" uid="uid://b8xmqoshmcqev" path="res://assets/backgrounds/sortings game.png" id="3_orgen"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://7f7upoejfclo" path="res://dialogic/characters/barkeeper/flaschen/flasche_4.png" id="9_4gj0m"]
 [ext_resource type="Texture2D" uid="uid://6txtq85mfjj0" path="res://dialogic/characters/barkeeper/flaschen/flasche_5.png" id="10_8e42t"]
 [ext_resource type="Texture2D" uid="uid://ce74w8k7rqlv4" path="res://dialogic/characters/barkeeper/flaschen/flasche_6.png" id="11_l25fc"]
+[ext_resource type="AudioStream" uid="uid://c7d6qhylstucc" path="res://sound/background sound/Szene 3 Bar_v004_final.wav" id="11_mpdel"]
 
 [node name="sorting_game" type="Node2D"]
 script = ExtResource("1_m2ue1")
@@ -82,51 +83,7 @@ texture = ExtResource("4_rehtm")
 script = ExtResource("5_c38uy")
 index = 2
 
-[node name="bottle3" type="TextureRect" parent="SlotContainer/item_slot3"]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -122.0
-offset_top = -582.0
-offset_right = 122.0
-grow_horizontal = 2
-grow_vertical = 0
-mouse_filter = 2
-texture = ExtResource("8_pmlyd")
-
-[node name="item_slot4" type="TextureRect" parent="SlotContainer"]
-self_modulate = Color(1, 1, 1, 0.458824)
-layout_mode = 2
-texture = ExtResource("4_rehtm")
-script = ExtResource("5_c38uy")
-index = 3
-
-[node name="bottle4" type="TextureRect" parent="SlotContainer/item_slot4"]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -122.0
-offset_top = -582.0
-offset_right = 122.0
-grow_horizontal = 2
-grow_vertical = 0
-mouse_filter = 2
-texture = ExtResource("9_4gj0m")
-
-[node name="item_slot5" type="TextureRect" parent="SlotContainer"]
-self_modulate = Color(1, 1, 1, 0.458824)
-layout_mode = 2
-texture = ExtResource("4_rehtm")
-script = ExtResource("5_c38uy")
-index = 4
-
-[node name="bottle5" type="TextureRect" parent="SlotContainer/item_slot5"]
+[node name="bottle5" type="TextureRect" parent="SlotContainer/item_slot3"]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -141,14 +98,14 @@ grow_vertical = 0
 mouse_filter = 2
 texture = ExtResource("10_8e42t")
 
-[node name="item_slot6" type="TextureRect" parent="SlotContainer"]
+[node name="item_slot4" type="TextureRect" parent="SlotContainer"]
 self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
 texture = ExtResource("4_rehtm")
 script = ExtResource("5_c38uy")
-index = 5
+index = 3
 
-[node name="bottle6" type="TextureRect" parent="SlotContainer/item_slot6"]
+[node name="bottle6" type="TextureRect" parent="SlotContainer/item_slot4"]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -162,3 +119,51 @@ grow_horizontal = 2
 grow_vertical = 0
 mouse_filter = 2
 texture = ExtResource("11_l25fc")
+
+[node name="item_slot5" type="TextureRect" parent="SlotContainer"]
+self_modulate = Color(1, 1, 1, 0.458824)
+layout_mode = 2
+texture = ExtResource("4_rehtm")
+script = ExtResource("5_c38uy")
+index = 4
+
+[node name="bottle3" type="TextureRect" parent="SlotContainer/item_slot5"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -122.0
+offset_top = -582.0
+offset_right = 122.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+texture = ExtResource("8_pmlyd")
+
+[node name="item_slot6" type="TextureRect" parent="SlotContainer"]
+self_modulate = Color(1, 1, 1, 0.458824)
+layout_mode = 2
+texture = ExtResource("4_rehtm")
+script = ExtResource("5_c38uy")
+index = 5
+
+[node name="bottle4" type="TextureRect" parent="SlotContainer/item_slot6"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -122.0
+offset_top = -582.0
+offset_right = 122.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+texture = ExtResource("9_4gj0m")
+
+[node name="bgm" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("11_mpdel")

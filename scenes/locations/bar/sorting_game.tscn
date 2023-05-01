@@ -1,6 +1,5 @@
-[gd_scene load_steps=11 format=3 uid="uid://30xn2xfnlomb"]
+[gd_scene load_steps=10 format=3 uid="uid://30xn2xfnlomb"]
 
-[ext_resource type="Script" path="res://scenes/locations/bar/sorting_game.gd" id="1_n25l6"]
 [ext_resource type="Texture2D" uid="uid://b8xmqoshmcqev" path="res://assets/backgrounds/sortings game.png" id="2_7xjsd"]
 [ext_resource type="Texture2D" uid="uid://ovkicqab51fr" path="res://scenes/locations/bar/slot.png" id="3_foh1m"]
 [ext_resource type="Script" path="res://scenes/locations/bar/item_slot.gd" id="4_dpwb5"]
@@ -12,7 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://ce74w8k7rqlv4" path="res://dialogic/characters/barkeeper/flaschen/flasche_6.png" id="10_6og4y"]
 
 [node name="sorting_game" type="Node2D"]
-script = ExtResource("1_n25l6")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 40.0
@@ -38,48 +36,49 @@ layout_mode = 2
 texture = ExtResource("3_foh1m")
 script = ExtResource("4_dpwb5")
 
-[node name="bottle1" type="TextureRect" parent="SlotContainer/item_slot"]
+[node name="bottle2" type="TextureRect" parent="SlotContainer/item_slot"]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -139.5
-offset_top = -578.0
-offset_right = 104.5
-offset_bottom = 4.0
+offset_left = -122.0
+offset_top = -582.0
+offset_right = 122.0
 grow_horizontal = 2
 grow_vertical = 0
 mouse_filter = 2
-texture = ExtResource("6_4le81")
+texture = ExtResource("5_og7ej")
 
 [node name="item_slot2" type="TextureRect" parent="SlotContainer"]
 self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
 texture = ExtResource("3_foh1m")
 script = ExtResource("4_dpwb5")
+index = 1
 
-[node name="bottle2" type="TextureRect" parent="SlotContainer/item_slot2"]
+[node name="bottle1" type="TextureRect" parent="SlotContainer/item_slot2"]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -141.5
-offset_top = -582.0
-offset_right = 102.5
+offset_left = -114.0
+offset_top = -570.0
+offset_right = 114.0
 grow_horizontal = 2
 grow_vertical = 0
 mouse_filter = 2
-texture = ExtResource("5_og7ej")
+texture = ExtResource("6_4le81")
 
 [node name="item_slot3" type="TextureRect" parent="SlotContainer"]
 self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
 texture = ExtResource("3_foh1m")
 script = ExtResource("4_dpwb5")
+index = 2
 
 [node name="bottle3" type="TextureRect" parent="SlotContainer/item_slot3"]
 layout_mode = 1
@@ -101,6 +100,7 @@ self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
 texture = ExtResource("3_foh1m")
 script = ExtResource("4_dpwb5")
+index = 3
 
 [node name="bottle4" type="TextureRect" parent="SlotContainer/item_slot4"]
 layout_mode = 1
@@ -122,6 +122,7 @@ self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
 texture = ExtResource("3_foh1m")
 script = ExtResource("4_dpwb5")
+index = 4
 
 [node name="bottle5" type="TextureRect" parent="SlotContainer/item_slot5"]
 layout_mode = 1
@@ -143,6 +144,7 @@ self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
 texture = ExtResource("3_foh1m")
 script = ExtResource("4_dpwb5")
+index = 5
 
 [node name="bottle6" type="TextureRect" parent="SlotContainer/item_slot6"]
 layout_mode = 1

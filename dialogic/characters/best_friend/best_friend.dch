@@ -1,18 +1,26 @@
 {
 "@path": "res://addons/dialogic/Resources/character.gd",
 "@subpath": NodePath(""),
-"color": Color(0.560784, 0.827451, 1, 1),
+"color": Color(0.941176, 0.309804, 0.470588, 1),
 "custom_info": {
 "sound_mood_default": "",
 "sound_moods": {},
 "style": ""
 },
-"default_portrait": "",
+"default_portrait": "default",
 "description": "",
 "display_name": "Best Friend",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),
-"portraits": {},
+"portraits": {
+"default": {
+"image": "res://dialogic/characters/best_friend/freundin.png",
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
 "scale": 1.0
 }

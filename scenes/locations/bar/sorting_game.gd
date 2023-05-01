@@ -14,12 +14,11 @@ func _ready():
 func slot_gui_input(event: InputEvent, slot: SlotClass):
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT && event.pressed:
-			print("left click")
 			if holding_item != null:
 				if !slot.item: #Place holding item to slot
 					slot.putIntoSlot(holding_item)
 					holding_item = null
-				else: #Swap holdgin item with item in slot
+				else: #Swap holding item with item in slot
 					var temp_item = slot.item
 					slot.pickFromSlot()
 					temp_item.global_position = event.global_position

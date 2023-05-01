@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://swhfoe2807o5"
-path="res://.godot/imported/inventory_ slot.png-bf98810e460a7cc11fddf06f10640f73.ctex"
+uid="uid://dpxam1201tb11"
+path="res://.godot/imported/freundin.png-49bb7130e5d9359e0f6421900d11d269.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/inventory_ slot.png"
-dest_files=["res://.godot/imported/inventory_ slot.png-bf98810e460a7cc11fddf06f10640f73.ctex"]
+source_file="res://dialogic/characters/best_friend/freundin.png"
+dest_files=["res://.godot/imported/freundin.png-49bb7130e5d9359e0f6421900d11d269.ctex"]
 
 [params]
 

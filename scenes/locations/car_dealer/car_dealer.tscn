@@ -1,12 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://cwinlcmmsgovg"]
+[gd_scene load_steps=5 format=3 uid="uid://cwinlcmmsgovg"]
 
 [ext_resource type="Script" path="res://scenes/locations/car_dealer/car_dealer.gd" id="1_ear6f"]
 [ext_resource type="Texture2D" uid="uid://dfeorcyh538oi" path="res://scenes/locations/car_dealer/autohaus_bg.png" id="2_frqwl"]
 [ext_resource type="Texture2D" uid="uid://bxom2nggowcob" path="res://dialogic/characters/seller/verkäufer.png" id="3_esqy2"]
 [ext_resource type="PackedScene" uid="uid://es0kxxw0ecbx" path="res://scenes/gameplay/start_dialog_area.tscn" id="4_looam"]
-[ext_resource type="PackedScene" uid="uid://tx0n7tcj711m" path="res://scenes/gameplay/select_location_area.tscn" id="5_8f32m"]
-[ext_resource type="PackedScene" uid="uid://dkk8yacxbaga2" path="res://scenes/overworld.tscn" id="6_my1yf"]
-[ext_resource type="Texture2D" uid="uid://c2xp5ik6frdh7" path="res://assets/ui/maps_1c.png" id="7_1mguw"]
 
 [node name="CarDealer" type="Node2D"]
 script = ExtResource("1_ear6f")
@@ -27,19 +24,6 @@ texture = ExtResource("3_esqy2")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Carson"]
 polygon = PackedVector2Array(-82, 78, -330, 148, -447, 141, -504, 165, -563, 152, -580, 110, -856, 86, -881, 110, -936, 114, -966, 69, -1012, 67, -1006, 21, -998, -45, -909, -70, -843, -179, -411, -176, -392, -149, -144, -153, -67, -98, -42, -202, 22, -265, 79, -253, 119, -193, 127, -126, 94, -104, 175, -48, 182, 6, 94, 35, 130, 55, 113, 108, 104, 197, -53, 190, -82, 116)
-
-[node name="GoOverworld" parent="." instance=ExtResource("5_8f32m")]
-unique_name_in_owner = true
-position = Vector2(1750, 100)
-location = ExtResource("6_my1yf")
-cursor_shape = 13
-enabled = false
-
-[node name="Maps1c" type="Sprite2D" parent="GoOverworld"]
-texture = ExtResource("7_1mguw")
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GoOverworld"]
-polygon = PackedVector2Array(-100, -61, -51, -54, -7, -78, 55, -62, 100, 59, 23, 35, -28, 74, -90, 53)
 
 [node name="FadeIn" type="ColorRect" parent="."]
 unique_name_in_owner = true

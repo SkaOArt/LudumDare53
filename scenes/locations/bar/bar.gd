@@ -1,6 +1,6 @@
 extends Node2D
 
-const sorting_game = preload("res://scenes/locations/bar/sorting_game.tscn")
+@export var sorting_game: PackedScene
 
 @onready var sorting_game_playable: Area2D = %sorting_game_playable
 @onready var boris_talk: Area2D = %boris_talk

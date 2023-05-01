@@ -1,6 +1,7 @@
 extends Node2D
 
-const bar_scene = preload("res://scenes/locations/bar/bar.tscn")
+
+@export var bar_scene: PackedScene
 
 @onready var inventory_slots = %SlotContainer
 

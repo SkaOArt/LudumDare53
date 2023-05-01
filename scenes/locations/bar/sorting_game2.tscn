@@ -1,23 +1,25 @@
-[gd_scene load_steps=11 format=3 uid="uid://30xn2xfnlomb"]
+[gd_scene load_steps=12 format=3 uid="uid://so4dxqtjyxgq"]
 
-[ext_resource type="Script" path="res://scenes/locations/bar/sorting_game.gd" id="1_pdonj"]
-[ext_resource type="Texture2D" uid="uid://b8xmqoshmcqev" path="res://assets/backgrounds/sortings game.png" id="2_7xjsd"]
-[ext_resource type="Texture2D" uid="uid://ovkicqab51fr" path="res://scenes/locations/bar/slot.png" id="3_foh1m"]
-[ext_resource type="Script" path="res://scenes/locations/bar/item_slot.gd" id="4_dpwb5"]
-[ext_resource type="Texture2D" uid="uid://wg443tgsg3i3" path="res://dialogic/characters/barkeeper/flaschen/flasche_2.png" id="5_og7ej"]
-[ext_resource type="Texture2D" uid="uid://e717wlm74je4" path="res://dialogic/characters/barkeeper/flaschen/flasche_1.png" id="6_4le81"]
-[ext_resource type="Texture2D" uid="uid://xpidswm4nrhr" path="res://dialogic/characters/barkeeper/flaschen/flasche_3.png" id="7_gpylw"]
-[ext_resource type="Texture2D" uid="uid://7f7upoejfclo" path="res://dialogic/characters/barkeeper/flaschen/flasche_4.png" id="8_ajo8x"]
-[ext_resource type="Texture2D" uid="uid://6txtq85mfjj0" path="res://dialogic/characters/barkeeper/flaschen/flasche_5.png" id="9_ifsvg"]
-[ext_resource type="Texture2D" uid="uid://ce74w8k7rqlv4" path="res://dialogic/characters/barkeeper/flaschen/flasche_6.png" id="10_6og4y"]
+[ext_resource type="Script" path="res://scenes/locations/bar/sorting_game2.gd" id="1_m2ue1"]
+[ext_resource type="PackedScene" uid="uid://oegvg7f8gcgj" path="res://scenes/locations/bar/bar.tscn" id="2_07k1a"]
+[ext_resource type="Texture2D" uid="uid://b8xmqoshmcqev" path="res://assets/backgrounds/sortings game.png" id="3_orgen"]
+[ext_resource type="Texture2D" uid="uid://ovkicqab51fr" path="res://scenes/locations/bar/slot.png" id="4_rehtm"]
+[ext_resource type="Script" path="res://scenes/locations/bar/item_slot.gd" id="5_c38uy"]
+[ext_resource type="Texture2D" uid="uid://wg443tgsg3i3" path="res://dialogic/characters/barkeeper/flaschen/flasche_2.png" id="6_u3b5l"]
+[ext_resource type="Texture2D" uid="uid://e717wlm74je4" path="res://dialogic/characters/barkeeper/flaschen/flasche_1.png" id="7_r328j"]
+[ext_resource type="Texture2D" uid="uid://xpidswm4nrhr" path="res://dialogic/characters/barkeeper/flaschen/flasche_3.png" id="8_pmlyd"]
+[ext_resource type="Texture2D" uid="uid://7f7upoejfclo" path="res://dialogic/characters/barkeeper/flaschen/flasche_4.png" id="9_4gj0m"]
+[ext_resource type="Texture2D" uid="uid://6txtq85mfjj0" path="res://dialogic/characters/barkeeper/flaschen/flasche_5.png" id="10_8e42t"]
+[ext_resource type="Texture2D" uid="uid://ce74w8k7rqlv4" path="res://dialogic/characters/barkeeper/flaschen/flasche_6.png" id="11_l25fc"]
 
 [node name="sorting_game" type="Node2D"]
-script = ExtResource("1_pdonj")
+script = ExtResource("1_m2ue1")
+bar_scene = ExtResource("2_07k1a")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 40.0
 offset_bottom = 40.0
-texture = ExtResource("2_7xjsd")
+texture = ExtResource("3_orgen")
 
 [node name="SlotContainer" type="GridContainer" parent="."]
 unique_name_in_owner = true
@@ -35,8 +37,8 @@ columns = 7
 [node name="item_slot" type="TextureRect" parent="SlotContainer"]
 self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
-texture = ExtResource("3_foh1m")
-script = ExtResource("4_dpwb5")
+texture = ExtResource("4_rehtm")
+script = ExtResource("5_c38uy")
 
 [node name="bottle2" type="TextureRect" parent="SlotContainer/item_slot"]
 layout_mode = 1
@@ -51,13 +53,13 @@ offset_right = 122.0
 grow_horizontal = 2
 grow_vertical = 0
 mouse_filter = 2
-texture = ExtResource("5_og7ej")
+texture = ExtResource("6_u3b5l")
 
 [node name="item_slot2" type="TextureRect" parent="SlotContainer"]
 self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
-texture = ExtResource("3_foh1m")
-script = ExtResource("4_dpwb5")
+texture = ExtResource("4_rehtm")
+script = ExtResource("5_c38uy")
 index = 1
 
 [node name="bottle1" type="TextureRect" parent="SlotContainer/item_slot2"]
@@ -73,13 +75,13 @@ offset_right = 114.0
 grow_horizontal = 2
 grow_vertical = 0
 mouse_filter = 2
-texture = ExtResource("6_4le81")
+texture = ExtResource("7_r328j")
 
 [node name="item_slot3" type="TextureRect" parent="SlotContainer"]
 self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
-texture = ExtResource("3_foh1m")
-script = ExtResource("4_dpwb5")
+texture = ExtResource("4_rehtm")
+script = ExtResource("5_c38uy")
 index = 2
 
 [node name="bottle3" type="TextureRect" parent="SlotContainer/item_slot3"]
@@ -95,13 +97,13 @@ offset_right = 122.0
 grow_horizontal = 2
 grow_vertical = 0
 mouse_filter = 2
-texture = ExtResource("7_gpylw")
+texture = ExtResource("8_pmlyd")
 
 [node name="item_slot4" type="TextureRect" parent="SlotContainer"]
 self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
-texture = ExtResource("3_foh1m")
-script = ExtResource("4_dpwb5")
+texture = ExtResource("4_rehtm")
+script = ExtResource("5_c38uy")
 index = 3
 
 [node name="bottle4" type="TextureRect" parent="SlotContainer/item_slot4"]
@@ -117,13 +119,13 @@ offset_right = 122.0
 grow_horizontal = 2
 grow_vertical = 0
 mouse_filter = 2
-texture = ExtResource("8_ajo8x")
+texture = ExtResource("9_4gj0m")
 
 [node name="item_slot5" type="TextureRect" parent="SlotContainer"]
 self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
-texture = ExtResource("3_foh1m")
-script = ExtResource("4_dpwb5")
+texture = ExtResource("4_rehtm")
+script = ExtResource("5_c38uy")
 index = 4
 
 [node name="bottle5" type="TextureRect" parent="SlotContainer/item_slot5"]
@@ -139,13 +141,13 @@ offset_right = 122.0
 grow_horizontal = 2
 grow_vertical = 0
 mouse_filter = 2
-texture = ExtResource("9_ifsvg")
+texture = ExtResource("10_8e42t")
 
 [node name="item_slot6" type="TextureRect" parent="SlotContainer"]
 self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
-texture = ExtResource("3_foh1m")
-script = ExtResource("4_dpwb5")
+texture = ExtResource("4_rehtm")
+script = ExtResource("5_c38uy")
 index = 5
 
 [node name="bottle6" type="TextureRect" parent="SlotContainer/item_slot6"]
@@ -161,4 +163,4 @@ offset_right = 122.0
 grow_horizontal = 2
 grow_vertical = 0
 mouse_filter = 2
-texture = ExtResource("10_6og4y")
+texture = ExtResource("11_l25fc")

@@ -6,10 +6,14 @@ var sorting_game: Resource
 @onready var boris_talk: Area2D = %boris_talk
 @onready var fade_in: ColorRect = %FadeIn
 @onready var go_overworld: Area2D = %GoOverworld
+@onready var bgm: AudioStreamPlayer = %bgm
 
 
 func _ready():
+	bgm.play()
+	
 	sorting_game = load("res://scenes/locations/bar/sorting_game2.tscn")
+	
 	if Globals.location_3_cleared:
 		# disable all areas
 		sorting_game_playable.disable()

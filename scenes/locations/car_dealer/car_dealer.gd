@@ -4,9 +4,12 @@ extends Node2D
 @onready var fade_in: ColorRect = %FadeIn
 @onready var carson: Area2D = %Carson
 @onready var go_overworld: Area2D = %GoOverworld
+@onready var bgm: AudioStreamPlayer = %bgm
 
 
 func _ready() -> void:
+	bgm.play()
+	
 	if Globals.location_2_cleared:
 		# disable all areas
 		carson.disable()

@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://bus8ewqfpgnka"]
+[gd_scene load_steps=8 format=3 uid="uid://bus8ewqfpgnka"]
 
 [ext_resource type="Script" path="res://scenes/locations/bar/bar.gd" id="1_rt3ho"]
 [ext_resource type="Texture2D" uid="uid://cfypjal280bwa" path="res://assets/backgrounds/V2_bar_bg.png" id="2_t564t"]
 [ext_resource type="Texture2D" uid="uid://880e403coglq" path="res://dialogic/characters/barkeeper/onkel.png" id="3_tlttg"]
 [ext_resource type="Texture2D" uid="uid://lsamuy46cuth" path="res://assets/backgrounds/V1_bar_bg.png" id="4_0xvn1"]
 [ext_resource type="PackedScene" uid="uid://es0kxxw0ecbx" path="res://scenes/gameplay/start_dialog_area.tscn" id="5_m2mqt"]
+[ext_resource type="AudioStream" uid="uid://c7d6qhylstucc" path="res://sound/background sound/Szene 3 Bar_v004_final.wav" id="7_brv6i"]
 [ext_resource type="PackedScene" uid="uid://cu6xwlghypvjd" path="res://scenes/gameplay/go_overworld/go_overworld.tscn" id="7_cno7q"]
 
 [node name="bar" type="Node2D"]
@@ -50,3 +51,7 @@ color = Color(0.129412, 0.129412, 0.129412, 1)
 unique_name_in_owner = true
 position = Vector2(1750, 100)
 enabled = false
+
+[node name="bgm" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("7_brv6i")

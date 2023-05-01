@@ -2,7 +2,7 @@ Join neighbor 3
 neighbor: „Hello {mc}, nice to see you. Since when do you deliver packages?“ #id:2c
 mc: I notice how she glances at the package and is visibly surprised. \
 As soon as we make brief eye contact, she turns away hurriedly and tries to look at the package. #id:2d
-„... uhm“
+neighbor (shy): „... uhm“
 mc: „Hi Miu, the package is for you. It was by the trash cans...“ #id:2e
 mc: I explain slowly and see how she hesitantly approaches. She takes the package and looks at the address before shaking her head and peering inside. #id:2f
 neighbor (default): „That's not mine. I think it belongs to Mr. Akuban. He moved away quite some time ago, and there have been mix-ups with our last names before.“ #id:30
@@ -10,7 +10,7 @@ mc: I nod slowly in understanding and have to strain myself to continue listenin
 She always speaks a little quieter than the others. #id:31
 mc: „Then you can probably bring it to him. I don't know him..“ #id:32
 mc: My neighbor shakes her head. #id:33
-neighbor: „I'd like to, but I don't know anything more than his last name. But it would be a shame if he didn't get his package today..." #id:34
+neighbor (default): „I'd like to, but I don't know anything more than his last name. But it would be a shame if he didn't get his package today..." #id:34
 neighbor: „I heard his wife left him... Maybe I shouldn't go to the birthday party today and try to find him instead..“ #id:35
 - I could take care of it. After all, I don't have anything planned. #id:36
 - I don't actually plan on delivering the package. #id:37

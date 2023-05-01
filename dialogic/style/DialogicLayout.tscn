@@ -80,9 +80,9 @@ shadow_size = 5
 [node name="DefaultDialogNode" type="CanvasLayer"]
 script = ExtResource("1_gf4oe")
 text_size = 30
-box_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.447059)
+box_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.752941)
 name_label_font_size = 30
-name_label_box_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.447059)
+name_label_box_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.752941)
 
 [node name="DialogicNode_BackgroundHolder" type="CanvasLayer" parent="."]
 layer = -1

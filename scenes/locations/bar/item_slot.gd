@@ -4,6 +4,7 @@ extends TextureRect
 var item = null
 
 func pickFromSlot():
+	print("pick")
 	remove_child(item)
 	var inventoryNode = find_parent("sorting_game")
 	inventoryNode.add_child(item)

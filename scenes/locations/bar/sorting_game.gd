@@ -7,6 +7,7 @@ var holding_item = null
 
 func _ready():
 	for inv_slot in inventory_slots.get_children():
+		print(inv_slot)
 		(inv_slot as SlotClass).gui_input.connect(slot_gui_input.bind(inv_slot))
 		#inv_slot.connect("gui_input", self, "slot_gui_input", [inv_slot])
 

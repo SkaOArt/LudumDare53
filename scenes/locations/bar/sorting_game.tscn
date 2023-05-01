@@ -1,7 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://30xn2xfnlomb"]
+[gd_scene load_steps=6 format=3 uid="uid://30xn2xfnlomb"]
 
 [ext_resource type="Script" path="res://scenes/locations/bar/sorting_game.gd" id="1_n25l6"]
-[ext_resource type="Texture2D" uid="uid://b8xmqoshmcqev" path="res://assets/backgrounds/sortings game.png" id="2_7xjsd"]
 [ext_resource type="Texture2D" uid="uid://ovkicqab51fr" path="res://scenes/locations/bar/slot.png" id="3_foh1m"]
 [ext_resource type="Texture2D" uid="uid://cqfgib6i6atlk" path="res://scenes/locations/bar/flasche.png" id="4_1bdfa"]
 [ext_resource type="Script" path="res://scenes/locations/bar/item_slot.gd" id="4_dpwb5"]
@@ -9,12 +8,6 @@
 
 [node name="sorting_game" type="Node2D"]
 script = ExtResource("1_n25l6")
-
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
-mouse_filter = 2
-texture = ExtResource("2_7xjsd")
 
 [node name="SlotContainer" type="GridContainer" parent="."]
 unique_name_in_owner = true
@@ -54,7 +47,6 @@ texture = ExtResource("4_1bdfa")
 [node name="item_slot2" type="TextureRect" parent="SlotContainer"]
 self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
-mouse_filter = 2
 texture = ExtResource("3_foh1m")
 script = ExtResource("4_dpwb5")
 
@@ -76,7 +68,6 @@ texture = ExtResource("6_a7xke")
 [node name="item_slot3" type="TextureRect" parent="SlotContainer"]
 self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
-mouse_filter = 2
 texture = ExtResource("3_foh1m")
 script = ExtResource("4_dpwb5")
 
@@ -98,7 +89,6 @@ texture = ExtResource("4_1bdfa")
 [node name="item_slot4" type="TextureRect" parent="SlotContainer"]
 self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
-mouse_filter = 2
 texture = ExtResource("3_foh1m")
 script = ExtResource("4_dpwb5")
 
@@ -120,7 +110,6 @@ texture = ExtResource("4_1bdfa")
 [node name="item_slot5" type="TextureRect" parent="SlotContainer"]
 self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
-mouse_filter = 2
 texture = ExtResource("3_foh1m")
 script = ExtResource("4_dpwb5")
 
@@ -142,7 +131,6 @@ texture = ExtResource("4_1bdfa")
 [node name="item_slot6" type="TextureRect" parent="SlotContainer"]
 self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
-mouse_filter = 2
 texture = ExtResource("3_foh1m")
 script = ExtResource("4_dpwb5")
 

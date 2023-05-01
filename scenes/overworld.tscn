@@ -1,11 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://dkk8yacxbaga2"]
+[gd_scene load_steps=8 format=3 uid="uid://dkk8yacxbaga2"]
 
 [ext_resource type="Texture2D" uid="uid://dfmp4n7spt1ap" path="res://assets/backgrounds/map_overworld.png" id="1_dy8bb"]
 [ext_resource type="Script" path="res://scenes/overworld.gd" id="1_m3rri"]
 [ext_resource type="PackedScene" uid="uid://tx0n7tcj711m" path="res://scenes/gameplay/select_location_area.tscn" id="2_nug62"]
 [ext_resource type="PackedScene" uid="uid://wf37gecg83pm" path="res://scenes/locations/building_complex/building_complex.tscn" id="3_mc850"]
 [ext_resource type="PackedScene" uid="uid://cwinlcmmsgovg" path="res://scenes/locations/car_dealer/car_dealer.tscn" id="4_877cn"]
-[ext_resource type="PackedScene" uid="uid://oegvg7f8gcgj" path="res://scenes/locations/bar/bar.tscn" id="5_dbqeo"]
 [ext_resource type="PackedScene" uid="uid://bo8ab7dh2t4d3" path="res://scenes/locations/house/house.tscn" id="6_kbnlq"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1kyeg"]
@@ -97,7 +96,6 @@ horizontal_alignment = 1
 
 [node name="Bar" parent="." instance=ExtResource("2_nug62")]
 position = Vector2(636, 650)
-location = ExtResource("5_dbqeo")
 cursor_shape = 13
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bar"]

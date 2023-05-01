@@ -1,5 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://30xn2xfnlomb"]
+[gd_scene load_steps=11 format=3 uid="uid://30xn2xfnlomb"]
 
+[ext_resource type="Script" path="res://scenes/locations/bar/sorting_game.gd" id="1_pdonj"]
 [ext_resource type="Texture2D" uid="uid://b8xmqoshmcqev" path="res://assets/backgrounds/sortings game.png" id="2_7xjsd"]
 [ext_resource type="Texture2D" uid="uid://ovkicqab51fr" path="res://scenes/locations/bar/slot.png" id="3_foh1m"]
 [ext_resource type="Script" path="res://scenes/locations/bar/item_slot.gd" id="4_dpwb5"]
@@ -11,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://ce74w8k7rqlv4" path="res://dialogic/characters/barkeeper/flaschen/flasche_6.png" id="10_6og4y"]
 
 [node name="sorting_game" type="Node2D"]
+script = ExtResource("1_pdonj")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 40.0

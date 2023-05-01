@@ -8,5 +8,6 @@ func _ready() -> void:
 
 
 func on_dialog_signal(arg):
+	# go to building complex scene after entering name
 	if arg == "name":
-		get_tree().change_scene_to_file("res://scenes/overworld.tscn")
+		get_tree().change_scene_to_file("res://scenes/locations/building_complex/building_complex.tscn")

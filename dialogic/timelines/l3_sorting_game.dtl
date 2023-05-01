@@ -1,10 +1,10 @@
 if {location 4.barkeeper_first} == "true":
 	Join barkeeper 3
-	barkeeper: "Hey don't touch it." #id:82
+	barkeeper (angry): "Hey don't touch it." #id:82
 elif {location 4.barkeeper_first} == "false":
 	mc: Maybe he will talk to me when I help him. #id:83
 	mc: "Hey Boris can I help you out by sorting the shelf?" #id:84
 	Join barkeeper 3
-	barkeeper: "Fine. If you sort them well I will awnser any question your have." #id:85
+	barkeeper: "Fine. If you sort them properly, I will answer any questions you have." #id:85
 	Leave barkeeper
 	[signal arg="sorting_game"]

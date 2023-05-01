@@ -13,9 +13,11 @@ script = ExtResource("1_n25l6")
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 40.0
 offset_bottom = 40.0
+mouse_filter = 2
 texture = ExtResource("2_7xjsd")
 
 [node name="SlotContainer" type="GridContainer" parent="."]
+unique_name_in_owner = true
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -30,7 +32,6 @@ columns = 7
 [node name="item_slot" type="TextureRect" parent="SlotContainer"]
 self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
-mouse_filter = 2
 texture = ExtResource("3_foh1m")
 script = ExtResource("4_dpwb5")
 
@@ -47,6 +48,7 @@ offset_right = 122.0
 offset_bottom = -40.0
 grow_horizontal = 2
 grow_vertical = 0
+mouse_filter = 2
 texture = ExtResource("4_1bdfa")
 
 [node name="item_slot2" type="TextureRect" parent="SlotContainer"]
@@ -54,6 +56,7 @@ self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
 mouse_filter = 2
 texture = ExtResource("3_foh1m")
+script = ExtResource("4_dpwb5")
 
 [node name="bottle2" type="TextureRect" parent="SlotContainer/item_slot2"]
 layout_mode = 1
@@ -75,6 +78,7 @@ self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
 mouse_filter = 2
 texture = ExtResource("3_foh1m")
+script = ExtResource("4_dpwb5")
 
 [node name="bottle3" type="TextureRect" parent="SlotContainer/item_slot3"]
 layout_mode = 1
@@ -96,6 +100,7 @@ self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
 mouse_filter = 2
 texture = ExtResource("3_foh1m")
+script = ExtResource("4_dpwb5")
 
 [node name="bottle4" type="TextureRect" parent="SlotContainer/item_slot4"]
 layout_mode = 1
@@ -117,6 +122,7 @@ self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
 mouse_filter = 2
 texture = ExtResource("3_foh1m")
+script = ExtResource("4_dpwb5")
 
 [node name="bottle5" type="TextureRect" parent="SlotContainer/item_slot5"]
 layout_mode = 1
@@ -138,6 +144,7 @@ self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
 mouse_filter = 2
 texture = ExtResource("3_foh1m")
+script = ExtResource("4_dpwb5")
 
 [node name="bottle6" type="TextureRect" parent="SlotContainer/item_slot6"]
 layout_mode = 1

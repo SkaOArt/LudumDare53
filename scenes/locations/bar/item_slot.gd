@@ -1,3 +1,4 @@
+class_name SlotClass
 extends TextureRect
 
 var item = null

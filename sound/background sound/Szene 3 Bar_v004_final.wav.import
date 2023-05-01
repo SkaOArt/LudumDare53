@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c7d6qhylstucc"
+path="res://.godot/imported/Szene 3 Bar_v004_final.wav-02916b055c041efbdb81aaf127c8be1b.sample"
+
+[deps]
+
+source_file="res://sound/background sound/Szene 3 Bar_v004_final.wav"
+dest_files=["res://.godot/imported/Szene 3 Bar_v004_final.wav-02916b055c041efbdb81aaf127c8be1b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://xmur384nhjwb"
+path="res://.godot/imported/Szene_2_Autowerkstatt_v001_final.wav-8539b11b7273683d91b148f918723f71.sample"
+
+[deps]
+
+source_file="res://sound/background sound/Szene_2_Autowerkstatt_v001_final.wav"
+dest_files=["res://.godot/imported/Szene_2_Autowerkstatt_v001_final.wav-8539b11b7273683d91b148f918723f71.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

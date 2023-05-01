@@ -13,4 +13,4 @@ func _on_check_button_toggled(button_pressed):
 
 
 func _on_audio_slider_value_changed(value):
-	AudioServer.set_bus_volume_db(1, value)
+	AudioServer.set_bus_volume_db(0, value)

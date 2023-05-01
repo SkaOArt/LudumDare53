@@ -50,12 +50,12 @@ corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
 [resource]
-Button/font_sizes/font_size = 35
+Button/font_sizes/font_size = 50
 Button/fonts/font = ExtResource("1_ajsla")
 Button/styles/hover = SubResource("StyleBoxFlat_sixkx")
 Button/styles/normal = SubResource("StyleBoxFlat_lepde")
 Button/styles/pressed = SubResource("StyleBoxFlat_tak74")
 HSlider/styles/grabber_area = SubResource("StyleBoxFlat_1j20w")
 HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_j7i8h")
-Label/font_sizes/font_size = 25
+Label/font_sizes/font_size = 50
 Label/fonts/font = ExtResource("1_ajsla")

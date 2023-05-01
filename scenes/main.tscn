@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dn8wkiqls3x25"]
+[gd_scene load_steps=11 format=3 uid="uid://dn8wkiqls3x25"]
 
 [ext_resource type="Script" path="res://script/main.gd" id="1_6wtgq"]
 [ext_resource type="FontFile" uid="uid://v8wwvuijl17k" path="res://Rakoon_PersonalUse.ttf" id="2_71r32"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://cguxs6brr6v7f" path="res://dialogic/characters/girl/lara.png" id="6_qfo0t"]
 [ext_resource type="Texture2D" uid="uid://ctatx6iuea0uh" path="res://dialogic/characters/neighbor/neighbor.png" id="7_h77e2"]
 [ext_resource type="Texture2D" uid="uid://bxom2nggowcob" path="res://dialogic/characters/seller/verkäufer.png" id="8_yfuri"]
+[ext_resource type="AudioStream" uid="uid://ch2kcdtgsfgx0" path="res://sound/background sound/Szene_1_v001.wav" id="10_oynf2"]
 
 [node name="main" type="Control"]
 layout_mode = 3
@@ -130,6 +131,10 @@ offset_right = 1920.0
 offset_bottom = 1080.0
 mouse_filter = 2
 color = Color(0.129412, 0.129412, 0.129412, 1)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_oynf2")
+autoplay = true
 
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/settings" to="." method="_on_settings_pressed"]

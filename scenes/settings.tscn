@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dm5ivslqnb6n5"]
+[gd_scene load_steps=4 format=3 uid="uid://dm5ivslqnb6n5"]
 
 [ext_resource type="Script" path="res://script/settings.gd" id="1_ryncp"]
-[ext_resource type="Theme" uid="uid://deehlrh573mkc" path="res://red_theme.tres" id="2_6joy6"]
-[ext_resource type="Theme" uid="uid://deehlrh573mkc" path="res://themes/red_theme.tres" id="3_ja460"]
+[ext_resource type="Theme" uid="uid://deehlrh573mkc" path="res://red_theme.tres" id="3_ja460"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ug7af"]
 bg_color = Color(0.180392, 0.133333, 0.184314, 1)
@@ -31,10 +30,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 773.0
-offset_top = 278.0
-offset_right = -773.0
-offset_bottom = -278.0
+offset_left = 739.0
+offset_top = 153.0
+offset_right = -739.0
+offset_bottom = -153.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_ug7af")
@@ -54,8 +53,8 @@ theme_override_constants/margin_top = 24
 [node name="Settings" type="Label" parent="Panel/VBoxBegin"]
 layout_mode = 2
 size_flags_horizontal = 4
-theme = ExtResource("2_6joy6")
-theme_override_font_sizes/font_size = 46
+theme = ExtResource("3_ja460")
+theme_override_font_sizes/font_size = 101
 text = "Settings"
 horizontal_alignment = 1
 
@@ -83,7 +82,7 @@ alignment = 1
 
 [node name="Full" type="Label" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer"]
 layout_mode = 2
-theme = ExtResource("2_6joy6")
+theme = ExtResource("3_ja460")
 text = "Fullscreen"
 
 [node name="CheckButton" type="CheckButton" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer"]
@@ -93,19 +92,19 @@ layout_mode = 2
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 1
-theme = ExtResource("2_6joy6")
+theme = ExtResource("3_ja460")
 text = "Music
 "
 
 [node name="audioSlider" type="HSlider" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer"]
 layout_mode = 2
-theme = ExtResource("2_6joy6")
+theme = ExtResource("3_ja460")
 value = 80.0
 
 [node name="Speed" type="Label" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer"]
 visible = false
 layout_mode = 2
-theme = ExtResource("2_6joy6")
+theme = ExtResource("3_ja460")
 text = "Text Speed"
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer"]
@@ -145,7 +144,7 @@ alignment = 2
 [node name="back" type="Button" parent="Panel/VBoxEnd"]
 layout_mode = 2
 size_flags_vertical = 8
-theme = ExtResource("2_6joy6")
+theme = ExtResource("3_ja460")
 text = "Back"
 
 [node name="MarginContainer" type="MarginContainer" parent="Panel/VBoxEnd"]

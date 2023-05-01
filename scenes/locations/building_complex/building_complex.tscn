@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://wf37gecg83pm"]
+[gd_scene load_steps=6 format=3 uid="uid://wf37gecg83pm"]
 
 [ext_resource type="Script" path="res://scenes/locations/building_complex/building_complex.gd" id="1_heswl"]
-[ext_resource type="Texture2D" uid="uid://dbs6tdnthvgjj" path="res://scenes/locations/building_complex/nachbar_bg.png" id="1_ykrgi"]
+[ext_resource type="Texture2D" uid="uid://los23mkieied" path="res://scenes/locations/building_complex/v1_nachbar_bg.png" id="2_lbq1q"]
 [ext_resource type="PackedScene" uid="uid://es0kxxw0ecbx" path="res://scenes/gameplay/start_dialog_area.tscn" id="2_sqtae"]
-[ext_resource type="Texture2D" uid="uid://ooambsvy805y" path="res://scenes/locations/building_complex/paket.png" id="4_6ae78"]
+[ext_resource type="Texture2D" uid="uid://b64gx4pmer4tm" path="res://scenes/locations/building_complex/geschenk ohne schatten.png" id="4_ipiir"]
+[ext_resource type="Texture2D" uid="uid://dr5qvntojtng2" path="res://scenes/locations/building_complex/hecke.png" id="5_38y7u"]
 
 [node name="BuildingComplex" type="Node2D"]
 script = ExtResource("1_heswl")
@@ -11,7 +12,7 @@ script = ExtResource("1_heswl")
 [node name="Background" type="Sprite2D" parent="."]
 unique_name_in_owner = true
 position = Vector2(960, 540)
-texture = ExtResource("1_ykrgi")
+texture = ExtResource("2_lbq1q")
 
 [node name="Door" parent="." instance=ExtResource("2_sqtae")]
 position = Vector2(893, 407)
@@ -37,16 +38,16 @@ polygon = PackedVector2Array(-94, -46, 57, -56, 78, -44, 78, 40, -73, 54, -93, 5
 
 [node name="Paket" parent="." instance=ExtResource("2_sqtae")]
 unique_name_in_owner = true
-position = Vector2(152, 620)
+position = Vector2(141, 620)
 timeline_name = "l1_paket"
 
 [node name="Sprite" type="Sprite2D" parent="Paket"]
-position = Vector2(5, -2)
-scale = Vector2(0.648699, 0.595477)
-texture = ExtResource("4_6ae78")
+position = Vector2(-20, 17.9999)
+scale = Vector2(0.341849, 0.313803)
+texture = ExtResource("4_ipiir")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Paket"]
-polygon = PackedVector2Array(-55, -13, -49, -40, 8, -53, 43, -26, 58, 18, 90, 34, 76, 53, 2, 51, -44, 54, -69, 51, -69, 29, -57, 19)
+polygon = PackedVector2Array(-74, 59, -57, 62, -40, 59, -39, 20, -38, -32, -59, -32, -68, -20, -67, -10, -60, 0, -75, 2, -77, 21, -71, 29, -70, 40, -75, 49)
 
 [node name="FadeIn" type="ColorRect" parent="."]
 unique_name_in_owner = true
@@ -61,4 +62,9 @@ position = Vector2(348, 582)
 timeline_name = "l1_bin"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bin"]
+visible = false
 polygon = PackedVector2Array(-101, -131, 2, -134, 7, -125, 32, -125, 56, -122, 92, -113, 92, -103, 83, -95, 84, 45, 80, 57, 80, 132, -39, 149, -97, 119, -100, 87, -93, 76, -97, 20)
+
+[node name="Hecke" type="Sprite2D" parent="."]
+position = Vector2(959, 541)
+texture = ExtResource("5_38y7u")

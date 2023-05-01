@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b64gx4pmer4tm"
-path="res://.godot/imported/geschenk ohne schatten.png-9b3bc3394fbdf25e9b1f6b9a69ca4cb2.ctex"
+uid="uid://los23mkieied"
+path="res://.godot/imported/v1_nachbar_bg.png-b85d463ff2076189ddb9b680c30caaaf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/geschenk ohne schatten.png"
-dest_files=["res://.godot/imported/geschenk ohne schatten.png-9b3bc3394fbdf25e9b1f6b9a69ca4cb2.ctex"]
+source_file="res://scenes/locations/building_complex/v1_nachbar_bg.png"
+dest_files=["res://.godot/imported/v1_nachbar_bg.png-b85d463ff2076189ddb9b680c30caaaf.ctex"]
 
 [params]
 

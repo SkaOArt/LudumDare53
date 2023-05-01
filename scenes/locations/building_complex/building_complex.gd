@@ -5,6 +5,12 @@ extends Node2D
 @onready var paket: SelectArea = %Paket
 @onready var fade_in: ColorRect = %FadeIn
 @onready var bgm: AudioStreamPlayer = %bgm
+@onready var go_overworld: Area2D = %GoOverworld
+
+@onready var door: Area2D = $Door
+@onready var fence: Area2D = $Fence
+@onready var letterbox: Area2D = $Letterbox
+@onready var bin: Area2D = $Bin
 
 
 func _ready() -> void:
@@ -16,6 +22,15 @@ func _ready() -> void:
 	var tween = create_tween()
 	tween.tween_property(fade_in, "self_modulate", Color(0, 0, 0, 0), 1.0)
 	tween.tween_callback(start)
+
+
+func start():
+	if Globals.location_1_cleared:
+		exit_location()
+		return
+	
+	var dialog = Dialogic.start("l1_scene1")
+	add_child(dialog)
 
 
 func on_dialog_signal(arg):
@@ -32,13 +47,16 @@ func on_dialog_signal(arg):
 			paket.disable()
 			
 		"talked_miu":
+			Globals.location_1_cleared = true
 			exit_location()
 
 
-func start():
-	var dialog = Dialogic.start("l1_scene1")
-	add_child(dialog)
-
-
 func exit_location():
-	get_tree().change_scene_to_file("res://scenes/overworld.tscn")
+	# disable all areas
+	door.disable()
+	fence.disable()
+	letterbox.disable()
+	bin.disable()
+	
+	# enable overworld map
+	go_overworld.enable()

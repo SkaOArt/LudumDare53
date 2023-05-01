@@ -118,6 +118,16 @@ position = Vector2(220, 698)
 scale = Vector2(0.666488, 0.666488)
 texture = ExtResource("6_qfo0t")
 
+[node name="FadeOut" type="ColorRect" parent="."]
+unique_name_in_owner = true
+self_modulate = Color(1, 1, 1, 0)
+top_level = true
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+color = Color(0.129412, 0.129412, 0.129412, 1)
+
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/settings" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/credit" to="." method="_on_credit_pressed"]

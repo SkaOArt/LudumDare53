@@ -2,8 +2,6 @@ class_name SelectArea
 extends Area2D
 
 
-signal hovering
-
 @export var cursor_shape: Input.CursorShape = Input.CURSOR_POINTING_HAND
 @export var enabled: bool = true
 
@@ -52,8 +50,7 @@ func _on_click(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 
 func _on_mouse_entered() -> void:
 	if enabled:
-		Input.set_default_cursor_shape(Input.CURSOR_POINTING_HAND)
-		hovering.emit()
+		Input.set_default_cursor_shape(cursor_shape)
 
 
 func _on_mouse_exited() -> void:

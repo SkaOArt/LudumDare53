@@ -1,11 +1,14 @@
-[gd_scene load_steps=7 format=3 uid="uid://wf37gecg83pm"]
+[gd_scene load_steps=10 format=3 uid="uid://wf37gecg83pm"]
 
 [ext_resource type="Script" path="res://scenes/locations/building_complex/building_complex.gd" id="1_heswl"]
 [ext_resource type="Texture2D" uid="uid://los23mkieied" path="res://scenes/locations/building_complex/v1_nachbar_bg.png" id="2_lbq1q"]
 [ext_resource type="PackedScene" uid="uid://es0kxxw0ecbx" path="res://scenes/gameplay/start_dialog_area.tscn" id="2_sqtae"]
 [ext_resource type="Texture2D" uid="uid://b64gx4pmer4tm" path="res://scenes/locations/building_complex/geschenk ohne schatten.png" id="4_ipiir"]
+[ext_resource type="PackedScene" uid="uid://dkk8yacxbaga2" path="res://scenes/overworld.tscn" id="4_tnjvv"]
 [ext_resource type="Texture2D" uid="uid://dr5qvntojtng2" path="res://scenes/locations/building_complex/hecke.png" id="5_38y7u"]
 [ext_resource type="AudioStream" uid="uid://ch2kcdtgsfgx0" path="res://sound/background sound/Szene_1_v001.wav" id="6_0qyex"]
+[ext_resource type="PackedScene" uid="uid://tx0n7tcj711m" path="res://scenes/gameplay/select_location_area.tscn" id="7_u7ctb"]
+[ext_resource type="Texture2D" uid="uid://c2xp5ik6frdh7" path="res://assets/ui/maps_1c.png" id="8_ph1v0"]
 
 [node name="BuildingComplex" type="Node2D"]
 script = ExtResource("1_heswl")
@@ -41,6 +44,7 @@ polygon = PackedVector2Array(-94, -46, 57, -56, 78, -44, 78, 40, -73, 54, -93, 5
 unique_name_in_owner = true
 position = Vector2(193, 583)
 timeline_name = "l1_paket"
+cursor_shape = 4
 enabled = false
 
 [node name="Sprite" type="Sprite2D" parent="Paket"]
@@ -61,8 +65,21 @@ visible = false
 polygon = PackedVector2Array(-101, -131, 2, -134, 7, -125, 32, -125, 56, -122, 92, -113, 92, -103, 83, -95, 84, 45, 80, 57, 80, 132, -39, 149, -97, 119, -100, 87, -93, 76, -97, 20)
 
 [node name="Hecke" type="Sprite2D" parent="."]
-position = Vector2(959, 541)
+position = Vector2(960, 540)
 texture = ExtResource("5_38y7u")
+
+[node name="GoOverworld" parent="." instance=ExtResource("7_u7ctb")]
+unique_name_in_owner = true
+position = Vector2(1750, 100)
+location = ExtResource("4_tnjvv")
+cursor_shape = 13
+enabled = false
+
+[node name="Maps1c" type="Sprite2D" parent="GoOverworld"]
+texture = ExtResource("8_ph1v0")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GoOverworld"]
+polygon = PackedVector2Array(-100, -61, -51, -54, -7, -78, 55, -62, 100, 59, 23, 35, -28, 74, -90, 53)
 
 [node name="FadeIn" type="ColorRect" parent="."]
 unique_name_in_owner = true

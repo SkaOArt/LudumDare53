@@ -12,4 +12,5 @@ func on_dialog_event(arg):
 			get_tree().change_scene_to_file("res://scenes/locations/bar/sorting_game.tscn")
 		
 		"goodbye":
+			Globals.niece_unlocked = true
 			get_tree().change_scene_to_file("res://scenes/overworld.tscn")

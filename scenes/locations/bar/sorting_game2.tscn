@@ -1,7 +1,6 @@
-[gd_scene load_steps=12 format=3 uid="uid://so4dxqtjyxgq"]
+[gd_scene load_steps=11 format=3 uid="uid://so4dxqtjyxgq"]
 
 [ext_resource type="Script" path="res://scenes/locations/bar/sorting_game2.gd" id="1_m2ue1"]
-[ext_resource type="PackedScene" uid="uid://oegvg7f8gcgj" path="res://scenes/locations/bar/bar.tscn" id="2_07k1a"]
 [ext_resource type="Texture2D" uid="uid://b8xmqoshmcqev" path="res://assets/backgrounds/sortings game.png" id="3_orgen"]
 [ext_resource type="Texture2D" uid="uid://ovkicqab51fr" path="res://scenes/locations/bar/slot.png" id="4_rehtm"]
 [ext_resource type="Script" path="res://scenes/locations/bar/item_slot.gd" id="5_c38uy"]
@@ -14,7 +13,6 @@
 
 [node name="sorting_game" type="Node2D"]
 script = ExtResource("1_m2ue1")
-bar_scene = ExtResource("2_07k1a")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 40.0

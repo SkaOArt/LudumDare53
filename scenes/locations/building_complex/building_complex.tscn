@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://b64gx4pmer4tm" path="res://scenes/locations/building_complex/geschenk ohne schatten.png" id="4_ipiir"]
 [ext_resource type="Texture2D" uid="uid://dr5qvntojtng2" path="res://scenes/locations/building_complex/hecke.png" id="5_38y7u"]
 [ext_resource type="AudioStream" uid="uid://ch2kcdtgsfgx0" path="res://sound/background sound/Szene_1_v001.wav" id="6_0qyex"]
-[ext_resource type="PackedScene" uid="uid://cu6xwlghypvjd" path="res://scenes/gameplay/go_overworld.tscn" id="6_3mys6"]
+[ext_resource type="PackedScene" uid="uid://cu6xwlghypvjd" path="res://scenes/gameplay/go_overworld/go_overworld.tscn" id="6_4ektn"]
 
 [node name="BuildingComplex" type="Node2D"]
 script = ExtResource("1_heswl")
@@ -66,8 +66,7 @@ polygon = PackedVector2Array(-101, -131, 2, -134, 7, -125, 32, -125, 56, -122, 9
 position = Vector2(960, 540)
 texture = ExtResource("5_38y7u")
 
-[node name="SelectLocationArea" parent="." instance=ExtResource("6_3mys6")]
-unique_name_in_owner = true
+[node name="GoOverworld" parent="." instance=ExtResource("6_4ektn")]
 position = Vector2(1750, 100)
 enabled = false
 

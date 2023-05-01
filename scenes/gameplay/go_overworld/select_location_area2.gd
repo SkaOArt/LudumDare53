@@ -1,7 +1,5 @@
-extends SelectArea
+extends SelectAreaOverworld
 
-
-@export var location: PackedScene
 
 @onready var fade_in: ColorRect = %FadeIn
 
@@ -18,7 +16,7 @@ func _left_click():
 	tween.tween_property(fade_in, "self_modulate", Color(0.13, 0.13, 0.13, 1), 0.4)
 	
 	# change scene
-	tween.tween_callback(func(): get_tree().change_scene_to_packed(location))	
+	tween.tween_callback(func(): get_tree().change_scene_to_packed(Globals.overworld))	
 
 
 func _right_click():

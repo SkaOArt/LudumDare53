@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var sorting_game: PackedScene
+var sorting_game: Resource
 
 @onready var sorting_game_playable: Area2D = %sorting_game_playable
 @onready var boris_talk: Area2D = %boris_talk
@@ -9,6 +9,7 @@ extends Node2D
 
 
 func _ready():
+	sorting_game = load("res://scenes/locations/bar/sorting_game2.tscn")
 	if Globals.location_3_cleared:
 		# disable all areas
 		sorting_game_playable.disable()

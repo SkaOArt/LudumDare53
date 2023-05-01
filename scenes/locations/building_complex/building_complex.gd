@@ -2,7 +2,7 @@ extends Node2D
 
 
 @onready var background: Sprite2D = %Background
-@onready var paket: SelectArea = %Paket
+@onready var paket: Area2D = %Paket
 @onready var fade_in: ColorRect = %FadeIn
 @onready var bgm: AudioStreamPlayer = %bgm
 @onready var go_overworld: Area2D = %SelectLocationArea

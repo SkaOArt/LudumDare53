@@ -1,38 +1,50 @@
-[gd_scene load_steps=4 format=3 uid="uid://c8vhbpk8nun6d"]
+[gd_scene load_steps=5 format=3 uid="uid://c8vhbpk8nun6d"]
 
 [ext_resource type="Script" path="res://script/credit.gd" id="1_gew0e"]
 [ext_resource type="Theme" uid="uid://deehlrh573mkc" path="res://red_theme.tres" id="2_al37v"]
 [ext_resource type="Texture2D" uid="uid://gn0qpftqe25v" path="res://assets/backgrounds/credits.png" id="2_avqig"]
+[ext_resource type="Texture2D" uid="uid://oyk7xmi8t3sy" path="res://assets/backgrounds/moni.png" id="4_0eq7d"]
 
-[node name="credit" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="credit" type="Node2D"]
+top_level = true
 script = ExtResource("1_gew0e")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+mouse_filter = 2
 texture = ExtResource("2_avqig")
 
 [node name="back" type="Button" parent="."]
-layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -186.0
-offset_top = -101.0
-offset_right = -100.0
-offset_bottom = -57.0
+offset_left = 1732.0
+offset_top = 966.0
+offset_right = 1855.0
+offset_bottom = 1025.0
 grow_horizontal = 0
 grow_vertical = 0
 theme = ExtResource("2_al37v")
 text = "Back"
 
+[node name="Moni" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(1447, 485)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("4_0eq7d")
+
+[node name="Button" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 86.0
+offset_top = 721.0
+offset_right = 724.0
+offset_bottom = 1229.0
+scale = Vector2(0.211857, 0.242499)
+icon = ExtResource("4_0eq7d")
+
 [connection signal="pressed" from="back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -20,7 +20,7 @@ func putIntoSlot(new_item):
 	item = new_item
 	owner.remove_child(item)
 	add_child(item)
-	item.position = Vector2(20,-440)
+	item.position = Vector2(16, 20)
 
 
 func get_current_list():

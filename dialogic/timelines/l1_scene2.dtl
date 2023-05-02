@@ -1,3 +1,5 @@
+[sound path="res://sound/door-knock-6406.mp3"]
+[wait time="2.0"]
 Join neighbor 3
 neighbor: „Hello {mc}, nice to see you. Since when do you deliver packages?“ #id:2c
 mc: I notice how she glances at the package and is visibly surprised. \
@@ -29,7 +31,7 @@ mc: I take the package back and feel her touch my arm gently. I look up at her, 
 neighbor: „I'm sorry for burdening you with this. I know you're busy too.“ #id:43
 mc: I smile gratefully and walk away. #id:44
 Leave neighbor
-mc: It's always clear to me that Miu is a very attentive person. That's why I don't want to burden her with anything more. \
-She's always considerate of others, and today she deserves to have a nice day. Actually, I can't take much off her plate, even though she's always so accommodating as a neighbor.\
-Delivering a package is an easy task, after all. #id:45
+mc: It's always clear to me that Miu is a very attentive person. That's why I don't want to burden her with anything more. #id:45
+mc: She's always considerate of others, and today she deserves to have a nice day. Actually, I can't take much off her plate, even though she's always so accommodating as a neighbor.
+mc: Delivering a package is an easy task, after all.
 [signal arg="talked_miu"]

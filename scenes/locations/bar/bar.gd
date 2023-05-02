@@ -45,6 +45,13 @@ func on_dialog_event(arg):
 		"sorting_game":
 			get_tree().change_scene_to_packed(sorting_game)
 		
+		"closed":
+			# disable all areas
+			boris_talk.disable()
+			
+			# enable overworld map
+			go_overworld.enable()
+		
 		"goodbye":
 			Globals.location_3_cleared = true
 			# disable all areas

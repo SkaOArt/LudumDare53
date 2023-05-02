@@ -21,9 +21,9 @@ I look at the price and hesitate for a moment. #id:59
 	The salesman suddenly smiles broadly as soon as I agree. #id:5c
 	seller: „Wonderful, then we can conclude the contract right away!“ #id:5d
 	Leave seller
-	[wait time="2.0"]
-	Barely out of the office, I suddenly feel much worse. I now have the address and my own car, but something in me says I will regret it in the next few years. Is it because of the strange fine print? #id:5e
-	Although I now have a car, I can't use it. Apparently, the salesman wants to take the car back to the workshop again, so I will have to walk to the bar. #id:5f
+	[wait time="1.2"]
+	mc: Barely out of the office, I suddenly feel much worse. I now have the address and my own car, but something in me says I will regret it in the next few years. Is it because of the strange fine print? #id:5e
+	mc: Although I now have a car, I can't use it. Apparently, the salesman wants to take the car back to the workshop again, so I will have to walk to the bar. #id:5f
 	VAR {auto} = "true"
 - I won't take the car. #id:60
 	mc: „Thanks, but I'm not interested in the car.“ #id:61

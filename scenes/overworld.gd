@@ -11,5 +11,5 @@ func _ready() -> void:
 	var tween = create_tween()
 	tween.tween_property(fade_in, "self_modulate", Color(0, 0, 0, 0), 0.4)
 	
-	if Globals.niece_unlocked:
+	if Globals.location_3_cleared:
 		niece_house.enable()

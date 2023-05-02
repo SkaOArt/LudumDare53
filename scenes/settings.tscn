@@ -99,7 +99,8 @@ text = "Music
 [node name="audioSlider" type="HSlider" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("3_ja460")
-value = 80.0
+min_value = -20.0
+max_value = 10.0
 
 [node name="Speed" type="Label" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer"]
 visible = false

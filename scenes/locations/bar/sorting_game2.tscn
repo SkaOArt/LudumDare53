@@ -25,10 +25,10 @@ unique_name_in_owner = true
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 141.0
-offset_top = 714.0
-offset_right = 1787.0
-offset_bottom = 856.0
+offset_left = 135.0
+offset_top = 230.0
+offset_right = 1781.0
+offset_bottom = 830.0
 grow_horizontal = 2
 grow_vertical = 2
 columns = 7
@@ -36,6 +36,8 @@ columns = 7
 [node name="item_slot" type="TextureRect" parent="SlotContainer"]
 self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 texture = ExtResource("4_rehtm")
 script = ExtResource("5_c38uy")
 
@@ -57,6 +59,8 @@ texture = ExtResource("6_u3b5l")
 [node name="item_slot2" type="TextureRect" parent="SlotContainer"]
 self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 texture = ExtResource("4_rehtm")
 script = ExtResource("5_c38uy")
 index = 1
@@ -79,6 +83,8 @@ texture = ExtResource("7_r328j")
 [node name="item_slot3" type="TextureRect" parent="SlotContainer"]
 self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 texture = ExtResource("4_rehtm")
 script = ExtResource("5_c38uy")
 index = 2
@@ -101,6 +107,8 @@ texture = ExtResource("10_8e42t")
 [node name="item_slot4" type="TextureRect" parent="SlotContainer"]
 self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 texture = ExtResource("4_rehtm")
 script = ExtResource("5_c38uy")
 index = 3
@@ -123,6 +131,8 @@ texture = ExtResource("11_l25fc")
 [node name="item_slot5" type="TextureRect" parent="SlotContainer"]
 self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 texture = ExtResource("4_rehtm")
 script = ExtResource("5_c38uy")
 index = 4
@@ -145,6 +155,8 @@ texture = ExtResource("8_pmlyd")
 [node name="item_slot6" type="TextureRect" parent="SlotContainer"]
 self_modulate = Color(1, 1, 1, 0.458824)
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 texture = ExtResource("4_rehtm")
 script = ExtResource("5_c38uy")
 index = 5

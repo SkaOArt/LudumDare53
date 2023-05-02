@@ -32,4 +32,4 @@ func on_dialog_event(arg):
 		# fade in
 		fade_in.visible = true
 		var tween = create_tween()
-		tween.tween_property(end, "self_modulate", Color(1, 1, 1, 1), 3.0)
+		tween.tween_property(end, "self_modulate", Color(1, 1, 1, 1), 6.0)

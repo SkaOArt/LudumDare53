@@ -43,6 +43,7 @@ func slot_gui_input(event: InputEvent, slot: SlotClass):
 					current_list[slot.index] = holding_item
 					holding_item = null
 					if check_bottles():
+						Dialogic.VAR.location3.sorting_game_played = "true"
 						for inv_slot in inventory_slots.get_children():
 							(inv_slot as SlotClass).gui_input.disconnect(slot_gui_input)
 						get_tree().change_scene_to_packed(bar_scene)
@@ -63,4 +64,5 @@ func slot_gui_input(event: InputEvent, slot: SlotClass):
 
 func _input(event):
 	if holding_item:
-		holding_item.global_position = get_global_mouse_position()
+		holding_item.global_position.x = get_global_mouse_position().x - 40
+		holding_item.global_position.y = get_global_mouse_position().y - 400

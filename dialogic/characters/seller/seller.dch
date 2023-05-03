@@ -8,8 +8,8 @@
 "style": ""
 },
 "default_portrait": "default",
-"description": "",
-"display_name": "Carson",
+"description": "Carson",
+"display_name": "{seller}",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),

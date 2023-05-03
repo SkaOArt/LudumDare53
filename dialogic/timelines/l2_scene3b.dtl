@@ -1,3 +1,4 @@
+[signal arg="carson_hide"]
 Join seller (smoll) 3
 seller (pleased): „Welcome to Autohaus KING, where we make driving a real experience.“ #id:4b
 if {location2.packet_dropped} == "true":
@@ -5,6 +6,7 @@ if {location2.packet_dropped} == "true":
 	I pick up the package again and notice that the salesman is making sure he is visible. #id:4d
 else:
 	I jump as the salesman suddenly walks past me and stands in front of me. He makes sure the package does not cover him too much. #id:4e
+[signal arg="carson_name"]
 seller (default): „I'm Carson Colinski, your man today. I'm not just any salesman. I'm your friend who wants to offer you only the best of the best.“ #id:4f
 I am about to say something, but the salesman is already pointing at a red sports car. #id:50
 seller (pleased): „That is your car, the latest model that you can pay for in installments. But wait, I can see that's not your thing. But don't worry, I'll find the perfect car for you.“ #id:51

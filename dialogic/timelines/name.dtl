@@ -1,3 +1,6 @@
 What is your name? #id:86
-[text_input text="Enter your name:" var="mc" placeholder="You" default="You"]
+[text_input text="Enter your name:" var="mc" allow_empty="true"]
+if len({mc}) == 0:
+	[jump timeline=""]
 [signal arg="name"]
+

@@ -35,6 +35,12 @@ func start():
 
 func on_dialog_event(arg):
 	match arg:
+		"carson_hide":
+			carson.disable()
+		
+		"carson_name":
+			Dialogic.VAR.seller = "Carson"
+		
 		"talked_seller":
 			Globals.location_2_cleared = true
 			exit_location()

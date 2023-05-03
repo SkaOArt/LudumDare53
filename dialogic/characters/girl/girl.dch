@@ -8,8 +8,8 @@
 "style": ""
 },
 "default_portrait": "default",
-"description": "Zum testen",
-"display_name": "Lara",
+"description": "Lara",
+"display_name": "{lara}",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),

@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://cguxs6brr6v7f" path="res://dialogic/characters/girl/lara.png" id="6_qfo0t"]
 [ext_resource type="Texture2D" uid="uid://ctatx6iuea0uh" path="res://dialogic/characters/neighbor/neighbor.png" id="7_h77e2"]
 [ext_resource type="Texture2D" uid="uid://bxom2nggowcob" path="res://dialogic/characters/seller/verkäufer.png" id="8_yfuri"]
-[ext_resource type="AudioStream" uid="uid://ch2kcdtgsfgx0" path="res://sound/background sound/Szene_1_v001.wav" id="10_oynf2"]
+[ext_resource type="AudioStream" uid="uid://bhageb7lhxdjv" path="res://sound/background sound/location_4.ogg" id="10_cgnle"]
 
 [node name="main" type="Control"]
 layout_mode = 3
@@ -95,8 +95,6 @@ layout_mode = 2
 
 [node name="credit" parent="." instance=ExtResource("4_pxa1v")]
 visible = false
-layout_mode = 2
-anchors_preset = 0
 
 [node name="settings" parent="." instance=ExtResource("3_ows2v")]
 visible = false
@@ -132,8 +130,9 @@ offset_bottom = 1080.0
 mouse_filter = 2
 color = Color(0.129412, 0.129412, 0.129412, 1)
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("10_oynf2")
+[node name="bgm" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_cgnle")
+volume_db = -16.5
 autoplay = true
 
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/play" to="." method="_on_play_pressed"]

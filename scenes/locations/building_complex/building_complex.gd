@@ -1,10 +1,13 @@
 extends Node2D
 
 
+var paket_revealed: bool = false
+
 @onready var background: Sprite2D = %Background
 @onready var paket: Area2D = %Paket
 @onready var fade_in: ColorRect = %FadeIn
 @onready var bgm: AudioStreamPlayer = %bgm
+@onready var snd_phone: AudioStreamPlayer = %snd_phone
 @onready var go_overworld: Area2D = %GoOverworld
 
 @onready var door: Area2D = $Door
@@ -15,7 +18,6 @@ extends Node2D
 
 func _ready() -> void:
 	Dialogic.signal_event.connect(on_dialog_signal)
-	bgm.play()
 	
 	# fade in
 	fade_in.visible = true
@@ -29,13 +31,29 @@ func start():
 		exit_location()
 		return
 	
+	snd_phone.play()
+	
 	var dialog = Dialogic.start("l1_scene1")
 	add_child(dialog)
 
 
 func on_dialog_signal(arg):
 	match arg:
+		"phone_stop":
+			snd_phone.stop()
+		
+		"bgm":
+			bgm.play()
+			door.enable()
+			fence.enable()
+			letterbox.enable()
+			bin.enable()
+		
 		"searched_enough":
+			if paket_revealed:
+				return
+			
+			paket_revealed = true
 			paket.enable()
 			var tween = paket.create_tween()
 			tween.tween_property(paket, "position:x", paket.position.x - 45, 1.4)\

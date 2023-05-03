@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://4034t71eyc1v" path="res://scenes/locations/house/haustür_zu_bg.png" id="1_tamcb"]
 [ext_resource type="PackedScene" uid="uid://es0kxxw0ecbx" path="res://scenes/gameplay/start_dialog_area.tscn" id="3_74k72"]
 [ext_resource type="Texture2D" uid="uid://ba1mrkf3svu0n" path="res://scenes/locations/house/end2.png" id="4_pu2uc"]
-[ext_resource type="AudioStream" uid="uid://b3cshsf0i52qk" path="res://sound/background sound/Szene_4_Finale_v001.wav" id="5_ui820"]
+[ext_resource type="AudioStream" uid="uid://bhageb7lhxdjv" path="res://sound/background sound/location_4.ogg" id="5_5hvo2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xgxnq"]
 radius = 76.83
@@ -39,5 +39,5 @@ texture = ExtResource("4_pu2uc")
 
 [node name="bgm" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
-stream = ExtResource("5_ui820")
-volume_db = -16.0
+stream = ExtResource("5_5hvo2")
+volume_db = -20.0

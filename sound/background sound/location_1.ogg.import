@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c2u52w2q6nu54"
+path="res://.godot/imported/location_1.ogg-84c016f57e1946fc2f238487a6387b26.oggvorbisstr"
+
+[deps]
+
+source_file="res://sound/background sound/location_1.ogg"
+dest_files=["res://.godot/imported/location_1.ogg-84c016f57e1946fc2f238487a6387b26.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

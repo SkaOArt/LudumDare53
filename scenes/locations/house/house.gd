@@ -11,6 +11,9 @@ func _ready() -> void:
 	
 	Dialogic.signal_event.connect(on_dialog_event)
 	
+	# fix cursor
+	Input.set_default_cursor_shape(Input.CURSOR_ARROW)
+	
 	# fade in
 	fade_in.visible = true
 	var tween = create_tween()
@@ -25,11 +28,16 @@ func start():
 
 
 func on_dialog_event(arg):
-	if arg == "end":
-		# bgm louder
-		bgm.volume_db = -4.0
+	match arg:
+		"lara_name":
+			Dialogic.VAR.lara = "Lara"
 		
-		# fade in
-		fade_in.visible = true
-		var tween = create_tween()
-		tween.tween_property(end, "self_modulate", Color(1, 1, 1, 1), 6.0)
+		"end":
+			# bgm louder
+			var bgm_tween = create_tween().set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_IN)
+			bgm_tween.tween_property(bgm, "volume_db", -8.0, 6.0)
+			
+			# fade in
+			fade_in.visible = true
+			var tween = create_tween().set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_IN)
+			tween.tween_property(end, "self_modulate", Color(1, 1, 1, 1), 6.0)

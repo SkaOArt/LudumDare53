@@ -1,27 +1,27 @@
 if {location2.completed} != "true":
-	mc: I decided to approach the bartender and ask for Mr. Akuban. The closer I got to the counter, the more unsure I became.
-	Join barkeeper 3
 	barkeeper: „We have not opened yet. Come back later..“
 	[signal arg="closed"]
 	[end_timeline]
 if {location3.barkeeper_first} == "true":
-	mc: I decided to approach the bartender and ask for Mr. Akuban. The closer I got to the counter, the more unsure I became. #id:6d
-	Join barkeeper 3
+	mc: I decided to approach the bartender and ask for Mr. Akuban. The closer I get to the counter, the more unsure I become.
 	barkeeper: „Shut up, Ciper, drink your crap and get lost.“ #id:6e
 	mc: The bartender shouts, and I flinched slightly. I sit down at the bar and plac the package as close to me as possible. #id:6f
+	[signal arg="boris_normal"]
 	barkeeper: „What do you want here, kiddo??“ #id:70
 	mc: „I'm looking for a Mr. Akuban... so...“ #id:71
 	mc: I got interrupted as the bartender looks at me with a cold and downright creepy gaze. #id:72
+	[signal arg="boris_angry"]
 	barkeeper (angry): „Get out of here, you have no business here.“ #id:73
 	mc: I quickly realize that he doesn't want to talk to me. So I have to make sure he will talk to me! #id:74
 	VAR {location3.barkeeper_first} = "false"
 	[end_timeline]
-if {location3.sorting_game_played} != "true":
+if {location3.sorting_game_played} == "false":
+	[signal arg="boris_angry"]
 	barkeeper (angry): „Get lost." #id:80
 	[end_timeline]
 # Minigame played
-mc: Mr. Akuban seems much friendlier all of a sudden after I made an effort to show him that I am serious. #id:75
 barkeeper (freundlich): „They call me Boris here. Drop the 'Mister' What do you want, kiddo?“ #id:76
+[signal arg="boris_name"]
 mc: „I'm here because of the package, it's for you..“ #id:77
 mc: I push the package over to him and after he had inspected and unpacked it, he looks at me for a while. Finally, he slams his hand on the counter, which completely confuses me. #id:78
 barkeeper (angry): „Damn witch! Wait a minute.“ #id:79
@@ -32,6 +32,4 @@ barkeeper: „My niece has her birthday today... please let her know that I'll c
 mc: I am surprised by his words and couldn't possibly refuse.
 Boris isn't a bad guy, and since I had already taken the whole way, I might as well go the last few meters. #id:7e
 I pack the gift and the card and say goodbye to the group. #id:7f
-Leave barkeeper
 [signal arg="goodbye"]
-

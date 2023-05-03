@@ -1,1 +1,5 @@
-mc (default): As I finally reached the bar, the smell of alcohol and smoke hit me, and I noticed some of the guests staring at me. #id:81
+if {location3.barkeeper_first} == "true":
+	mc (default): As I finally reached the bar, the smell of alcohol and smoke hit me, and I noticed some of the guests staring at me. #id:81
+elif {location3.sorting_game_played} == "true":
+	[signal arg="boris_normal"]
+	mc: Mr. Akuban seems much friendlier all of a sudden after I made an effort to show him that I am serious.

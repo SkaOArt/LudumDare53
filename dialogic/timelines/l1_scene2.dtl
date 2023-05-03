@@ -1,4 +1,4 @@
-[sound path="res://sound/door-knock-6406.mp3"]
+[sound path="res://sound/door-knock.wav"]
 [wait time="2.0"]
 Join neighbor 3
 neighbor: „Hello {mc}, nice to see you. Since when do you deliver packages?“ #id:2c

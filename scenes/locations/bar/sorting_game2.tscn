@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://so4dxqtjyxgq"]
+[gd_scene load_steps=17 format=3 uid="uid://so4dxqtjyxgq"]
 
 [ext_resource type="Script" path="res://scenes/locations/bar/sorting_game2.gd" id="1_m2ue1"]
 [ext_resource type="Texture2D" uid="uid://b8xmqoshmcqev" path="res://assets/backgrounds/sortings game.png" id="3_orgen"]
@@ -9,8 +9,13 @@
 [ext_resource type="Texture2D" uid="uid://xpidswm4nrhr" path="res://dialogic/characters/barkeeper/flaschen/flasche_3.png" id="8_pmlyd"]
 [ext_resource type="Texture2D" uid="uid://7f7upoejfclo" path="res://dialogic/characters/barkeeper/flaschen/flasche_4.png" id="9_4gj0m"]
 [ext_resource type="Texture2D" uid="uid://6txtq85mfjj0" path="res://dialogic/characters/barkeeper/flaschen/flasche_5.png" id="10_8e42t"]
+[ext_resource type="AudioStream" uid="uid://8vbidx44de8t" path="res://sound/background sound/location_3.ogg" id="11_i7arf"]
 [ext_resource type="Texture2D" uid="uid://ce74w8k7rqlv4" path="res://dialogic/characters/barkeeper/flaschen/flasche_6.png" id="11_l25fc"]
-[ext_resource type="AudioStream" uid="uid://c7d6qhylstucc" path="res://sound/background sound/Szene 3 Bar_v004_final.wav" id="11_mpdel"]
+[ext_resource type="AudioStream" uid="uid://bylfyshrxeywr" path="res://sound/bottle_1.wav" id="12_ri3e1"]
+[ext_resource type="AudioStream" uid="uid://bdx4e1jak6j47" path="res://sound/bottle_2.wav" id="13_unquu"]
+[ext_resource type="AudioStream" uid="uid://cikokfbvnly4o" path="res://sound/bottle_3.wav" id="14_02omm"]
+[ext_resource type="AudioStream" uid="uid://bunu2nqgds6sn" path="res://sound/bottle_4.wav" id="15_cklro"]
+[ext_resource type="AudioStream" uid="uid://d2264vohu5ksg" path="res://sound/bottle_5.wav" id="16_1cj0d"]
 
 [node name="sorting_game" type="Node2D"]
 script = ExtResource("1_m2ue1")
@@ -178,4 +183,23 @@ texture = ExtResource("9_4gj0m")
 
 [node name="bgm" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
-stream = ExtResource("11_mpdel")
+stream = ExtResource("11_i7arf")
+volume_db = -1.6
+
+[node name="BottleSounds" type="Node2D" parent="."]
+unique_name_in_owner = true
+
+[node name="bottle_1" type="AudioStreamPlayer2D" parent="BottleSounds"]
+stream = ExtResource("12_ri3e1")
+
+[node name="bottle_2" type="AudioStreamPlayer2D" parent="BottleSounds"]
+stream = ExtResource("13_unquu")
+
+[node name="bottle_3" type="AudioStreamPlayer2D" parent="BottleSounds"]
+stream = ExtResource("14_02omm")
+
+[node name="bottle_4" type="AudioStreamPlayer2D" parent="BottleSounds"]
+stream = ExtResource("15_cklro")
+
+[node name="bottle_5" type="AudioStreamPlayer2D" parent="BottleSounds"]
+stream = ExtResource("16_1cj0d")

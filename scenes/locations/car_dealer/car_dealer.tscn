@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://dfrm216xtdtid" path="res://dialogic/characters/seller/verkäufer smoll.png" id="4_161hj"]
 [ext_resource type="PackedScene" uid="uid://es0kxxw0ecbx" path="res://scenes/gameplay/start_dialog_area.tscn" id="4_looam"]
 [ext_resource type="PackedScene" uid="uid://cu6xwlghypvjd" path="res://scenes/gameplay/go_overworld/go_overworld.tscn" id="5_8uqje"]
-[ext_resource type="AudioStream" uid="uid://xmur384nhjwb" path="res://sound/background sound/Szene_2_Autowerkstatt_v001_final.wav" id="6_8chk2"]
+[ext_resource type="AudioStream" uid="uid://c3ywu1hlgggeo" path="res://sound/background sound/location_2.ogg" id="6_boht0"]
 
 [node name="CarDealer" type="Node2D"]
 script = ExtResource("1_ear6f")
@@ -42,4 +42,5 @@ color = Color(0.129412, 0.129412, 0.129412, 1)
 
 [node name="bgm" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
-stream = ExtResource("6_8chk2")
+stream = ExtResource("6_boht0")
+volume_db = -6.4

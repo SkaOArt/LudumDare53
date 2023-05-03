@@ -5,6 +5,7 @@ var bar_scene: Resource
 
 @onready var inventory_slots = %SlotContainer
 @onready var bgm: AudioStreamPlayer = %bgm
+@onready var bottle_sounds: Node2D = %BottleSounds
 
 
 var holding_item = null
@@ -38,6 +39,7 @@ func slot_gui_input(event: InputEvent, slot: SlotClass):
 		if event.button_index == MOUSE_BUTTON_LEFT && event.pressed:
 			if holding_item != null:
 				# holding an item
+				play_random_bottle_sound()
 				if !slot.item: #Place holding item to slot
 					slot.putIntoSlot(holding_item)
 					current_list[slot.index] = holding_item
@@ -57,12 +59,21 @@ func slot_gui_input(event: InputEvent, slot: SlotClass):
 					
 			elif slot.item != null:
 				# slot has item
+				play_random_bottle_sound()
 				holding_item = slot.item
 				current_list[slot.index] = null
 				slot.pickFromSlot()
 
 
 func _input(event):
+	var mouse_pos = get_global_mouse_position()
+	# spatial audio
+	bottle_sounds.global_position = mouse_pos
+	
 	if holding_item:
-		holding_item.global_position.x = get_global_mouse_position().x - 40
-		holding_item.global_position.y = get_global_mouse_position().y - 400
+		holding_item.global_position.x = mouse_pos.x - 40
+		holding_item.global_position.y = mouse_pos.y - 400
+
+
+func play_random_bottle_sound():
+	bottle_sounds.get_children().pick_random().play()

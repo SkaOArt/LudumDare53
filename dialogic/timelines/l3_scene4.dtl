@@ -5,7 +5,7 @@ if {location2.completed} != "true":
 if {location3.barkeeper_first} == "true":
 	mc: I decided to approach the bartender and ask for Mr. Akuban. The closer I get to the counter, the more unsure I become.
 	barkeeper: „Shut up, Ciper, drink your crap and get lost.“ #id:6e
-	mc: The bartender shouts, and I flinched slightly. I sit down at the bar and plac the package as close to me as possible. #id:6f
+	mc: The bartender shouts, and I flinched slightly. I sit down at the bar and place the package as close to me as possible. #id:6f
 	[signal arg="boris_normal"]
 	barkeeper: „What do you want here, kiddo??“ #id:70
 	mc: „I'm looking for a Mr. Akuban... so...“ #id:71
@@ -33,3 +33,4 @@ mc: I am surprised by his words and couldn't possibly refuse.
 Boris isn't a bad guy, and since I had already taken the whole way, I might as well go the last few meters. #id:7e
 I pack the gift and the card and say goodbye to the group. #id:7f
 [signal arg="goodbye"]
+

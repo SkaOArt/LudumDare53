@@ -2,8 +2,8 @@
 [wait time="2.0"]
 Join neighbor 3
 neighbor: „Hello {mc}, nice to see you. Since when do you deliver packages?“ #id:2c
-mc: I notice how she glances at the package and is visibly surprised. \
-As soon as we make brief eye contact, she turns away hurriedly and tries to look at the package. #id:2d
+mc: I notice how she glances at the package and is visibly surprised.
+mc: As soon as we make brief eye contact, she turns away hurriedly and tries to look at the package. #id:2d
 neighbor (shy): „... uhm“
 mc: „Hi Miu, the package is for you. It was by the trash cans...“ #id:2e
 mc: I explain slowly and see how she hesitantly approaches. She takes the package and looks at the address before shaking her head and peering inside. #id:2f
@@ -14,14 +14,14 @@ mc: „Then you can probably bring it to him. I don't know him..“ #id:32
 mc: My neighbor shakes her head. #id:33
 neighbor (default): „I'd like to, but I don't know anything more than his last name. But it would be a shame if he didn't get his package today..." #id:34
 neighbor: „I heard his wife left him... Maybe I shouldn't go to the birthday party today and try to find him instead..“ #id:35
-- I could take care of it. After all, I don't have anything planned. #id:36
-- I don't actually plan on delivering the package. #id:37
+- I could take care of it. After all, I don't have anything planned #id:36
+- I don't actually plan on delivering the package #id:37
 	mc: It's better if I slowly withdraw. #id:38
 	mc: „Miu, I have to go now.“ #id:39
 	neighbor (shy): „O- o- of course, see you later, {mc}.“ #id:3a
 	mc: I see Miu weakly lift her hand, take out her phone and start typing. She's clearly down, and I feel very guilty. #id:3b
-	mc: I turn around and clenche my fists. Miu has been through enough.\
-She should think of herself today. #id:3c
+	mc: I turn around and clenche my fists. Miu has been through enough.
+	mc: She should think of herself today. #id:3c
 mc: I turn around and walk towards Miu, who blinks in surprise. #id:3d
 mc: „Leave it to me. I have nothing planned today, and if he's that well-known, it should be possible to find him quickly.“ #id:3e
 mc: Miu beams from ear to ear. #id:3f
@@ -35,3 +35,4 @@ mc: It's always clear to me that Miu is a very attentive person. That's why I do
 mc: She's always considerate of others, and today she deserves to have a nice day. Actually, I can't take much off her plate, even though she's always so accommodating as a neighbor.
 mc: Delivering a package is an easy task, after all.
 [signal arg="talked_miu"]
+

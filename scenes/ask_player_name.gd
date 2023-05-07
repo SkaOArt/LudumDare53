@@ -3,8 +3,7 @@ extends Node2D
 
 func _ready() -> void:
 	Dialogic.signal_event.connect(on_dialog_signal)
-	var dialog = Dialogic.start("name")
-	add_child(dialog)
+	Dialogic.start("name")
 
 
 func on_dialog_signal(arg):

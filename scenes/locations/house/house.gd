@@ -23,8 +23,7 @@ func _ready() -> void:
 
 func start():
 	# auto start
-	var dialog = Dialogic.start("l4_intro")
-	add_child(dialog)
+	Dialogic.start("l4_intro")
 
 
 func on_dialog_event(arg):

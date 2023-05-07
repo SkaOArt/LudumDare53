@@ -33,8 +33,7 @@ func start():
 	
 	snd_phone.play()
 	
-	var dialog = Dialogic.start("l1_scene1")
-	add_child(dialog)
+	Dialogic.start("l1_scene1")
 
 
 func on_dialog_signal(arg):

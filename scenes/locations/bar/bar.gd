@@ -48,9 +48,7 @@ func start():
 		return
 	
 	Dialogic.signal_event.connect(on_dialog_event)
-	var dialog = Dialogic.start("l3_scene4_initizalize")
-	add_child(dialog)
-	
+	Dialogic.start("l3_scene4_initizalize")
 
 
 func on_dialog_event(arg):

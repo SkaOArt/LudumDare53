@@ -98,6 +98,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 
 [node name="DialogicNode_PortraitContainer1" type="Control" parent="Portraits/Control"]
 layout_mode = 1
@@ -108,6 +109,7 @@ offset_left = -257.0
 offset_right = -1163.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 script = ExtResource("3_jrdso")
 size_mode = 0
 
@@ -119,6 +121,7 @@ anchor_bottom = 1.0
 offset_right = -909.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 script = ExtResource("3_jrdso")
 position_index = 1
 size_mode = 0
@@ -132,6 +135,7 @@ offset_left = 428.0
 offset_right = -431.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 script = ExtResource("3_jrdso")
 position_index = 2
 size_mode = 0
@@ -145,6 +149,7 @@ offset_left = 910.0
 offset_right = 3.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 script = ExtResource("3_jrdso")
 position_index = 3
 size_mode = 0
@@ -159,17 +164,20 @@ offset_right = 261.0
 offset_bottom = 3.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 script = ExtResource("3_jrdso")
 position_index = 4
 size_mode = 0
 
 [node name="DefaultStyle" type="Control" parent="."]
+unique_name_in_owner = true
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 script = ExtResource("4_byqk6")
 
 [node name="Choices" type="VBoxContainer" parent="DefaultStyle"]
@@ -187,41 +195,48 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.5, 1.5)
 pivot_offset = Vector2(115, 160)
+mouse_filter = 2
 alignment = 1
 metadata/_edit_layout_mode = 1
 
 [node name="DialogicNode_ChoiceButton1" type="Button" parent="DefaultStyle/Choices"]
 layout_mode = 2
+mouse_filter = 2
 theme_override_font_sizes/font_size = 30
 text = "Some text"
 script = ExtResource("5_l5da8")
 
 [node name="DialogicNode_ChoiceButton2" type="Button" parent="DefaultStyle/Choices"]
 layout_mode = 2
+mouse_filter = 2
 theme_override_font_sizes/font_size = 30
 text = "Some text"
 script = ExtResource("5_l5da8")
 
 [node name="DialogicNode_ChoiceButton3" type="Button" parent="DefaultStyle/Choices"]
 layout_mode = 2
+mouse_filter = 2
 theme_override_font_sizes/font_size = 30
 text = "Some text"
 script = ExtResource("5_l5da8")
 
 [node name="DialogicNode_ChoiceButton4" type="Button" parent="DefaultStyle/Choices"]
 layout_mode = 2
+mouse_filter = 2
 theme_override_font_sizes/font_size = 30
 text = "Some text"
 script = ExtResource("5_l5da8")
 
 [node name="DialogicNode_ChoiceButton5" type="Button" parent="DefaultStyle/Choices"]
 layout_mode = 2
+mouse_filter = 2
 theme_override_font_sizes/font_size = 30
 text = "Some text"
 script = ExtResource("5_l5da8")
 
 [node name="DialogicNode_ChoiceButton6" type="Button" parent="DefaultStyle/Choices"]
 layout_mode = 2
+mouse_filter = 2
 theme_override_font_sizes/font_size = 30
 text = "Some text"
 script = ExtResource("5_l5da8")
@@ -244,6 +259,7 @@ offset_top = 158.0
 offset_right = 215.0
 offset_bottom = 230.0
 grow_vertical = 2
+mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_wpkyg")
 script = ExtResource("10_f4ckt")
 metadata/_edit_layout_mode = 1
@@ -252,6 +268,7 @@ metadata/_edit_group_ = true
 
 [node name="MarginContainer" type="MarginContainer" parent="DefaultStyle/NameLabelPanel"]
 layout_mode = 2
+mouse_filter = 2
 theme_override_constants/margin_left = 8
 theme_override_constants/margin_right = 8
 script = ExtResource("10_f4ckt")
@@ -277,6 +294,7 @@ anchor_bottom = 1.0
 offset_top = -10.0
 grow_horizontal = 2
 grow_vertical = 0
+mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_bxpcl")
 metadata/_edit_layout_mode = 1
 
@@ -294,6 +312,7 @@ modulate = Color(1, 1, 1, 0.188235)
 custom_minimum_size = Vector2(0, 10)
 layout_mode = 2
 size_flags_vertical = 8
+mouse_filter = 2
 max_value = 1.0
 step = 0.001
 value = 0.5
@@ -303,6 +322,7 @@ script = ExtResource("15_bvq6h")
 [node name="DialogicNode_DialogText" type="RichTextLabel" parent="DefaultStyle/DialogTextPanel"]
 unique_name_in_owner = true
 layout_mode = 2
+mouse_filter = 2
 theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/normal_font_size = 45
 theme_override_font_sizes/bold_font_size = 45
@@ -331,6 +351,7 @@ offset_bottom = 34.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.5, 1.5)
+mouse_filter = 2
 script = ExtResource("16_byusb")
 input_line_edit = NodePath("TextInputPanel/VBoxContainer/InputField")
 text_label = NodePath("TextInputPanel/VBoxContainer/TextLabel")
@@ -346,10 +367,12 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_q3vpc")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="DefaultStyle/DialogicNode_TextInput/TextInputPanel"]
 layout_mode = 2
+mouse_filter = 2
 
 [node name="TextLabel" type="Label" parent="DefaultStyle/DialogicNode_TextInput/TextInputPanel/VBoxContainer"]
 layout_mode = 2
@@ -358,10 +381,12 @@ autowrap_mode = 3
 
 [node name="InputField" type="LineEdit" parent="DefaultStyle/DialogicNode_TextInput/TextInputPanel/VBoxContainer"]
 layout_mode = 2
+mouse_filter = 2
 
 [node name="ConfirmationButton" type="Button" parent="DefaultStyle/DialogicNode_TextInput/TextInputPanel/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 8
+mouse_filter = 2
 text = "Confirm"
 
 [node name="Glossary" type="Control" parent="DefaultStyle"]
@@ -530,5 +555,17 @@ history_font_bold = ExtResource("20_apcf1")
 history_font_italics = ExtResource("21_f5ltx")
 metadata/_edit_lock_ = true
 
+[connection signal="gui_input" from="Portraits/Control" to="." method="_on_control_gui_input"]
+[connection signal="gui_input" from="Portraits/Control/DialogicNode_PortraitContainer1" to="." method="_on_dialogic_node_portrait_container_1_gui_input"]
+[connection signal="gui_input" from="Portraits/Control/DialogicNode_PortraitContainer2" to="." method="_on_dialogic_node_portrait_container_2_gui_input"]
+[connection signal="gui_input" from="Portraits/Control/DialogicNode_PortraitContainer3" to="." method="_on_dialogic_node_portrait_container_3_gui_input"]
+[connection signal="gui_input" from="Portraits/Control/DialogicNode_PortraitContainer4" to="." method="_on_dialogic_node_portrait_container_4_gui_input"]
+[connection signal="gui_input" from="Portraits/Control/DialogicNode_PortraitContainer5" to="." method="_on_dialogic_node_portrait_container_5_gui_input"]
+[connection signal="gui_input" from="DefaultStyle" to="." method="_on_default_style_gui_input"]
+[connection signal="gui_input" from="DefaultStyle/Choices" to="." method="_on_choices_gui_input"]
+[connection signal="gui_input" from="DefaultStyle/Choices/DialogicNode_ChoiceButton1" to="." method="_on_dialogic_node_choice_button_1_gui_input"]
+[connection signal="gui_input" from="DefaultStyle/DialogTextPanel" to="." method="_on_dialog_text_panel_gui_input"]
 [connection signal="meta_hover_ended" from="DefaultStyle/DialogTextPanel/DialogicNode_DialogText" to="DefaultStyle/Glossary" method="_on_dialogic_display_dialog_text_meta_hover_ended"]
 [connection signal="meta_hover_started" from="DefaultStyle/DialogTextPanel/DialogicNode_DialogText" to="DefaultStyle/Glossary" method="_on_dialogic_display_dialog_text_meta_hover_started"]
+[connection signal="gui_input" from="DefaultStyle/DialogicNode_TextInput" to="." method="_on_dialogic_node_text_input_gui_input"]
+[connection signal="gui_input" from="DefaultStyle/DialogicNode_TextInput/TextInputPanel/VBoxContainer/InputField" to="." method="_on_input_field_gui_input"]

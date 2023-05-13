@@ -62,3 +62,61 @@ func _ready():
 	%DialogicNode_NameLabel.use_character_color = name_label_use_character_color
 	
 	%NameLabelPanel.self_modulate = name_label_box_modulate
+
+
+func custom_hide():
+	%DefaultStyle.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	hide()
+
+
+func custom_show():
+	show()
+	%DefaultStyle.mouse_filter = Control.MOUSE_FILTER_STOP
+
+
+func _on_control_gui_input(event: InputEvent) -> void:
+	print_debug("input")
+
+
+func _on_dialogic_node_portrait_container_1_gui_input(event: InputEvent) -> void:
+	print_debug("input")
+
+
+func _on_dialogic_node_portrait_container_2_gui_input(event: InputEvent) -> void:
+	print_debug("input")
+
+
+func _on_dialogic_node_portrait_container_3_gui_input(event: InputEvent) -> void:
+	print_debug("input")
+
+
+func _on_dialogic_node_portrait_container_4_gui_input(event: InputEvent) -> void:
+	print_debug("input")
+
+
+func _on_dialogic_node_portrait_container_5_gui_input(event: InputEvent) -> void:
+	print_debug("input")
+
+
+func _on_default_style_gui_input(event: InputEvent) -> void:
+	print_debug("input")
+
+
+func _on_choices_gui_input(event: InputEvent) -> void:
+	print_debug("input")
+
+
+func _on_dialogic_node_choice_button_1_gui_input(event: InputEvent) -> void:
+	print_debug("input")
+
+
+func _on_dialog_text_panel_gui_input(event: InputEvent) -> void:
+	print_debug("input")
+
+
+func _on_dialogic_node_text_input_gui_input(event: InputEvent) -> void:
+	print_debug("input")
+
+
+func _on_input_field_gui_input(event: InputEvent) -> void:
+	print_debug("input")

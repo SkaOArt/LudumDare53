@@ -11,7 +11,7 @@ seller (default): „I'm Carson Colinski, your man today. I'm not just any sales
 I am about to say something, but the salesman is already pointing at a red sports car. #id:50
 seller (pleased): „That is your car, the latest model that you can pay for in installments. But wait, I can see that's not your thing. But don't worry, I'll find the perfect car for you.“ #id:51
 mc: I open my mouth to say something, but he interrupts me right away. #id:52
-seller (default): „These days there are so many cars and uncertainties. You clearly belong to the type of people who want it a little safer. Just follow me..“ #id:53
+seller (default): „These days there are so many cars and uncertainties. You clearly belong to the kind of people who want it a little safer. Just follow me..“ #id:53
 I follow him reluctantly, but I don't want to be rude either. This is at least my chance to say something! #id:54
 mc: „I am actually here because of the package. It's for a Mr. Akuban.“ #id:55
 seller (happy): „Of course, you are a delivery person. Then I have the perfect vehicle for you.“ #id:56

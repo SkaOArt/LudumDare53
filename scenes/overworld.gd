@@ -6,6 +6,9 @@ extends Node2D
 
 
 func _ready() -> void:
+	# reset cursor
+	Input.set_default_cursor_shape(Input.CURSOR_ARROW)
+	
 	# fade in
 	fade_in.visible = true
 	var tween = create_tween()

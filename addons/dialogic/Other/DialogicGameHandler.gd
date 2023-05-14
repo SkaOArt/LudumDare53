@@ -477,7 +477,7 @@ func start(timeline, single_instance = true) -> Node:
 		# otherwise use existing scene
 		else:
 			scene = get_tree().get_meta('dialogic_layout_node', null)
-			scene.show()
+			scene.show_layout_node()
 	Dialogic.start_timeline(timeline)
 	return scene
 
@@ -492,7 +492,7 @@ func _on_timeline_ended():
 			0:
 				get_tree().get_meta('dialogic_layout_node', '').queue_free()
 			1:
-				get_tree().get_meta('dialogic_layout_node', '').hide()
+				get_tree().get_meta('dialogic_layout_node', '').hide_layout_node()
 
 
 func has_active_layout_node() -> bool:

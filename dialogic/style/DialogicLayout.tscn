@@ -169,7 +169,7 @@ script = ExtResource("3_jrdso")
 position_index = 4
 size_mode = 0
 
-[node name="DefaultStyle" type="Control" parent="."]
+[node name="DefaultStyle" type="Control" parent="." groups=["dialogic_mouse_filter"]]
 unique_name_in_owner = true
 layout_mode = 3
 anchors_preset = 15
@@ -177,7 +177,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 2
 script = ExtResource("4_byqk6")
 
 [node name="Choices" type="VBoxContainer" parent="DefaultStyle"]
@@ -199,44 +198,38 @@ mouse_filter = 2
 alignment = 1
 metadata/_edit_layout_mode = 1
 
-[node name="DialogicNode_ChoiceButton1" type="Button" parent="DefaultStyle/Choices"]
+[node name="DialogicNode_ChoiceButton1" type="Button" parent="DefaultStyle/Choices" groups=["dialogic_mouse_filter"]]
 layout_mode = 2
-mouse_filter = 2
 theme_override_font_sizes/font_size = 30
 text = "Some text"
 script = ExtResource("5_l5da8")
 
-[node name="DialogicNode_ChoiceButton2" type="Button" parent="DefaultStyle/Choices"]
+[node name="DialogicNode_ChoiceButton2" type="Button" parent="DefaultStyle/Choices" groups=["dialogic_mouse_filter"]]
 layout_mode = 2
-mouse_filter = 2
 theme_override_font_sizes/font_size = 30
 text = "Some text"
 script = ExtResource("5_l5da8")
 
-[node name="DialogicNode_ChoiceButton3" type="Button" parent="DefaultStyle/Choices"]
+[node name="DialogicNode_ChoiceButton3" type="Button" parent="DefaultStyle/Choices" groups=["dialogic_mouse_filter"]]
 layout_mode = 2
-mouse_filter = 2
 theme_override_font_sizes/font_size = 30
 text = "Some text"
 script = ExtResource("5_l5da8")
 
-[node name="DialogicNode_ChoiceButton4" type="Button" parent="DefaultStyle/Choices"]
+[node name="DialogicNode_ChoiceButton4" type="Button" parent="DefaultStyle/Choices" groups=["dialogic_mouse_filter"]]
 layout_mode = 2
-mouse_filter = 2
 theme_override_font_sizes/font_size = 30
 text = "Some text"
 script = ExtResource("5_l5da8")
 
-[node name="DialogicNode_ChoiceButton5" type="Button" parent="DefaultStyle/Choices"]
+[node name="DialogicNode_ChoiceButton5" type="Button" parent="DefaultStyle/Choices" groups=["dialogic_mouse_filter"]]
 layout_mode = 2
-mouse_filter = 2
 theme_override_font_sizes/font_size = 30
 text = "Some text"
 script = ExtResource("5_l5da8")
 
-[node name="DialogicNode_ChoiceButton6" type="Button" parent="DefaultStyle/Choices"]
+[node name="DialogicNode_ChoiceButton6" type="Button" parent="DefaultStyle/Choices" groups=["dialogic_mouse_filter"]]
 layout_mode = 2
-mouse_filter = 2
 theme_override_font_sizes/font_size = 30
 text = "Some text"
 script = ExtResource("5_l5da8")
@@ -303,6 +296,7 @@ visible = false
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 8
+mouse_filter = 2
 script = ExtResource("14_xgmde")
 show_on_questions = true
 metadata/_edit_layout_mode = 1
@@ -379,19 +373,18 @@ layout_mode = 2
 text = "What is your name?"
 autowrap_mode = 3
 
-[node name="InputField" type="LineEdit" parent="DefaultStyle/DialogicNode_TextInput/TextInputPanel/VBoxContainer"]
+[node name="InputField" type="LineEdit" parent="DefaultStyle/DialogicNode_TextInput/TextInputPanel/VBoxContainer" groups=["dialogic_mouse_filter"]]
 layout_mode = 2
-mouse_filter = 2
 
-[node name="ConfirmationButton" type="Button" parent="DefaultStyle/DialogicNode_TextInput/TextInputPanel/VBoxContainer"]
+[node name="ConfirmationButton" type="Button" parent="DefaultStyle/DialogicNode_TextInput/TextInputPanel/VBoxContainer" groups=["dialogic_mouse_filter"]]
 layout_mode = 2
 size_flags_horizontal = 8
-mouse_filter = 2
 text = "Confirm"
 
 [node name="Glossary" type="Control" parent="DefaultStyle"]
 layout_mode = 1
 anchors_preset = 0
+mouse_filter = 2
 script = ExtResource("17_la2xs")
 
 [node name="Panel" type="PanelContainer" parent="DefaultStyle/Glossary"]
@@ -407,12 +400,14 @@ offset_right = 104.0
 offset_bottom = -34.0
 grow_horizontal = 2
 grow_vertical = 0
+mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_a3cyk")
 metadata/_edit_use_custom_anchors = true
 metadata/_edit_layout_mode = 1
 
 [node name="VBox" type="VBoxContainer" parent="DefaultStyle/Glossary/Panel"]
 layout_mode = 2
+mouse_filter = 2
 theme_override_constants/separation = 0
 
 [node name="Title" type="Label" parent="DefaultStyle/Glossary/Panel/VBox"]
@@ -421,15 +416,18 @@ text = "MyGlossaryEntry"
 
 [node name="HSeparator" type="HSeparator" parent="DefaultStyle/Glossary/Panel/VBox"]
 layout_mode = 2
+mouse_filter = 2
 
 [node name="Text" type="RichTextLabel" parent="DefaultStyle/Glossary/Panel/VBox"]
 layout_mode = 2
+mouse_filter = 2
 bbcode_enabled = true
 text = "Some text"
 fit_content = true
 
 [node name="Extra" type="RichTextLabel" parent="DefaultStyle/Glossary/Panel/VBox"]
 layout_mode = 2
+mouse_filter = 2
 theme_override_colors/default_color = Color(1, 1, 1, 0.584314)
 theme_override_font_sizes/normal_font_size = 15
 bbcode_enabled = true
@@ -441,6 +439,7 @@ show_behind_parent = true
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
+mouse_filter = 2
 
 [node name="PanelContainer" type="PanelContainer" parent="DefaultStyle/Glossary/Panel/Control"]
 layout_mode = 0
@@ -451,6 +450,7 @@ offset_bottom = 6.0
 rotation = 0.75799
 size_flags_horizontal = 4
 size_flags_vertical = 8
+mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_a3cyk")
 
 [node name="SpecialStyle" type="Control" parent="."]
@@ -461,6 +461,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 script = ExtResource("4_byqk6")
 style_name = "Special"
 
@@ -477,42 +478,49 @@ offset_right = -27.0
 offset_bottom = -30.0
 grow_horizontal = 0
 grow_vertical = 0
+mouse_filter = 2
 alignment = 2
 metadata/_edit_layout_mode = 1
 
 [node name="DialogicNode_ChoiceButton1" type="Button" parent="SpecialStyle/Choices"]
 layout_mode = 2
 size_flags_horizontal = 8
+mouse_filter = 2
 text = "Text"
 script = ExtResource("5_l5da8")
 
 [node name="DialogicNode_ChoiceButton2" type="Button" parent="SpecialStyle/Choices"]
 layout_mode = 2
 size_flags_horizontal = 8
+mouse_filter = 2
 text = "Text"
 script = ExtResource("5_l5da8")
 
 [node name="DialogicNode_ChoiceButton3" type="Button" parent="SpecialStyle/Choices"]
 layout_mode = 2
 size_flags_horizontal = 8
+mouse_filter = 2
 text = "Text"
 script = ExtResource("5_l5da8")
 
 [node name="DialogicNode_ChoiceButton4" type="Button" parent="SpecialStyle/Choices"]
 layout_mode = 2
 size_flags_horizontal = 8
+mouse_filter = 2
 text = "Text"
 script = ExtResource("5_l5da8")
 
 [node name="DialogicNode_ChoiceButton5" type="Button" parent="SpecialStyle/Choices"]
 layout_mode = 2
 size_flags_horizontal = 8
+mouse_filter = 2
 text = "Text"
 script = ExtResource("5_l5da8")
 
 [node name="DialogicNode_ChoiceButton6" type="Button" parent="SpecialStyle/Choices"]
 layout_mode = 2
 size_flags_horizontal = 8
+mouse_filter = 2
 text = "Text"
 script = ExtResource("5_l5da8")
 
@@ -526,14 +534,17 @@ offset_top = 26.0
 offset_right = 202.0
 offset_bottom = 95.0
 grow_horizontal = 2
+mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_nnmvp")
 metadata/_edit_layout_mode = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="SpecialStyle/PanelContainer"]
 layout_mode = 2
+mouse_filter = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="SpecialStyle/PanelContainer/MarginContainer"]
 layout_mode = 2
+mouse_filter = 2
 theme_override_constants/separation = 0
 alignment = 1
 
@@ -546,6 +557,7 @@ use_character_color = false
 
 [node name="DialogicNode_DialogText" type="RichTextLabel" parent="SpecialStyle/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
+mouse_filter = 2
 text = "Some default text"
 script = ExtResource("12_be5v2")
 

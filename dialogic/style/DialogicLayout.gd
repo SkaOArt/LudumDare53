@@ -64,14 +64,21 @@ func _ready():
 	%NameLabelPanel.self_modulate = name_label_box_modulate
 
 
-func custom_hide():
-	%DefaultStyle.mouse_filter = Control.MOUSE_FILTER_IGNORE
+func hide_layout_node():
+	#print_debug("hiding layout node")
+	for node in get_tree().get_nodes_in_group("dialogic_mouse_filter"):
+		#print_debug("disabling mouse filter for ", node.name)
+		(node as Control).mouse_filter = Control.MOUSE_FILTER_IGNORE
 	hide()
 
 
-func custom_show():
+func show_layout_node():
+	#print_debug("showing layout node")
+	for node in get_tree().get_nodes_in_group("dialogic_mouse_filter"):
+		#print_debug("enabling mouse filter for ", node.name)
+		(node as Control).mouse_filter = Control.MOUSE_FILTER_STOP
 	show()
-	%DefaultStyle.mouse_filter = Control.MOUSE_FILTER_STOP
+	Input.set_default_cursor_shape(Input.CURSOR_ARROW)
 
 
 func _on_control_gui_input(event: InputEvent) -> void:

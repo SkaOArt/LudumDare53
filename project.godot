@@ -83,7 +83,7 @@ translation/enabled=true
 translation/original_locale="en"
 translation/file_mode=0
 translation/translation_folder="res://dialogic/translation"
-layout/end_behaviour=0
+layout/end_behaviour=1
 
 [display]
 

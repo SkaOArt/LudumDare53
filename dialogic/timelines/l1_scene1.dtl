@@ -23,5 +23,5 @@ best_friend: „Alright then, see you tomorrow!" #id:25
 mc: „Yes, tomorrow then. Have a good day!" #id:26
 mc: I feel a bit frustrated. #id:27
 mc: The strange noise doesn't improve my mood, and I turn in the direction it's coming from.
-mc: „What's that noice?" #id:28
+mc: „What's that noise?" #id:28
 [signal arg="bgm"]

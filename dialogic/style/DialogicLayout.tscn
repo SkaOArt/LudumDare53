@@ -567,17 +567,5 @@ history_font_bold = ExtResource("20_apcf1")
 history_font_italics = ExtResource("21_f5ltx")
 metadata/_edit_lock_ = true
 
-[connection signal="gui_input" from="Portraits/Control" to="." method="_on_control_gui_input"]
-[connection signal="gui_input" from="Portraits/Control/DialogicNode_PortraitContainer1" to="." method="_on_dialogic_node_portrait_container_1_gui_input"]
-[connection signal="gui_input" from="Portraits/Control/DialogicNode_PortraitContainer2" to="." method="_on_dialogic_node_portrait_container_2_gui_input"]
-[connection signal="gui_input" from="Portraits/Control/DialogicNode_PortraitContainer3" to="." method="_on_dialogic_node_portrait_container_3_gui_input"]
-[connection signal="gui_input" from="Portraits/Control/DialogicNode_PortraitContainer4" to="." method="_on_dialogic_node_portrait_container_4_gui_input"]
-[connection signal="gui_input" from="Portraits/Control/DialogicNode_PortraitContainer5" to="." method="_on_dialogic_node_portrait_container_5_gui_input"]
-[connection signal="gui_input" from="DefaultStyle" to="." method="_on_default_style_gui_input"]
-[connection signal="gui_input" from="DefaultStyle/Choices" to="." method="_on_choices_gui_input"]
-[connection signal="gui_input" from="DefaultStyle/Choices/DialogicNode_ChoiceButton1" to="." method="_on_dialogic_node_choice_button_1_gui_input"]
-[connection signal="gui_input" from="DefaultStyle/DialogTextPanel" to="." method="_on_dialog_text_panel_gui_input"]
 [connection signal="meta_hover_ended" from="DefaultStyle/DialogTextPanel/DialogicNode_DialogText" to="DefaultStyle/Glossary" method="_on_dialogic_display_dialog_text_meta_hover_ended"]
 [connection signal="meta_hover_started" from="DefaultStyle/DialogTextPanel/DialogicNode_DialogText" to="DefaultStyle/Glossary" method="_on_dialogic_display_dialog_text_meta_hover_started"]
-[connection signal="gui_input" from="DefaultStyle/DialogicNode_TextInput" to="." method="_on_dialogic_node_text_input_gui_input"]
-[connection signal="gui_input" from="DefaultStyle/DialogicNode_TextInput/TextInputPanel/VBoxContainer/InputField" to="." method="_on_input_field_gui_input"]

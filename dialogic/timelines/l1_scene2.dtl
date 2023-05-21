@@ -5,7 +5,7 @@ neighbor: „Hello {mc}, nice to see you. Since when do you deliver packages?“
 mc: I notice how she glances at the package and is visibly surprised.
 mc: As soon as we make brief eye contact, she turns away quickly and looks at the package. #id:2d
 neighbor (shy): „... uhm“
-mc: „Hi Miu, the package is for you. It was by the trash cans...“ #id:2e
+mc: „Hi Miu, the package is for you. It was by the trash can...“ #id:2e
 mc: I explain slowly and see how she hesitantly approaches. She takes the package and looks at the address before shaking her head and peering inside. #id:2f
 neighbor (default): „That's not mine. I think it belongs to Mr. Akuban. He moved away quite some time ago, and there have been mix-ups with our last names before.“ #id:30
 mc: I nod slowly in understanding and have to strain myself to continue listening to her.\
@@ -19,14 +19,14 @@ neighbor: „I heard his wife left him... Maybe I shouldn't go to the birthday p
 	mc: I slowly withdraw. #id:38
 	mc: „Miu, I have to go now.“ #id:39
 	neighbor (shy): „O- o- of course, see you later, {mc}.“ #id:3a
-	mc: I see Miu meekily lift her hand, take out her phone and start typing. She's clearly down, and I feel very guilty. #id:3b
+	mc: I see Miu meekly lift her hand, take out her phone and start typing. She's clearly down, and I feel very guilty. #id:3b
 	mc: I turn around and clench my fists. Miu has been through enough.
 	mc: She should think of herself today. #id:3c
 mc: I turn around and walk towards Miu, who blinks in surprise. #id:3d
 mc: „Leave it to me. I have nothing planned today anyway, and if he's that well-known, it should be possible to find him quickly.“ #id:3e
 mc: Miu beams from ear to ear. #id:3f
 neighbor (happy): „Thank you so much, {mc}.“ #id:40
-neighbor (default): „I don't know where he lives, but I heard an old friend of his sells cars on Lessing Street. Maybe he can help you more.“
+neighbor (default): „I don't know where he lives, but I heard an old friend of his sells cars on Lessing Street. Maybe he can help you.“
 neighbor (shy): „But is this really okay for you?“
 mc: „Yes, of course. I'm going right now.“ #id:41
 mc: I take the package back and feel her touch my arm gently. I look up at her, and she quickly withdraws her hand. #id:42

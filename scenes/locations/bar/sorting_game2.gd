@@ -27,7 +27,7 @@ func check_bottles() -> bool:
 	for i in range(6):
 		if current_list[i] == null:
 			return false
-		printt("bottle" + str(i + 1), current_list[i].name)
+		#printt("bottle" + str(i + 1), current_list[i].name)
 		if current_list[i].name != "bottle" + str(i + 1):
 			return false
 	
@@ -35,34 +35,40 @@ func check_bottles() -> bool:
 
 
 func slot_gui_input(event: InputEvent, slot: SlotClass):
-	if event is InputEventMouseButton:
-		if event.button_index == MOUSE_BUTTON_LEFT && event.pressed:
-			if holding_item != null:
-				# holding an item
-				play_random_bottle_sound()
-				if !slot.item: #Place holding item to slot
-					slot.putIntoSlot(holding_item)
-					current_list[slot.index] = holding_item
-					holding_item = null
-					if check_bottles():
-						Dialogic.VAR.location3.sorting_game_played = "true"
-						for inv_slot in inventory_slots.get_children():
-							(inv_slot as SlotClass).gui_input.disconnect(slot_gui_input)
-						get_tree().change_scene_to_packed(bar_scene)
-					
-				else: #Swap holding item with item in slot
-					var temp_item = slot.item
-					slot.pickFromSlot()
-					slot.putIntoSlot(holding_item)
-					current_list[slot.index] = holding_item
-					holding_item = temp_item
-					
-			elif slot.item != null:
-				# slot has item
-				play_random_bottle_sound()
-				holding_item = slot.item
-				current_list[slot.index] = null
-				slot.pickFromSlot()
+	# ignore if not pressed
+	if not event.is_pressed():
+		return
+	
+	# ignore all events but mouseclicks and touches
+	if (not event is InputEventScreenTouch) and (not event is InputEventMouseButton):
+		return
+	
+	if holding_item != null:
+		# holding an item
+		play_random_bottle_sound()
+		if !slot.item: #Place holding item to slot
+			slot.putIntoSlot(holding_item)
+			current_list[slot.index] = holding_item
+			holding_item = null
+			if check_bottles():
+				Dialogic.VAR.location3.sorting_game_played = "true"
+				for inv_slot in inventory_slots.get_children():
+					(inv_slot as SlotClass).gui_input.disconnect(slot_gui_input)
+				get_tree().change_scene_to_packed(bar_scene)
+			
+		else: #Swap holding item with item in slot
+			var temp_item = slot.item
+			slot.pickFromSlot()
+			slot.putIntoSlot(holding_item)
+			current_list[slot.index] = holding_item
+			holding_item = temp_item
+			
+	elif slot.item != null:
+		# slot has item
+		play_random_bottle_sound()
+		holding_item = slot.item
+		current_list[slot.index] = null
+		slot.pickFromSlot()
 
 
 func _input(event):

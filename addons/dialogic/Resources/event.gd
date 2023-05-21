@@ -203,28 +203,28 @@ func get_property_translation_key(property_name:String) -> String:
 ### new
 ## Call this whenever you are using a translatable property
 func get_property_translated(property_name: String) -> String:
-	print("206: _translation_id: ", _translation_id)
-	if _translation_id.is_empty():
-		print("208: translation_id is empty")
-	if DialogicUtil.get_project_setting('dialogic/translation/enabled', false) == false:
-		print("210: translation is disabled")
+	#print("206: _translation_id: ", _translation_id)
+	#if _translation_id.is_empty():
+		#print("208: translation_id is empty")
+	#if DialogicUtil.get_project_setting('dialogic/translation/enabled', false) == false:
+		#print("210: translation is disabled")
 	
 	if not _translation_id.is_empty() and DialogicUtil.get_project_setting('dialogic/translation/enabled', false):
 		var translation_key = get_property_translation_key(property_name)
-		print("214: translation_key: ", translation_key)
+		#print("214: translation_key: ", translation_key)
 		var translation = tr(translation_key)
-		print("216: translation: ", translation)
+		#print("216: translation: ", translation)
 		# if no translation is found tr() returns the id, but we want to fallback to the original
 		if translation != translation_key:
-			print("219: translation is different than id, returning translation..")
+			#print("219: translation is different than id, returning translation..")
 			return translation
 			
 		else:
-			print("223: translation is same as id, returning original translation..")
+			#print("223: translation is same as id, returning original translation..")
 			return _get_property_original_translation(property_name)
 			
 	else:
-		print("220: returning original translation..")
+		#print("220: returning original translation..")
 		return _get_property_original_translation(property_name)
 
 

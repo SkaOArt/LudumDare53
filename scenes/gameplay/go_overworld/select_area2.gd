@@ -33,19 +33,15 @@ func _on_click(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	if not enabled:
 		return
 	
-	# ignore all events but mouseclicks
-	var mouse_button_event = event as InputEventMouseButton
-	if mouse_button_event == null:
-		return
-	if not mouse_button_event.pressed:
+	# ignore if not pressed
+	if not event.is_pressed():
 		return
 	
-	match mouse_button_event.button_index:
-		MOUSE_BUTTON_LEFT:
-			_left_click()
-		
-		MOUSE_BUTTON_RIGHT:
-			_right_click()
+	# ignore all events but mouseclicks and touches
+	if (not event is InputEventScreenTouch) and (not event is InputEventMouseButton):
+		return
+	
+	_left_click()
 
 
 func _on_mouse_entered() -> void:

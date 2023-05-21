@@ -4,5 +4,5 @@ if {location2.completed} == "false":
 if {location3.barkeeper_first} == "true":
 	mc (default): As I reach the bar, the smell of alcohol and smoke hit me, and I noticed some of the guests staring at me. There is a man standing behind the counter. #id:81
 elif {location3.sorting_game_played} == "true":
-	[signal arg="boris_normal"]
-	mc: Mr. Akuban seems much friendlier all of a sudden after I made an effort to show him that I am serious.
+	[signal arg="boris_friendly"]
+	mc: The bartender seems much friendlier all of a sudden after I made an effort to show him that I am serious.

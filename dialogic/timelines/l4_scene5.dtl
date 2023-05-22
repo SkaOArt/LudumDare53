@@ -1,19 +1,19 @@
-mc: I am actually glad that I don't have to carry the big package anymore, but only the gift and the attached card. That makes things much easier! #id:87
-mc: Slowly but surely, I approach the address. I hear children's laughter and also a few screams of joy. Children can be very peculiar at times. #id:88
+mc: I am actually glad that I don't have to carry the big package anymore, but only the gift and the attached card. That makes things much easier!
+mc: Slowly but surely, I approach the address. I hear children's laughter and also a few screams of joy. Children can be very peculiar at times.
 mc: After I reach the house, I see how much it's decorated.\
-Children are running around, but one of the them looks particularly sad and is standing around watching the others. #id:89
+Children are running around, but one of the them looks particularly sad and is standing around watching the others.
 Join girl (confused) 3
-mc: I approach the girl who looks at me questioningly. #id:8a
-girl: „I don't know you.“ #id:8b
-mc: „I'm {mc}. I'm here because I have a very important delivery for the birthday girl!“ #id:8c
+mc: I approach the girl who looks at me questioningly.
+girl: „I don't know you.“
+mc: „I'm {mc}. I'm here because I have a very important delivery for the birthday girl!“
 [signal arg="lara_name"]
-girl (excited): „I am the birthday girl! I'm Lara and today is my seventh birthday.“ #id:8d
-mc: Proudly, the girl raises her hands to show the number on her fingers. Instantly, she looks at the gift and seems very excited. #id:8e
-mc: „Your uncle and aunt both wanted me to deliver this to you, and your uncle even sent a card along with it.“ #id:8f
-girl (default): „As long as he comes, it's not a problem!“ #id:90
-girl (confused): „Is this... the present they got for me?“ #id:91
-mc: I see how the girl keeps looking at the wrapped gift and hand her the package as well as the card. #id:92
-girl (excited): „Thank you so much! You saved my birthday!“ #id:93
+girl (excited): „I am the birthday girl! I'm Lara and today is my seventh birthday.“
+mc: Proudly, the girl raises her hands to show the number on her fingers. Instantly, she looks at the gift and seems very excited.
+mc: „Your uncle and aunt both wanted me to deliver this to you, and your uncle even sent a card along with it.“
+girl (default): „As long as he comes, it's not a problem!“
+girl (confused): „Is this... the present they got for me?“
+mc: I see how the girl keeps looking at the wrapped gift and hand her the package as well as the card.
+girl (excited): „Thank you so much! You saved my birthday!“
 The girl hurries to unwrap the present, and a teddy bear comes into view which she hugs tightly.
 girl (teddy): [wave freq=8.0][font_size=60]„A teddy bear!“[/font_size][/wave]
 It doesn't take long before she runs off and is more excited than any other child. I am very happy to see her like that, and don't regret taking the package from Miu.
@@ -21,17 +21,17 @@ girl: „Come with me, my new best friend!“
 Leave girl
 [wait]
 Join neighbor (happy) 3
-neighbor: „Isn't that you, {mc}?“ #id:95
-mc: „Miu, what are you doing here?“ #id:96
-neighbor (shy): „I t- t- told you I was invited to a birthday party. And you? Did you succeed with the package?“ #id:97
+neighbor: „Isn't that you, {mc}?“
+mc: „Miu, what are you doing here?“
+neighbor (shy): „I t- t- told you I was invited to a birthday party. And you? Did you succeed with the package?“
 if {auto} == "true":
-	mc: I nod, and suddenly I hear a honk. I look with Miu to the entrance and see Carson getting out of my car. I can also see Boris. He goes straight to Lara, who greets him. #id:98
+	mc: I nod, and suddenly I hear a honk. I look with Miu to the entrance and see Carson getting out of my car. I can also see Boris. He goes straight to Lara, who greets him.
 else:
 	mc: I nod, and suddenly I hear a honk. I look with Miu to the entrance and see Carson getting out of a car. I can also see Boris. He goes straight to Lara, who greets him.
-neighbor: „Wait, does that mean... Oh no, I'm so sorry, {mc}, I didn't know...“ #id:99
-mc: I shake my head and smile. #id:9a
-mc: „Don't worry. At least, I wasn't bored today. And you know what? I think we can definitely do things together more often and solve your problem with your ex.“ #id:9b
-mc: I don't know why, but I have the feeling that something has changed in me through this small delivery, and I want to continue this change! #id:9c
+neighbor: „Wait, does that mean... Oh no, I'm so sorry, {mc}, I didn't know...“
+mc: I shake my head and smile.
+mc: „Don't worry. At least, I wasn't bored today. And you know what? I think we can definitely do things together more often and solve your problem with your ex.“
+mc: I don't know why, but I have the feeling that something has changed in me through this small delivery, and I want to continue this change!
 if {auto} == "true":
 	mc: The only thing I would still like to avoid is buying a car from that sleazy car dealer. It's constantly breaking down!
 [signal arg="end"]

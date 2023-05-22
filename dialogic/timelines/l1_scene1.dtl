@@ -5,23 +5,24 @@ mc: „Okay, okay..."
 [wait time="0.5"]
 [signal arg="phone_stop"]
 [wait time="0.6"]
-mc: „Hey, I'm in a hurry. Just a moment." #id:19
+mc: „Hey, I'm in a hurry. Just a moment."
 mc: I'm on the phone with my best friend. We wanted to go for a walk in the city today and talk a bit.
-mc: As I leave the apartment complex, I hear a strange noise. #id:1a
+mc: As I leave the apartment complex, I hear a strange noise.
 Join best_friend (new) 3
-best_friend (new): „I'm sorry, but I can't make it today. I just received a surprise visit from my parents. We will have to postpone our walk until next time." #id:1b
-I bite my lip. This is the third time now that she has canceled. I want to say something... but we're best friends! #id:1c
-- But I have to say something! #id:1d
-	mc: „Uh, do you know..." #id:1e
-	best_friend: „Yes, I'll be right there! What's the matter, {mc}?" #id:1f
-	mc: I sigh softly and shake my head. #id:20
-	mc: „No, no... all good." #id:21
-- I choose to remain silent. #id:22
-best_friend: „I'm really sorry, but tomorrow is definitely the day!" #id:23
-I hear that she's sorry, but still hesitate. Tomorrow, I was actually planning to take a break and have some time for myself... #id:24
-best_friend: „Alright then, see you tomorrow!" #id:25
-mc: „Yes, tomorrow then. Have a good day!" #id:26
-mc: I feel a bit frustrated. #id:27
+best_friend (new): „I'm sorry, but I can't make it today. I just received a surprise visit from my parents. We will have to postpone our walk until next time."
+I bite my lip. This is the third time now that she has canceled. I want to say something... but we're best friends!
+- But I have to say something!
+	mc: „Uh, do you know..."
+	best_friend: „Yes, I'll be right there! What's the matter, {mc}?"
+	mc: I sigh softly and shake my head.
+	mc: „No, no... all good."
+- I choose to remain silent.
+best_friend: „I'm really sorry, but tomorrow is definitely the day!"
+I hear that she's sorry, but still hesitate. Tomorrow, I was actually planning to take a break and have some time for myself...
+best_friend: „Alright then, see you tomorrow!"
+mc: „Yes, tomorrow then. Have a good day!"
+Leave best_friend
+mc: I feel a bit frustrated.
 mc: The strange noise doesn't improve my mood, and I turn in the direction it's coming from.
-mc: „What's that noise?" #id:28
+mc: „What's that noise?"
 [signal arg="bgm"]

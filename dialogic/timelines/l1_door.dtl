@@ -1,5 +1,5 @@
 if {location1.paket_picket} == "true":
 	[jump timeline="l1_scene2"]
 else:
-	mc: „The sound comes from outside." #id:13
+	mc: „The sound comes from outside."
 	VAR {location1.search_count} += 1

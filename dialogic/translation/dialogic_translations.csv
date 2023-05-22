@@ -178,3 +178,12 @@ Text/b4/text,This is shown when this choice is selected,
 Choice/b5/text,Text of choice 2,
 Choice/b5/disabled_text,,
 Text/b6/text,This is shown when this choice is selected,
+Key/Settings,Settings,Optionen
+Key/Fullscreen,Fullscreen,Vollbild
+Key/Music,Music,Musik
+Key/Language,Language,Sprache
+Key/English,English,Englisch
+Key/German,German,Deutsch
+Key/Play,Play,Spielen
+Key/Credits,Credits,Credits
+Key/Quit,Quit,Ende

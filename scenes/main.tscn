@@ -39,7 +39,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 12
 theme_override_fonts/font = ExtResource("2_71r32")
 theme_override_font_sizes/font_size = 152
-text = "AKUBAN"
+text = "AKOBAN"
 horizontal_alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
@@ -70,25 +70,25 @@ alignment = 1
 layout_mode = 2
 size_flags_vertical = 3
 theme = ExtResource("2_h8idp")
-text = "Play"
+text = "Key/Play"
 
 [node name="settings" type="Button" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme = ExtResource("2_h8idp")
-text = "Settings"
+text = "Key/Settings"
 
 [node name="credit" type="Button" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme = ExtResource("2_h8idp")
-text = "Credit"
+text = "Key/Credits"
 
 [node name="quit" type="Button" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme = ExtResource("2_h8idp")
-text = "Quit"
+text = "Key/Quit"
 
 [node name="MarginContainer" type="MarginContainer" parent="HBoxContainer"]
 layout_mode = 2

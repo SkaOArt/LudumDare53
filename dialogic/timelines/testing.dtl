@@ -1,5 +1,5 @@
-Text bla bla, choice\:
-- Text of choice 1
-	This is shown when this choice is selected
-- Text of choice 2
-	This is shown when this choice is selected
+Text bla bla, choice\: #id:b2
+- Text of choice 1 #id:b3
+	This is shown when this choice is selected #id:b4
+- Text of choice 2 #id:b5
+	This is shown when this choice is selected #id:b6

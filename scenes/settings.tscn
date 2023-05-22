@@ -1,7 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://dm5ivslqnb6n5"]
+[gd_scene load_steps=7 format=3 uid="uid://dm5ivslqnb6n5"]
 
 [ext_resource type="Script" path="res://script/settings.gd" id="1_ryncp"]
 [ext_resource type="Theme" uid="uid://deehlrh573mkc" path="res://red_theme.tres" id="3_ja460"]
+[ext_resource type="FontFile" uid="uid://v8wwvuijl17k" path="res://Rakoon_PersonalUse.ttf" id="3_uaoke"]
+[ext_resource type="Texture2D" uid="uid://of4r02qrh257" path="res://assets/ui/en.png" id="4_qgi5a"]
+[ext_resource type="Texture2D" uid="uid://c6cqdoc7jbosy" path="res://assets/ui/de.png" id="5_dejp1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ug7af"]
 bg_color = Color(0.180392, 0.133333, 0.184314, 1)
@@ -74,21 +77,25 @@ alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
+theme_override_constants/separation = 32
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer"]
+[node name="FullscreenContainer" type="HBoxContainer" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 alignment = 1
 
-[node name="Full" type="Label" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer"]
+[node name="Full" type="Label" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer/FullscreenContainer"]
 layout_mode = 2
 theme = ExtResource("3_ja460")
 text = "Fullscreen"
 
-[node name="CheckButton" type="CheckButton" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer"]
+[node name="CheckButton" type="CheckButton" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer/FullscreenContainer"]
 layout_mode = 2
 
-[node name="music" type="Label" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer"]
+[node name="MusicContainer" type="VBoxContainer" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+
+[node name="music" type="Label" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer/MusicContainer"]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 1
@@ -96,31 +103,55 @@ theme = ExtResource("3_ja460")
 text = "Music
 "
 
-[node name="audioSlider" type="HSlider" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer"]
+[node name="audioSlider" type="HSlider" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer/MusicContainer"]
 layout_mode = 2
 theme = ExtResource("3_ja460")
 min_value = -20.0
 max_value = 10.0
 
-[node name="Speed" type="Label" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer"]
+[node name="LanguageContainer" type="VBoxContainer" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer/LanguageContainer"]
+layout_mode = 2
+theme = ExtResource("3_ja460")
+text = "Language"
+
+[node name="OptionButton" type="OptionButton" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer/LanguageContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_uaoke")
+theme_override_font_sizes/font_size = 40
+item_count = 2
+selected = 0
+popup/item_0/text = "English"
+popup/item_0/icon = ExtResource("4_qgi5a")
+popup/item_0/id = 0
+popup/item_1/text = "German"
+popup/item_1/icon = ExtResource("5_dejp1")
+popup/item_1/id = 1
+
+[node name="TextSpeedContainer" type="VBoxContainer" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer"]
 visible = false
+layout_mode = 2
+
+[node name="Speed" type="Label" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer/TextSpeedContainer"]
 layout_mode = 2
 theme = ExtResource("3_ja460")
 text = "Text Speed"
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer"]
-visible = false
+[node name="HBoxContainer2" type="HBoxContainer" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer/TextSpeedContainer"]
 layout_mode = 2
 alignment = 1
 
-[node name="Button" type="Button" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer2"]
+[node name="Button" type="Button" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer/TextSpeedContainer/HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("3_ja460")
 toggle_mode = true
 text = "slow"
 
-[node name="Button2" type="Button" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer2"]
+[node name="Button2" type="Button" parent="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer/TextSpeedContainer/HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("3_ja460")
@@ -152,6 +183,7 @@ text = "Back"
 layout_mode = 2
 theme_override_constants/margin_bottom = 18
 
-[connection signal="toggled" from="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer/HBoxContainer/CheckButton" to="." method="_on_check_button_toggled"]
-[connection signal="value_changed" from="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer/audioSlider" to="." method="_on_audio_slider_value_changed"]
+[connection signal="toggled" from="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer/FullscreenContainer/CheckButton" to="." method="_on_check_button_toggled"]
+[connection signal="value_changed" from="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer/MusicContainer/audioSlider" to="." method="_on_audio_slider_value_changed"]
+[connection signal="item_selected" from="Panel/VBoxBegin/VBoxContainer/HBoxContainer2/VBoxContainer/LanguageContainer/OptionButton" to="." method="_on_option_button_item_selected"]
 [connection signal="pressed" from="Panel/VBoxEnd/back" to="." method="_on_button_pressed"]

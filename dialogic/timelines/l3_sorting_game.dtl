@@ -1,12 +1,12 @@
 if {location3.sorting_game_played} == "true":
 	[signal arg="boris_friendly"]
-	barkeeper: „Thank you. It looks much better now!“
+	barkeeper: „Thank you. It looks much better now!“ #id:91
 	[signal arg="boris_normal"]
 	[end_timeline]
 if {location3.barkeeper_first} == "true":
-	barkeeper (angry): "Hey don't touch my stuff!"
+	barkeeper (angry): "Hey don't touch my stuff!" #id:92
 elif {location3.barkeeper_first} == "false":
-	mc: Maybe he will talk to me when I help him.
-	mc: "Hey, can I help you out by sorting the shelf?"
-	barkeeper: "Fine. If you sort them properly, I might be willing to help you."
+	mc: Maybe he will talk to me when I help him. #id:93
+	mc: "Hey, can I help you out by sorting the shelf?" #id:94
+	barkeeper: "Fine. If you sort them properly, I might be willing to help you." #id:95
 	[signal arg="sorting_game"]

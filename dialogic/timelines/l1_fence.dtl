@@ -1,7 +1,7 @@
 [sound path="res://sound/gate_squeak.wav"]
-The gate is locked.
+The gate is locked. #id:14
 if {location1.paket_picket} == "false":
-	mc: „The noise doesn't seem to come from there anyway."
+	mc: „The noise doesn't seem to come from there anyway." #id:15
 	VAR {location1.search_count} += 1
 	if {location1.search_count} >= 5:
 		[signal arg="searched_enough"]

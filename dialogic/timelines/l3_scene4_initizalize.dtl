@@ -1,8 +1,8 @@
 if {location2.completed} == "false":
-	mc: As I reach the bar, the smell of alcohol and smoke hit me. There is a man standing behind the counter.
+	mc: As I reach the bar, the smell of alcohol and smoke hit me. There is a man standing behind the counter. #id:8e
 	[end_timeline]
 if {location3.barkeeper_first} == "true":
-	mc (default): As I reach the bar, the smell of alcohol and smoke hit me, and I noticed some of the guests staring at me. There is a man standing behind the counter.
+	mc (default): As I reach the bar, the smell of alcohol and smoke hit me, and I noticed some of the guests staring at me. There is a man standing behind the counter. #id:8f
 elif {location3.sorting_game_played} == "true":
 	[signal arg="boris_friendly"]
-	mc: The bartender seems much friendlier all of a sudden after I made an effort to show him that I am serious.
+	mc: The bartender seems much friendlier all of a sudden after I made an effort to show him that I am serious. #id:90

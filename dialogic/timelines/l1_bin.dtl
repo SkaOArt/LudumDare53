@@ -1,6 +1,6 @@
-mc: There is nothing special in the trash can.
+mc: There is nothing special in the trash can. #id:11
 if {location1.paket_picket} == "true":
 	[end_timeline]
 if {location1.search_count} >= 3:
-	mc: „Hey, there is something behind it!"
+	mc: „Hey, there is something behind it!" #id:12
 	[signal arg="searched_enough"]

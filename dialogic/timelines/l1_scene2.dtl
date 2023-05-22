@@ -1,39 +1,39 @@
 [sound path="res://sound/door-knock.wav"]
 [wait time="2.0"]
 Join neighbor 3
-neighbor: „Hello {mc}, nice to see you. Since when do you deliver packages?“
-mc: I notice how she glances at the package and is visibly surprised.
-mc: As soon as we make brief eye contact, she turns away quickly and looks at the package.
-neighbor (shy): „... uhm“
-mc: „Hi Miu, the package is for you. It was by the trash can...“
-mc: I explain slowly and see how she hesitantly approaches. She takes the package and looks at the address before shaking her head and peering inside.
-neighbor (default): „That's not mine. I think it belongs to Mr. Akuban. He moved away quite some time ago, and there have been mix-ups with our last names before.“
+neighbor: „Hello {mc}, nice to see you. Since when do you deliver packages?“ #id:32
+mc: I notice how she glances at the package and is visibly surprised. #id:33
+mc: As soon as we make brief eye contact, she turns away quickly and looks at the package. #id:34
+neighbor (shy): „... uhm“ #id:35
+mc: „Hi Miu, the package is for you. It was by the trash can...“ #id:36
+mc: I explain slowly and see how she hesitantly approaches. She takes the package and looks at the address before shaking her head and peering inside. #id:37
+neighbor (default): „That's not mine. I think it belongs to Mr. Akuban. He moved away quite some time ago, and there have been mix-ups with our last names before.“ #id:38
 mc: I nod slowly in understanding and have to strain myself to continue listening to her.\
-She always speaks a little quieter than the others.
-mc: „Then maybe you can bring it to him? I don't know him...“
-mc: Miu shakes her head.
-neighbor (default): „I'd like to, but I don't know anything more than his last name. But it would be a shame if he didn't get his package today..."
-neighbor: „I heard his wife left him... Maybe I shouldn't go to the birthday party today and try to find him instead..“
-- I could take care of it. After all, I don't have anything planned
-- I don't actually plan on delivering the package
-	mc: I slowly withdraw.
-	mc: „Miu, I have to go now.“
-	neighbor (shy): „O- o- of course, see you later, {mc}.“
-	mc: I see Miu meekly lift her hand, take out her phone and start typing. She's clearly down, and I feel very guilty.
-	mc: I turn around and clench my fists. Miu has been through enough.
-	mc: She should think of herself today.
-mc: I turn around and walk towards Miu, who blinks in surprise.
-mc: „Leave it to me. I have nothing planned today anyway, and if he's that well-known, it should be possible to find him quickly.“
-mc: Miu beams from ear to ear.
-neighbor (happy): „Thank you so much, {mc}.“
-neighbor (default): „I don't know where he lives, but I heard an old friend of his sells cars on Lessing Street. Maybe he can help you.“
-neighbor (shy): „But is this really okay for you?“
-mc: „Yes, of course. I'm going right now.“
-mc: I take the package back and feel her touch my arm gently. I look up at her, and she quickly withdraws her hand.
-neighbor (default): „I'm sorry for burdening you with this. I know you're busy too.“
-mc: I smile gratefully and walk away.
+She always speaks a little quieter than the others. #id:39
+mc: „Then maybe you can bring it to him? I don't know him...“ #id:3a
+mc: Miu shakes her head. #id:3b
+neighbor (default): „I'd like to, but I don't know anything more than his last name. But it would be a shame if he didn't get his package today..." #id:3c
+neighbor: „I heard his wife left him... Maybe I shouldn't go to the birthday party today and try to find him instead..“ #id:3d
+- I could take care of it. After all, I don't have anything planned #id:3e
+- I don't actually plan on delivering the package #id:3f
+	mc: I slowly withdraw. #id:40
+	mc: „Miu, I have to go now.“ #id:41
+	neighbor (shy): „O- o- of course, see you later, {mc}.“ #id:42
+	mc: I see Miu meekly lift her hand, take out her phone and start typing. She's clearly down, and I feel very guilty. #id:43
+	mc: I turn around and clench my fists. Miu has been through enough. #id:44
+	mc: She should think of herself today. #id:45
+mc: I turn around and walk towards Miu, who blinks in surprise. #id:46
+mc: „Leave it to me. I have nothing planned today anyway, and if he's that well-known, it should be possible to find him quickly.“ #id:47
+mc: Miu beams from ear to ear. #id:48
+neighbor (happy): „Thank you so much, {mc}.“ #id:49
+neighbor (default): „I don't know where he lives, but I heard an old friend of his sells cars on Lessing Street. Maybe he can help you.“ #id:4a
+neighbor (shy): „But is this really okay for you?“ #id:4b
+mc: „Yes, of course. I'm going right now.“ #id:4c
+mc: I take the package back and feel her touch my arm gently. I look up at her, and she quickly withdraws her hand. #id:4d
+neighbor (default): „I'm sorry for burdening you with this. I know you're busy too.“ #id:4e
+mc: I smile gratefully and walk away. #id:4f
 Leave neighbor
-mc: It's been always clear to me that Miu is a very attentive person. That's why I don't want to burden her with anything more.
-mc: She's always considerate of others, and today she deserves to have a nice day. Actually, I can't take much off her plate, even though she's always so accommodating as a neighbor.
-mc: Delivering a package is an easy task, after all.
+mc: It's been always clear to me that Miu is a very attentive person. That's why I don't want to burden her with anything more. #id:50
+mc: She's always considerate of others, and today she deserves to have a nice day. Actually, I can't take much off her plate, even though she's always so accommodating as a neighbor. #id:51
+mc: Delivering a package is an easy task, after all. #id:52
 [signal arg="talked_miu"]

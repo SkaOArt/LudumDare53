@@ -39,7 +39,7 @@ I look at the price and hesitate for a moment. #id:66
 	seller (happy): „Mr. Akuban is a good friend. He works at the bar which is not very far from here. A good man, that guy. Say hello to him from me. You just go straight from here and take the first right. You can't miss the bar.“ #id:76
 	mc: „Thank you very much.“ #id:77
 	Leave seller
-	I said goodbye and felt very relieved to be getting away from this man. Buying a car had suddenly become much less attractive than I had  previously thought. #id:78
+	I say goodbye and feel very relieved to get away from this man. Buying a car had suddenly become much less attractive than I had previously thought. #id:78
 	VAR {auto} = "false"
 VAR {location2.completed} = "true"
 [signal arg="talked_seller"]

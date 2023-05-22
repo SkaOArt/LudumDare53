@@ -12,7 +12,7 @@ if {location3.barkeeper_first} == "true":
 	mc: I am silenced as the bartender looks at me with a cold and downright creepy gaze. #id:7f
 	[signal arg="boris_angry"]
 	barkeeper (angry): „Get out of here, you have no business here.“ #id:80
-	mc: I quickly realize that he doesn't want to talk to me. So I have to make sure! #id:81
+	mc: I quickly realize that he does not want to talk to me. I have to get him to help me somehow. #id:81
 	VAR {location3.barkeeper_first} = "false"
 	[end_timeline]
 if {location3.sorting_game_played} == "false":

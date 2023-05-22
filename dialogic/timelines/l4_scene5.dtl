@@ -33,5 +33,5 @@ mc: I shake my head and smile. #id:ad
 mc: „Don't worry. At least, I wasn't bored today. And you know what? I think we can definitely do things together more often and solve your problem with your ex.“ #id:ae
 mc: I don't know why, but I have the feeling that something has changed in me through this small delivery, and I want to continue this change! #id:af
 if {auto} == "true":
-	mc: The only thing I would still like to avoid is buying a car from that sleazy car dealer. It's constantly breaking down! #id:b0
+	mc: The only thing I would rather have avoided is buying a car from this shoddy dealership. It breaks down all the time! #id:b0
 [signal arg="end"]

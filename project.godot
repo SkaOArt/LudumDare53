@@ -118,8 +118,8 @@ dialogic_default_action={
 
 [internationalization]
 
-locale/translations=PackedStringArray("res://dialogic/translation/dialogic_translations.en.translation", "res://dialogic/translation/dialogic_translations.de.translation", "res://dialogic/translation/dialogic_translations.te.translation")
-locale/test="de"
+locale/translations=PackedStringArray("res://dialogic/translation/dialogic_translations.en.translation", "res://dialogic/translation/dialogic_translations.de.translation")
+locale/test="en"
 
 [rendering]
 
